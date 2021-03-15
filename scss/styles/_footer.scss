@@ -1,0 +1,26 @@
+footer {
+    background-color: $colorDarkBlue;
+    color: #DCDCDC;
+    padding-top: 35px;
+    @include responsive(md) {
+        padding-top: 90px;
+    }
+    h3 {
+        color: $colorWhite;
+        font-size: $fontSize20;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    ul li {
+        line-height: 2.5;
+    }
+    .copyright {
+        border-top: 1px solid #222C5D;
+        padding: 20px 0;
+        color: #DCDCDC;
+        p {
+            margin-bottom: 0;
+            text-align: center;
+        }
+    }
+}

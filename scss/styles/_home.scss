@@ -1,0 +1,857 @@
+.sect1 {
+    background-color: #F7F8FA;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-image: url('../images/bg.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 92%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .page-caption {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: 0;
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.75;
+            font-size: $fontSize24;
+            color: $colorWhite;
+            @include responsive(sm) {
+                font-size: $fontSize42;
+            }
+        }
+        .caption {
+            color: $colorWhite;
+            padding: 2rem 0;
+            font-family: $fontSFProLight;
+            @include responsive(sm) {
+                padding: 3rem 0;
+                font-size: $fontSize20;
+            }
+        }
+        .btn-booking-calendar {
+            border: 1px solid $colorWhite;
+            border-radius: 30px;
+            outline: 0;
+            background-color: transparent;
+            color: $colorWhite;
+            padding: 12px 40px;
+            text-transform: uppercase;
+            font-size: $fontSize12;
+            font-family: $fontSFProSemiBold;
+            margin-top: 15px;
+            cursor: pointer;
+            &:hover {
+                background-color: $colorWhite;
+                border: 1px solid $colorLightBlue;
+                color: $colorLightBlue;
+            }
+            @include responsive(sm) {
+                padding: 16px 50px;
+                font-size: $fontSize18;
+            }
+        }
+    }
+    .page-title {
+        display: flex;
+        justify-content: center;
+        background-color: $colorWhite;
+        box-shadow: 0 -15px 15px #00000010;
+        width: 100%;
+        height: 90px;
+        z-index: 2;
+        align-items: center;
+        @include responsive(sm) {
+            height: 180px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: $colorBlack;
+            font-size: $fontSize24;
+            @include responsive(sm) {
+                font-size: $fontSize48;
+            }
+        }
+    }
+}
+
+main {
+    background-color: #F7F8FA;
+    position: relative;
+    #what {
+        position: relative;
+        .text-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            display: none;
+            align-items: flex-start;
+            width: 14%;
+            justify-content: center;
+            background-color: #F7F8FA;
+            @include responsive(xl) {
+                display: flex;
+            }
+        }
+    }
+    #answer {
+        background-color: $colorWhite;
+        box-shadow: 0 5px 15px #00000010;
+        border-radius: 4px;
+        @include responsive(lg) {
+            padding: 0 50px 80px 50px;
+        }
+        .item {
+            background: #F9F9F9;
+            padding: 30px;
+            border-radius: 5px;
+            min-height: 355px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            box-shadow: 0 3px 10px #00000010;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 30px;
+            @include responsive(xl) {
+                margin-bottom: 0;
+                padding: 45px;
+                min-height: 420px;
+            }
+            &:hover {
+                background: $colorLightBlue;
+                color: $colorWhite;
+                * {
+                    color: $colorWhite;
+                }
+            }
+            .icon {
+                min-height: 65px;
+            }
+            h3 {
+                font-size: $fontSize22;
+                font-family: $fontSFProSemiBold;
+                color: $colorBlack;
+                padding: 15px 0px;
+                line-height: 1.55;
+                @include responsive(md) {
+                    padding: 30px 0px;
+                    font-size: $fontSize30;
+                }
+            }
+            .description {
+                font-family: $fontSFProRegular;
+                line-height: 2.25rem;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                }
+            }
+        }
+    }
+    #stated {
+        @include responsive(md) {
+            padding: 0 50px;
+        }
+        h4 {
+            font-size: $fontSize22;
+            font-family: $fontSFProBold;
+            padding-bottom: 20px;
+            line-height: 1.6;
+            @include responsive(md) {
+                font-size: $fontSize36;
+                padding-bottom: 45px;
+                padding-bottom: 30px;
+            }
+            .txt-highlights {
+                background-color: #095ADB;
+                color: $colorWhite;
+            }
+        }
+        .description {
+            display: inline-block;
+            border-top: 1px solid #DFDFDF;
+            padding-top: 20px;
+            font-size: $fontSize20;
+            @include responsive(md) {
+                font-size: $fontSize24;
+                padding-top: 30px;
+            }
+        }
+    }
+    #how {
+        position: relative;
+        .text-bg {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            display: none;
+            align-items: center;
+            width: 14%;
+            justify-content: center;
+            background-color: #F7F8FA;
+            @include responsive(xl) {
+                display: flex;
+            }
+        }
+        .bg-how {
+            background-color: $colorWhite;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 200%;
+                height: 115%;
+                top: 0;
+                right: 0;
+                background-color: $colorWhite;
+                z-index: 3;
+                display: none;
+                @include responsive(lg) {
+                    display: block;
+                }
+            }
+            h3 {
+                font-weight: bold;
+                padding-bottom: 25px;
+                font-size: $fontSize24;
+                line-height: 1.7;
+                @include responsive(md) {
+                    padding-bottom: 50px;
+                    font-size: $fontSize48;
+                }
+            }
+            .description {
+                font-family: $fontSFProRegular;
+                line-height: 1.75;
+                padding-bottom: 10px;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                }
+            }
+            li {
+                display: flex;
+                align-items: baseline;
+                justify-content: flex-start;
+                border-bottom: 1px solid #E9E9E9;
+                margin-bottom: 20px;
+                &:last-child {
+                    border: 0;
+                }
+                .fa-circle {
+                    padding-right: 20px;
+                    &::before {
+                        color: $colorBlue;
+                        font-size: $fontSize12;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            a {
+                font-family: $fontSFProMedium;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                }
+            }
+            .btn-view-now {
+                font-size: $fontSize14;
+                background-color: transparent;
+                border: 2px solid $colorLightBlue;
+                padding: 5px 25px;
+                text-transform: uppercase;
+                color: $colorLightBlue;
+                font-family: $fontSFProMedium;
+                border-radius: 30px;
+                outline: 0;
+                cursor: pointer;
+                &:hover {
+                    background-color: $colorWhite;
+                    border: 2px solid $colorLightBlue;
+                    color: $colorLightBlue;
+                }
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                    padding: 10px 45px;
+                }
+            }
+        }
+    }
+    #sales-marketing {
+        z-index: 2;
+        position: relative;
+        .text-bg {
+            position: absolute;
+            left: 0;
+            top: 70px;
+            height: 100%;
+            display: none;
+            align-items: center;
+            width: 14%;
+            justify-content: center;
+            background-color: #F7F8FA;
+            @include responsive(xl) {
+                display: flex;
+            }
+        }
+        .bg-sales-marketing {
+            background-color: $colorDarkBlue;
+            position: relative;
+            color: $colorWhite;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            z-index: 4;
+            padding-top: 0;
+            padding-bottom: 50px;
+            @include responsive(lg) {
+                padding-top: 150px;
+                padding-bottom: 0;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 200%;
+                height: 115%;
+                top: 0;
+                left: 0;
+                background-color: $colorDarkBlue;
+                z-index: 9;
+                display: none;
+                @include responsive(lg) {
+                    display: block;
+                }
+            }
+            h3 {
+                font-weight: bold;
+                padding-bottom: 25px;
+                line-height: 1.7;
+                font-size: $fontSize24;
+                @include responsive(md) {
+                    padding-bottom: 50px;
+                    font-size: $fontSize48;
+                }
+            }
+            .description {
+                font-family: $fontSFProRegular;
+                line-height: 1.75;
+                padding-bottom: 10px;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                }
+            }
+            li {
+                display: flex;
+                align-items: baseline;
+                justify-content: flex-start;
+                border-bottom: 1px solid #E9E9E9;
+                margin-bottom: 20px;
+                &:last-child {
+                    border: 0;
+                }
+                .fa-circle {
+                    padding-right: 20px;
+                    &::before {
+                        color: $colorBlue;
+                        font-size: $fontSize12;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            a {
+                font-family: $fontSFProMedium;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                }
+            }
+            .btn-view-now {
+                font-size: $fontSize14;
+                background-color: transparent;
+                border: 2px solid $colorWhite;
+                padding: 5px 25px;
+                text-transform: uppercase;
+                color: $colorWhite;
+                font-family: $fontSFProMedium;
+                border-radius: 30px;
+                outline: 0;
+                cursor: pointer;
+                &:hover {
+                    background-color: $colorWhite;
+                    border: 2px solid $colorLightBlue;
+                    color: $colorLightBlue;
+                }
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                    padding: 10px 45px;
+                }
+            }
+        }
+    }
+    #trademark {
+        z-index: 1;
+        position: relative;
+        .text-bg {
+            position: absolute;
+            right: 0;
+            top: 70px;
+            height: 92%;
+            display: flex;
+            align-items: center;
+            width: 14%;
+            justify-content: center;
+            background-color: #F7F8FA;
+            display: none;
+            @include responsive(xl) {
+                display: flex;
+            }
+        }
+        .bg-trademark {
+            background-color: $colorWhite;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            z-index: 1;
+            padding-top: 0;
+            padding-bottom: 35px;
+            @include responsive(lg) {
+                padding-top: 150px;
+                padding-bottom: 0;
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 200%;
+                height: 115%;
+                top: 0;
+                right: 0;
+                background-color: $colorWhite;
+                display: none;
+                @include responsive(lg) {
+                    display: block;
+                }
+            }
+            h3 {
+                font-size: $fontSize48;
+                font-weight: bold;
+                padding-bottom: 25px;
+                line-height: 1.7;
+                font-size: $fontSize24;
+                @include responsive(md) {
+                    padding-bottom: 50px;
+                    font-size: $fontSize48;
+                }
+            }
+            .description {
+                font-family: $fontSFProRegular;
+                line-height: 1.75;
+                padding-bottom: 10px;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                }
+            }
+            li {
+                display: flex;
+                align-items: baseline;
+                justify-content: flex-start;
+                border-bottom: 1px solid #E9E9E9;
+                margin-bottom: 20px;
+                &:last-child {
+                    border: 0;
+                }
+                .fa-circle {
+                    padding-right: 20px;
+                    &::before {
+                        color: $colorBlue;
+                        font-size: $fontSize12;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            a {
+                font-family: $fontSFProMedium;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 10px;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                }
+            }
+            .btn-view-now {
+                font-size: $fontSize14;
+                background-color: transparent;
+                border: 2px solid $colorLightBlue;
+                padding: 5px 25px;
+                text-transform: uppercase;
+                color: $colorLightBlue;
+                font-family: $fontSFProMedium;
+                border-radius: 30px;
+                outline: 0;
+                cursor: pointer;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                    padding: 10px 45px;
+                }
+                &:hover {
+                    background-color: $colorWhite;
+                    border: 2px solid $colorLightBlue;
+                    color: $colorLightBlue;
+                }
+            }
+        }
+    }
+    #areas {
+        .areas-header {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 200%;
+                height: 100%;
+                top: 0;
+                left: -16%;
+                background-color: $colorDarkBlue;
+                display: none;
+                @include responsive(lg) {
+                    display: flex;
+                }
+            }
+            background-color: $colorDarkBlue;
+            color: $colorWhite;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            h3 {
+                font-weight: bold;
+                font-size: $fontSize22;
+                line-height: 1.7;
+                @include responsive(md) {
+                    font-size: $fontSize40;
+                }
+            }
+            .goby {
+                font-family: $fontSFProRegular;
+                opacity: 0.6;
+            }
+            .title {
+                z-index: 3;
+            }
+            .view-all {
+                z-index: 3;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                border-bottom: 2px solid $colorLightBlue;
+                padding-bottom: 5px;
+                font-size: 10px;
+                width: 60px;
+                @include responsive(md) {
+                    width: 170px;
+                    padding-bottom: 15px;
+                }
+                a {
+                    font-family: $fontSFProSemiBold;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .bg-areas-content {
+            background-color: $colorBlue;
+        }
+        .areas-content {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 200%;
+                height: 100%;
+                top: 0;
+                left: -16%;
+                background-color: $colorDarkBlue;
+            }
+            background-color: $colorDarkBlue;
+            color: $colorWhite;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .list-items {
+                width: 100%;
+                z-index: 3;
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            .item {
+                flex-basis: 50%;
+                padding: 35px;
+                border-right: 1px solid #222C5D;
+                border-bottom: 1px solid #222C5D;
+                min-height: 200px;
+                position: relative;
+                @include responsive(md) {
+                    flex-basis: 25%;
+                }
+                @include responsive(lg) {
+                    flex-basis: 20%;
+                }
+                h4 {
+                    font-family: $fontSFProRegular;
+                    font-size: $fontSize16;
+                    @include responsive(md) {
+                        font-size: $fontSize20;
+                    }
+                }
+                .icon {
+                    min-height: 57px;
+                    margin-bottom: 20px;
+                }
+            }
+            .btn-contact {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: -15%;
+                padding: 20px;
+                background-color: $colorBlue;
+                min-height: 260px;
+                font-size: $fontSize30;
+                font-family: $fontSFProRegular;
+                display: flex;
+                align-items: center;
+                .txt-contact {
+                    border-bottom: 2px solid $colorWhite;
+                    width: max-content;
+                    padding-bottom: 10px;
+                    font-size: $fontSize18;
+                    @include responsive(md) {
+                        padding-bottom: 20px;
+                        font-size: $fontSize20;
+                    }
+                }
+            }
+        }
+    }
+    #reason {
+        display: flex;
+        align-items: stretch;
+        .left {
+            background-color: $colorBlue;
+            width: 15%;
+            align-items: center;
+            justify-content: center;
+            display: none;
+            @include responsive(md) {
+                display: flex;
+            }
+        }
+        .right {
+            width: 100%;
+            background-color: $colorWhite;
+            @include responsive(md) {
+                padding-right: 50px;
+            }
+            .txt-reason {
+                color: $colorLightBlue;
+                font-family: $fontSFProSemiBold;
+                font-size: $fontSize16;
+                text-transform: uppercase;
+                @include responsive(md) {
+                    font-size: $fontSize20;
+                }
+            }
+            h3 {
+                font-weight: bold;
+                padding-top: 7px;
+                line-height: 1.7;
+                font-size: $fontSize24;
+                @include responsive(md) {
+                    font-size: $fontSize48;
+                }
+            }
+            .list-items {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                .item {
+                    flex-basis: 100%;
+                    padding: 20px;
+                    @include responsive(md) {
+                        flex-basis: 33%;
+                    }
+                    .description {
+                        font-size: $fontSize16;
+                        font-family: $fontSFProRegular;
+                        @include responsive(md) {
+                            font-size: $fontSize20;
+                        }
+                    }
+                }
+                h4 {
+                    font-size: $fontSize20;
+                    font-weight: bold;
+                    margin: 20px 0;
+                    @include responsive(md) {
+                        font-size: $fontSize26;
+                        font-weight: bold;
+                        margin: 30px 0;
+                    }
+                }
+            }
+        }
+    }
+    #share {
+        background-color: #F3FCFF;
+        .txt-share {
+            color: $colorLightBlue;
+            font-family: $fontSFProSemiBold;
+            font-size: $fontSize16;
+            text-transform: uppercase;
+            @include responsive(md) {
+                font-size: $fontSize20;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            padding-top: 7px;
+            font-size: $fontSize24;
+            line-height: 1.7;
+            @include responsive(md) {
+                font-size: $fontSize48;
+            }
+        }
+        article {
+            margin-bottom: 25px;
+            @include responsive(md) {
+                margin-bottom: 0;
+            }
+            .name {
+                font-family: $fontSFProSemiBold;
+                font-size: $fontSize20;
+                padding-top: 20px;
+                @include responsive(md) {
+                    font-size: $fontSize24;
+                }
+            }
+        }
+    }
+    #contact {
+        background-color: $colorWhite;
+        position: relative;
+        .text-bg {
+            position: absolute;
+            right: 0;
+            background: $colorBlue;
+            top: 0;
+            height: 100%;
+            align-items: center;
+            width: 14%;
+            justify-content: center;
+            display: none;
+            @include responsive(xl) {
+                display: flex;
+            }
+        }
+        .txt-contact {
+            color: $colorLightBlue;
+            font-family: $fontSFProSemiBold;
+            font-size: $fontSize16;
+            text-transform: uppercase;
+            @include responsive(md) {
+                font-size: $fontSize20;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            font-size: $fontSize24;
+            line-height: 1.7;
+            @include responsive(md) {
+                font-size: $fontSize48;
+                padding-bottom: 25px;
+            }
+        }
+        .description {
+            font-size: $fontSize16;
+            margin-bottom: 30px;
+            @include responsive(md) {
+                font-size: $fontSize24;
+            }
+        }
+        form {
+            input {
+                outline: 0;
+                border-width: 0 0 2px;
+                border: 0;
+                border-bottom: 1px solid#D2D2D2;
+                width: 100%;
+                background-color: transparent;
+                height: 50px;
+                margin-bottom: 10px;
+                &::placeholder {
+                    font-family: $fontSFProRegular;
+                    color: #686868;
+                }
+            }
+            .btn-submit {
+                color: $colorWhite;
+                background-color: $colorLightBlue;
+                font-size: $fontSize12;
+                font-family: $fontSFProMedium;
+                border-radius: 25px;
+                padding: 10px 25px;
+                outline: 0;
+                border: 0;
+                margin-top: 35px;
+                border: 1px solid $colorLightBlue;
+                @include responsive(md) {
+                    padding: 13px 34px;
+                    font-size: $fontSize14;
+                }
+                img {
+                    margin-left: 5px;
+                }
+                cursor: pointer;
+                &:hover {
+                    background-color: $colorWhite;
+                    border: 1px solid $colorLightBlue;
+                    color: $colorLightBlue;
+                }
+            }
+        }
+    }
+}

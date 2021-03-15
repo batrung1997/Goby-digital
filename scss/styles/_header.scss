@@ -1,0 +1,71 @@
+header {
+    color: $colorWhite;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    @include responsive(xs) {
+        height: 150px;
+    }
+    .logo {
+        width: 200px;
+        @include responsive(xs) {
+            width: unset;
+        }
+    }
+    .btn-contact {
+        border: 1px solid $colorWhite;
+        border-radius: 30px;
+        outline: 0;
+        background-color: transparent;
+        color: $colorWhite;
+        padding: 8px 35px;
+        text-transform: uppercase;
+        font-size: $fontSize14;
+        font-family: $fontSFProSemiBold;
+        cursor: pointer;
+        &:hover {
+            background-color: $colorWhite;
+            border: 1px solid $colorLightBlue;
+            color: $colorLightBlue;
+        }
+    }
+    nav {
+        position: static !important;
+        padding-right: 0 !important;
+        @include responsive(xl) {
+            position: unset;
+        }
+        .navbar-toggler {
+            padding-right: 0;
+        }
+        .navbar-collapse {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 100%;
+            background-color: $colorWhite;
+            @include responsive(xl) {
+                position: unset;
+                background-color: transparent;
+            }
+        }
+        .navbar-nav {
+            a {
+                font-size: 16px;
+                padding: 0.5rem !important;
+                color: $colorLightBlue;
+                display: block;
+                @include responsive(xl) {
+                    color: $colorWhite;
+                    padding: 0 1rem !important;
+                }
+            }
+        }
+        .navbar-toogle::before {
+            color: $colorWhite;
+        }
+    }
+}
