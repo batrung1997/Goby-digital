@@ -18,6 +18,10 @@ footer {
         border-top: 1px solid #222C5D;
         padding: 20px 0;
         color: #DCDCDC;
+        margin-top: 25px;
+        @include responsive(md) {
+            margin-top: 90px;
+        }
         p {
             margin-bottom: 0;
             text-align: center;

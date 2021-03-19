@@ -1,0 +1,27 @@
+<svg id="transparency" xmlns="http://www.w3.org/2000/svg" width="20.223" height="20.223" viewBox="0 0 20.223 20.223">
+  <g id="Group_647" data-name="Group 647">
+    <g id="Group_646" data-name="Group 646">
+      <path id="Path_1897" data-name="Path 1897" d="M15,5.227A7.765,7.765,0,0,0,12.4,1.6,7.63,7.63,0,0,0,7.7,0,7.7,7.7,0,0,0,5.227,15,7.7,7.7,0,1,0,15,5.227ZM4.842,13.117a6.123,6.123,0,1,1,8.274-8.276q-.295-.023-.6-.023a7.711,7.711,0,0,0-7.7,7.7Q4.819,12.822,4.842,13.117Zm7.679,5.526a6.122,6.122,0,1,1,6.122-6.122A6.129,6.129,0,0,1,12.521,18.643Z" fill="#095adb"/>
+    </g>
+  </g>
+  <g id="Group_649" data-name="Group 649" transform="translate(13.788 8.273)">
+    <g id="Group_648" data-name="Group 648" transform="translate(0 0)">
+      <circle id="Ellipse_214" data-name="Ellipse 214" cx="1" cy="1" r="1" transform="translate(0.212 -0.273)" fill="#095adb"/>
+    </g>
+  </g>
+  <g id="Group_651" data-name="Group 651" transform="translate(12.869 11.112)">
+    <g id="Group_650" data-name="Group 650" transform="translate(0 0)">
+      <circle id="Ellipse_215" data-name="Ellipse 215" cx="1" cy="1" r="1" transform="translate(0.131 -0.111)" fill="#095adb"/>
+    </g>
+  </g>
+  <g id="Group_653" data-name="Group 653" transform="translate(11.111 12.869)">
+    <g id="Group_652" data-name="Group 652" transform="translate(0 0)">
+      <circle id="Ellipse_216" data-name="Ellipse 216" cx="1" cy="1" r="1" transform="translate(-0.111 0.131)" fill="#095adb"/>
+    </g>
+  </g>
+  <g id="Group_655" data-name="Group 655" transform="translate(8.273 13.788)">
+    <g id="Group_654" data-name="Group 654" transform="translate(0 0)">
+      <circle id="Ellipse_217" data-name="Ellipse 217" cx="1" cy="1" r="1" transform="translate(-0.273 0.212)" fill="#095adb"/>
+    </g>
+  </g>
+</svg>

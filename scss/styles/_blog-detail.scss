@@ -1,0 +1,162 @@
+.blog-detail {
+    background-color: #F7F8FA;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-image: url('../images/banner-blogs.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .page-caption {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: 0;
+        height: 100%;
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.75;
+            font-size: $fontSize18;
+            color: $colorWhite;
+            @include responsive(lg) {
+                font-size: $fontSize42;
+            }
+        }
+        .caption {
+            color: $colorWhite;
+            padding: 2rem 0;
+            font-family: $fontSFProLight;
+            @include responsive(lg) {
+                padding: 3rem 0;
+                font-size: $fontSize20;
+            }
+        }
+        .btn-booking-calendar {
+            border: 1px solid $colorWhite;
+            border-radius: 30px;
+            outline: 0;
+            background-color: transparent;
+            color: $colorWhite;
+            padding: 12px 40px;
+            text-transform: uppercase;
+            font-size: $fontSize12;
+            font-family: $fontSFProSemiBold;
+            margin-top: 15px;
+            cursor: pointer;
+            &:hover {
+                background-color: $colorWhite;
+                border: 1px solid $colorLightBlue;
+                color: $colorLightBlue;
+            }
+            @include responsive(sm) {
+                padding: 16px 50px;
+                font-size: $fontSize18;
+            }
+        }
+    }
+    .page-title {
+        display: flex;
+        justify-content: center;
+        background-color: $colorWhite;
+        box-shadow: 0 -15px 15px #00000010;
+        width: 100%;
+        height: 90px;
+        z-index: 2;
+        align-items: center;
+        @include responsive(sm) {
+            height: 180px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: $colorBlack;
+            font-size: $fontSize19;
+            line-height: 1.6;
+            @include responsive(lg) {
+                font-size: $fontSize36;
+            }
+        }
+    }
+    .breadcrumb {
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+        .breadcrumb-item {
+            font-family: $fontSFProLight;
+            font-size: $fontSize18;
+            color: $colorWhite;
+            opacity: 0.5;
+            &.active {
+                font-family: $fontSFProRegular;
+                opacity: 1;
+            }
+            &::before {
+                color: $colorWhite;
+            }
+        }
+    }
+}
+
+.content {
+    h2 {
+        font-size: $fontSize24;
+        font-family: $fontSFProMedium;
+        padding-bottom: 25px;
+        @include responsive(md) {
+            font-size: $fontSize36;
+            padding-bottom: 30px;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+        @include responsive(md) {
+            padding-bottom: 35px;
+        }
+    }
+    img {
+        margin-bottom: 15px;
+        @include responsive(md) {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+.hr {
+    hr {
+        width: 90%;
+    }
+}
+
+.feature-posts {
+    .feature-posts-title {
+        font-weight: bold;
+        font-size: $fontSize20;
+        @include responsive(md) {
+            font-size: $fontSize32;
+        }
+    }
+    .post-item {
+        padding-bottom: 20px;
+        @include responsive(md) {
+            padding-bottom: 35px;
+        }
+        .post-title {
+            font-size: $fontSize18;
+            font-family: $fontSFProMedium;
+            padding-top: 15px;
+        }
+    }
+}

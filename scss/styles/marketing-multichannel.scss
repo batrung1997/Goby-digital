@@ -1,0 +1,383 @@
+.marketing-multichannel {
+    background-color: #F7F8FA;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-image: url('../images/marketing-multichannel.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 92%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .page-caption {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: 0;
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.75;
+            font-size: $fontSize18;
+            color: $colorWhite;
+            @include responsive(lg) {
+                font-size: $fontSize42;
+            }
+        }
+        .caption {
+            color: $colorWhite;
+            padding: 2rem 0;
+            font-family: $fontSFProLight;
+            @include responsive(lg) {
+                padding: 3rem 0;
+                font-size: $fontSize20;
+            }
+        }
+        .btn-booking-calendar {
+            border: 1px solid $colorWhite;
+            border-radius: 30px;
+            outline: 0;
+            background-color: transparent;
+            color: $colorWhite;
+            padding: 12px 40px;
+            text-transform: uppercase;
+            font-size: $fontSize12;
+            font-family: $fontSFProSemiBold;
+            margin-top: 15px;
+            cursor: pointer;
+            &:hover {
+                background-color: $colorWhite;
+                border: 1px solid $colorLightBlue;
+                color: $colorLightBlue;
+            }
+            @include responsive(sm) {
+                padding: 16px 50px;
+                font-size: $fontSize18;
+            }
+        }
+    }
+    .page-title {
+        display: flex;
+        justify-content: center;
+        background-color: $colorWhite;
+        box-shadow: 0 -15px 15px #00000010;
+        width: 100%;
+        height: 90px;
+        z-index: 2;
+        align-items: center;
+        @include responsive(sm) {
+            height: 180px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+            color: $colorBlack;
+            font-size: $fontSize26;
+            line-height: 1.6;
+            @include responsive(lg) {
+                font-size: $fontSize36;
+            }
+        }
+    }
+}
+
+#marketing-multichannel-page {
+    background-color: #F7F8FA;
+    position: relative;
+    #when-need {
+        @include responsive(md) {
+            padding-bottom: 200px;
+        }
+        .list-items {
+            background-color: $colorWhite;
+            box-shadow: 0 5px 15px #00000010;
+            border-radius: 4px;
+            padding-top: 25px;
+            @include responsive(lg) {
+                padding: 0 50px 80px 50px;
+            }
+            .item {
+                background: #F9F9F9;
+                padding: 15px;
+                border-radius: 5px;
+                min-height: 265px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 3px 10px #00000010;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-bottom: 30px;
+                height: 100%;
+                @include responsive(xl) {
+                    margin-bottom: 0;
+                }
+                &:hover {
+                    background: $colorLightBlue;
+                    color: $colorWhite;
+                    * {
+                        color: $colorWhite;
+                    }
+                }
+                .icon {
+                    min-height: 65px;
+                }
+                h3 {
+                    font-size: $fontSize20;
+                    font-family: $fontSFProSemiBold;
+                    color: $colorBlack;
+                    padding: 15px 0px;
+                    line-height: 1.55;
+                    text-align: center;
+                    @include responsive(md) {
+                        padding: 30px 0px;
+                        font-size: $fontSize26;
+                    }
+                }
+                .description {
+                    font-family: $fontSFProRegular;
+                    line-height: 2.25rem;
+                    @include responsive(md) {
+                        font-size: $fontSize20;
+                    }
+                }
+            }
+        }
+    }
+    #marketing-multichannel-help-how {
+        position: relative;
+        background-color: $colorBlue;
+        color: $colorWhite;
+        padding: 40px 0;
+        @include responsive(md) {
+            padding-bottom: 100px;
+            padding-top: 0;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            background-color: $colorDarkBlue;
+            @include responsive(md) {
+                height: 112%;
+                left: 3%;
+            }
+        }
+        .name {
+            color: $colorWhite;
+            opacity: 0.6;
+            text-align: center;
+        }
+        .title {
+            color: $colorWhite;
+            text-align: center;
+            font-size: $fontSize24;
+            font-weight: bold;
+            line-height: 1.6;
+            @include responsive(md) {
+                font-size: $fontSize36;
+            }
+        }
+        .item {
+            text-align: center;
+            margin-bottom: 25px;
+            @include responsive(md) {
+                margin-bottom: 0;
+            }
+            h4 {
+                font-size: $fontSize22;
+                font-family: $fontSFProSemiBold;
+                padding: 25px 0;
+                @include responsive(md) {
+                    font-size: $fontSize24;
+                }
+            }
+            .description {
+                font-size: $fontSize16;
+                font-family: $fontSFProLight;
+                @include responsive(md) {
+                    font-size: $fontSize18;
+                }
+            }
+        }
+    }
+}
+
+#marketing-multichannel-difference {
+    display: flex;
+    align-items: stretch;
+    .left {
+        background-color: $colorBlue;
+        width: 15%;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        @include responsive(md) {
+            display: flex;
+        }
+    }
+    .right {
+        width: 100%;
+        background-color: $colorWhite;
+        padding-bottom: 35px;
+        @include responsive(md) {
+            padding-right: 50px;
+            padding-bottom: 90px;
+        }
+        .txt-reason {
+            color: $colorLightBlue;
+            font-family: $fontSFProSemiBold;
+            font-size: $fontSize16;
+            text-transform: uppercase;
+            @include responsive(md) {
+                font-size: $fontSize20;
+            }
+        }
+        h3 {
+            font-weight: bold;
+            padding-top: 7px;
+            line-height: 1.7;
+            font-size: $fontSize24;
+            @include responsive(md) {
+                font-size: $fontSize48;
+            }
+        }
+        .list-items {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .item {
+                flex-basis: 100%;
+                padding: 20px;
+                @include responsive(md) {
+                    flex-basis: 33%;
+                }
+                .description {
+                    font-size: $fontSize16;
+                    font-family: $fontSFProRegular;
+                    @include responsive(md) {
+                        font-size: $fontSize20;
+                    }
+                }
+            }
+            h4 {
+                font-size: $fontSize20;
+                font-weight: bold;
+                margin: 20px 0;
+                @include responsive(md) {
+                    font-size: $fontSize26;
+                    font-weight: bold;
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
+}
+
+#process-marketing-multichannel {
+    background-color: $colorDarkBlue;
+    color: $colorWhite;
+    padding: 40px 0;
+    @include responsive(md) {
+        padding: 150px 0;
+    }
+    .name {
+        font-size: $fontSize24;
+        font-weight: bold;
+        @include responsive(md) {
+            font-size: $fontSize36;
+        }
+    }
+    .title {
+        font-size: $fontSize24;
+        font-weight: bold;
+        line-height: 1.6;
+        @include responsive(md) {
+            font-size: $fontSize36;
+        }
+    }
+    .list-process {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        @include responsive(md) {
+            padding-top: 80px;
+        }
+        .survey-content {
+            flex-basis: 100%;
+            text-align: center;
+            padding: 10px 0;
+            @include responsive(md) {
+                flex-basis: 20%;
+            }
+            h4 {
+                font-size: $fontSize20;
+                font-family: $fontSFProRegular;
+                padding-top: 30px;
+                line-height: 1.7;
+                @include responsive(md) {
+                    font-size: $fontSize24;
+                }
+            }
+        }
+        .arrow {
+            flex-basis: 100%;
+            text-align: center;
+            @include responsive(md) {
+                flex-basis: 6.6%;
+            }
+        }
+    }
+}
+
+#contact-consultant {
+    padding: 40px 0;
+    background-image: url('../images/facebook-bg2.jpg');
+    @include responsive(md) {
+        padding: 90px 0;
+    }
+    .title {
+        font-size: $fontSize26;
+        font-weight: bold;
+        padding-bottom: 40px;
+        color: $colorWhite;
+        line-height: 1.6;
+        @include responsive(md) {
+            font-size: $fontSize48;
+        }
+    }
+    .btn-contact {
+        background-color: transparent;
+        border: 2px solid $colorWhite;
+        text-transform: uppercase;
+        padding: 7px 35px;
+        font-family: $fontSFProMedium;
+        font-size: $fontSize16;
+        border-radius: 25px;
+        color: $colorWhite;
+        cursor: pointer;
+        &:hover {
+            background-color: $colorWhite;
+            border: 2px solid $colorLightBlue;
+            color: $colorLightBlue;
+        }
+        @include responsive(md) {
+            padding: 10px 45px;
+            font-size: $fontSize24;
+        }
+    }
+}

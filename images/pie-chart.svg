@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="51.404" height="54.563" viewBox="0 0 51.404 54.563">
+  <g id="pie-chart" transform="translate(-1.75 -7.24)">
+    <path id="Path_1227" data-name="Path 1227" d="M46.541,54.063H8.363C4.856,54.063,2,51.535,2,48.431V5.632C2,2.527,4.856,0,8.363,0H46.541C50.049,0,52.9,2.527,52.9,5.632v42.8C52.9,51.535,50.049,54.063,46.541,54.063ZM8.363,2.253A3.623,3.623,0,0,0,4.545,5.632v42.8A3.623,3.623,0,0,0,8.363,51.81H46.541a3.623,3.623,0,0,0,3.818-3.379V5.632a3.623,3.623,0,0,0-3.818-3.379Z" transform="translate(0 7.49)" fill="#095adb" stroke="#095adb" stroke-width="0.5"/>
+    <path id="Path_1228" data-name="Path 1228" d="M22.363,13.545h-5.09a1.273,1.273,0,1,1,0-2.545h5.09a1.273,1.273,0,0,1,0,2.545Z" transform="translate(21.633 17.465)" fill="#095adb" stroke="#095adb" stroke-width="0.5"/>
+    <path id="Path_1229" data-name="Path 1229" d="M22.363,10.545h-5.09a1.273,1.273,0,1,1,0-2.545h5.09a1.273,1.273,0,0,1,0,2.545Z" transform="translate(21.633 12.83)" fill="#095adb" stroke="#095adb" stroke-width="0.5"/>
+    <path id="Path_1230" data-name="Path 1230" d="M22.363,16.545h-5.09a1.273,1.273,0,1,1,0-2.545h5.09a1.273,1.273,0,0,1,0,2.545Z" transform="translate(21.633 22.101)" fill="#095adb" stroke="#095adb" stroke-width="0.5"/>
+    <path id="Path_1231" data-name="Path 1231" d="M22.363,19.545h-5.09a1.273,1.273,0,1,1,0-2.545h5.09a1.273,1.273,0,0,1,0,2.545Z" transform="translate(21.633 26.736)" fill="#095adb" stroke="#095adb" stroke-width="0.5"/>
+    <path id="Path_1232" data-name="Path 1232" d="M39.36,22.545H6.273a1.273,1.273,0,1,1,0-2.545H39.36a1.273,1.273,0,1,1,0,2.545Z" transform="translate(4.636 31.372)" fill="#095adb" stroke="#095adb" stroke-width="0.5"/>
+    <path id="Path_1233" data-name="Path 1233" d="M17.726,33.452A12.726,12.726,0,1,1,30.452,20.726,12.741,12.741,0,0,1,17.726,33.452Zm0-22.907A10.181,10.181,0,1,0,27.907,20.726,10.191,10.191,0,0,0,17.726,10.545Z" transform="translate(4.636 12.83)" fill="#095adb" stroke="#095adb" stroke-width="0.5"/>
+    <path id="Path_1234" data-name="Path 1234" d="M7.591,30.1a1.271,1.271,0,0,1-.9-2.171L14.417,20.2V9.273a1.273,1.273,0,0,1,2.545,0V20.726a1.282,1.282,0,0,1-.372.9l-8.1,8.1A1.278,1.278,0,0,1,7.591,30.1Z" transform="translate(6.672 12.83)" fill="#095adb" stroke="#095adb" stroke-width="0.5"/>
+  </g>
+</svg>

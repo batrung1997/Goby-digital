@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6475,6 +6476,211 @@ a.text-dark:hover, a.text-dark:focus {
 /*
     variables font size
 */
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none; }
+  .slick-prev:hover, .slick-prev:focus,
+  .slick-next:hover,
+  .slick-next:focus {
+    outline: none;
+    background: transparent;
+    color: transparent; }
+    .slick-prev:hover:before, .slick-prev:focus:before,
+    .slick-next:hover:before,
+    .slick-next:focus:before {
+      opacity: 1; }
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before {
+    opacity: 0.25; }
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: 0.75;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.slick-prev {
+  left: -25px; }
+  [dir="rtl"] .slick-prev {
+    left: auto;
+    right: -25px; }
+  .slick-prev:before {
+    content: "←"; }
+    [dir="rtl"] .slick-prev:before {
+      content: "→"; }
+
+.slick-next {
+  right: -25px; }
+  [dir="rtl"] .slick-next {
+    left: -25px;
+    right: auto; }
+  .slick-next:before {
+    content: "→"; }
+    [dir="rtl"] .slick-next:before {
+      content: "←"; }
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer; }
+    .slick-dots li button {
+      border: 0;
+      background: transparent;
+      display: block;
+      height: 20px;
+      width: 20px;
+      outline: none;
+      line-height: 0px;
+      font-size: 0px;
+      color: transparent;
+      padding: 5px;
+      cursor: pointer; }
+      .slick-dots li button:hover, .slick-dots li button:focus {
+        outline: none; }
+        .slick-dots li button:hover:before, .slick-dots li button:focus:before {
+          opacity: 1; }
+      .slick-dots li button:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "•";
+        width: 20px;
+        height: 20px;
+        font-family: "slick";
+        font-size: 6px;
+        line-height: 20px;
+        text-align: center;
+        color: black;
+        opacity: 0.25;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale; }
+    .slick-dots li.slick-active button:before {
+      color: black;
+      opacity: 0.75; }
+
 @font-face {
   font-family: "SF-Pro-Display-Light";
   src: url("../fonts/SF-Pro-Display-Light.otf") format("opentype");
@@ -6601,6 +6807,49 @@ img {
   .bdr-0 {
     border-right: 0 !important; } }
 
+div.image {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 40%;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAMAAADDpiTIAAACXlBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///+1k98ZAAAAyHRSTlMAAQIDBAUGBwgLDA0ODxAREhMUFRYbHB0eHyAhIissLS4vMDEyMzQ1Njc4OTo7PD0+P0BBQkNERkdISUpLTE1OT1FSVVZXWFlaW1xdXmBhYmNkZWZnaGltb3BxcnN0dXd4eXp7fX5/gIGChIWIiouMjY+QkZKUlZeZmpyeoKKnqKmqq6ytr7CxsrO0tba3u7y+v8DCxMXGx8nKy8zNzs/Q0dLT1NXW2Nna29zd3t/g4eLn6Onq6+zt7vDx8vP09fb3+Pn6+/z9/qD3A4UAAAABYktHRMlqvWdcAAANR0lEQVR42u2d+WNU1RmGvySTUIohuFBRsBQlyGoXUVGEUnGhoEVLtNTttlQzChFRrNJFIygVjAsquNSlEWgrJFWLYKwgsmSZP6s/iIgxhMzcc85853zP8wdMMu/73GXucj4RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACETj9GWrN76xs+uzYyVQzbHPut5/Y+PqpZc2Oiv/+1e2vd1PstHRtWFxU/72m1q295FlrPS9tmJsnvZrF2w6Sopxc2TjtbWV1r94N/mlwO6bCxXUX1jRRXSpsPe2shW47H1iS4nOOWXVP249p/2JMfDkeSPv/7oeAkuPTxeNsP76tgHSSpINDSPpf9LfSSpV3px45v4v3U9O6dIz60z9X3GQlFLmi6uH73/JcTJKm2M3Ddf/L/n1lzz9wxhwBVf+DXD8tEeB6YdIxwKHT3MmOOkA2dhg/4VDXv95g2Ss8NZQV4QeIxc7rPtu/wu5/muIgV8M7v887v+Y4tNzBgnwVzKxxZ8HPf/BAcDaQeBbvwUL/yARa7x/6lNiK8jDHsu/6b9uD3HYY+83u4BlpGGRk3eFanYShkV2f/3GyAKysMn8EwJsIgqbtJ94/5OnAIxy5Ks3R28nCavcKiIi2wnCKq+KiIzl/X+z9J4lIovIwS7XisijxGCXh0WE98AN865IIzeCDdM/RqaTgmWauRFkmyWymhAs8wA3AmzTLq8TgmV2yC5CsEynfEgIlukWXggxzQFh/XfTHBUysA0CIAAgACAAIAAgACAAIIBz+vZ0rGuZN3PypKaGhqZJk2fOa1nXsZenkW0I8PmWOy8Zcp36hql3bf2cBtIWoPP3M+qGHU01YxUPpSYrQM+Gy0YyoeKitv/SQ4ICvDR/xKPKCvNfpom0BBjYOrO8MXWXbOTx9HQEGGifXP6kyikokIoA/7qyslm1P2apmhQEOFxsqHRYdWElE4uiF2DrD/LMKz//eSqJWoDeYq3komYlz6hFLMBHsyQ305haHq0Am8eKA5qeo5Y4BfhjrTihZh29xChAmzgjo5joBOhrEYfc0ks1cQnQt1iccj1PC0QlwMCvxTGMMIhKgFXinPspJx4BHhcPsH5dNAJsrvUhQO0W6olDgI/GiRea/kM/MQhwfJZ4Yjr3BWIQ4LfijXspSL8AW2r8CVDTQUPaBTh8gXjk/ENUpFyAu8Urv6Mi3QLsqvcrQMM/6UizAAM/E8/8hGeFNQvQLt55lpL0CjAw2b8AF7ML0CvA3yQA/BTUK8DsEALMpCWtArwkQdhGTUoFmB9GAIZbKxVgXyGMAIV99KRSgIclEDwaolOAKaEEaKYnjQLslGCwjpBGAVaFE+A+ilIowPRwAsymKH0C/K8unAAF1hPUJ8AWCQiXg/UJcGdIAe6hKXUCXBJSAH4IqhOgb1RIAUbxrqg2AfZIULqpSpkAz4cV4EWqUibAurACcDtAmwArwgpwB1UpE2BeWAGuoSplAswMK8AcqlImwA/DCvAjqlImwAVhBZhIVcoEGBdWgHOoSpkADWEFGEVVCAAcAoCTQOBnICgQYBYXgmwLwKXgM7LnocvH19ePn7t2b4oCtIQVIL6bQV1LT66fWrusOz0BuB08PJtGn/rvj34mOQE6eCBkONYMWj2xZk1qAuwNK0Bkywa3fvcbZIkJEPah0O/1xd6/VgN4LNwDxaG/RDEtAe4KKcC90W//WvcBlQuwNaQAL6TQv0oDKhfgYCFc/4WDSfSv0YAcr4fP4EJwuf0rNCCHAH9ggYgRn//pPRPMIcCucALsTGT7V7gPyLNI1MWh+p+WUP/aDMgjQLDbAetT6l+ZAXkE+ISFIivpX5cBMSwVuzCR8z+VZ4K5BHg5jACvpLX969oHsFx8NfpXZEA+AYKsFPZCgv3rMSDnyJip/vuPYmRMa/nfK0tBgNJG/wJsTuv8T9uZYN6xcZf77v+nA0lu/2r2AXkHR+5mcGSl/eswIPfo2Hv9CrAq4f5VGJB/ePSFPvuf8EXK/WswIP/4+Od9jo/X/zR4Md83LMYvgM/54Vna27+Gr+hAgF5v1wNnHE++/6ob4ECA0sdn++m/6UMD/VfbABcClJ6r9dF/nfopEUU3X7QYvQClJ3wI8JiJ7b/a+wA3ApTud9//A2b6r6oBjgQo/cZ1/y2G+q+mAa4E6Lvebf83aH8btOj2+xZjF6DUd7vLPH7Va2n7r+Y+QNx9VJuhC0Ct7s95sugFKD3u6Ndg3RMG+6+WAS4FKG1xsnzo2VZ+/6s4D3AqQOnjOfljuLTb5PZfrX2AWwFKvcWch4GalcfN9l8VA8T1B3ZMyJPABcnf/9V2FHAuQOlwseLlo+pXHioZ3v6rsg8QD5/5wVUVPv+5q2S9//AGiJdPfbaCJcSmJvv8t+qjgHj63O1zy/vas7cm+v6H9n2AePvkbQtG/PZ4YcG2Uontvyr7APH42T0bLhvJ972oLbX3/2PaB4jfj99136xh9wOF2ffvLkVCUYJRTEaAUql0sOPu5iF/GI6adk/HoVKJ/qtqgAT5K31dLz5y+9Wzp0wa19AwbtKUOVff8eiL3f2lmAjaf0ADpASqjv+hzwMQQGf/wQxAAKX9hzIAAbT2H8gABFDbfxgDEEBv/0EMQADF/YcwAAE09x/AAARQ3b9/AxBAd//eDUAA5f37NgABtPfv2QAEUN+/XwMQQH//Xg1AgAj692kAAsTQv0cDECCK/v0ZgABx9O/NAASIpH9fBiBALP17MgABounfjwEIEE//XgxAgIj692EAAsTUvwcDECCq/t0bgABx9e/cAASIrH/XBiBAbP07NgABouvfrQGaBNjz0OXj6+vHz127typ/vijRUExRgK6lJ9eYrF3WTf+BDFAjwKbRp37B0c+w/w9zFNAiwJpB4ydr1rD9B9kHKBGgtSrvxUW7/TvMR7T2H9SACPt3lY+o7T+gAVH27ygf0dt/MAMi7d9NPqK4/0AGRNu/k3xEc/9BDIi4fxf5iOr+AxgQdf8O8hHd/Xs3IPL+RSIXoDXMmU66/UcuQGugM510+49bgNZQZzrp9h+1AK3BznTS7T9mAcrIP6P/9AQoK/+M/lMToMz8M/pPS4Cy88/oPyUBKsg/o/90BKgo/4z+UxGgwvwz+k9DgIrzz+g/BQFy5J/Rf/wC5Mo/o//YBciZf0b/cQuQO/+M/mMWwEH+Gf3HK4CT/DP6j1UAR/ln9B+nAM7yz+g/RgEc5p/Rf3wCOM0/o//YBHCcf0b/cQngPP+M/mMSwEP+Gf3HI4CX/DP6j0UAT/ln9B+HAN7yz+g/BgE85p+Z7z8CAbzmn1nvX78AnvPPjPevXgDv+We2+9cuQID8M9P9KxcgSP6Z5f51CxAo/8xw/6oFCJZ/Zrd/zQIEzD8z279iAYLmn1ntX68AgfPPjPavVoDg+Wc2+9cqQBXyz0z2r1SAquSfWexfpwBVyj8z2L9KAaqWf2avf40CVDH/zFz/CgWoav6Ztf71CVDl+WvFoiBANQUwtv0hAP0jAP0jAP0jAP2bF4D+bQtA/7YFoH/bAtC/bQHo37YA9G9bAPq3LQD92xaA/m0LQP+2BaB/4wJQAQIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIAAgACAAIgAAIgAAIgAAIgAAIgQHgBIG4QAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAASBNAY6RgWWOSg8hWOaAfEgIlumWXYRgmU55nRAss102EYJl2mU1IVjmAVlGCJZZItMJwTLN0jhACnbpHyPSSQx2eVdEHiEGu6wVkZ8Tg13mi0hjHzlYpfcsEZHXCMIq20REpIUgrLJcREQavyQJmxwZ+9UiExuJwiZPnVhl5FqisMk1JwSo2UkWFtld+/VCQ0sJwyI3nlxpqu4D0rDHnrpv1hq7jTjsccspi83VvUce1nin7tTlBudwU9gY/bO+veDkX4jEFn8atOLouZ+SiSUOnD14zdkFHAQMMbDou6sO82CIIdYOsex0Pa+ImOHNhqEWHp+4n2Rs8MmEoZeen3aIbCxwcOrphg/MPUo66XPsqtOPn7ipn3xSp/+G4QaQXHeEhBLf/m8cfgTN3M/JKGUOzTvTEKJpn5BSuuxrPvMYqgk7yClV3po4kkFkhSKngkkysL5hhLPoFnFnKEEOLBz5NMKm9ewEUtv8nzy3rIGUzW+RWUq8N7vckaSF5R8QWyr8+5a6CqbS1i58h+hSYOfNhQoHE9fMb+fKYOR8+dQ1NXmGUzfe+movKcZK7yvLG/MPKB99Zdvb/CiIj64Ni8c6m1I/ZtqSB5/e0dnVw+ryyjnW09W5o/3BJc1jBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALxfwK6T3+OxGPLAAAAAElFTkSuQmCC"); }
+  div.image a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center; }
+  div.image.small-image {
+    padding-bottom: 58.13%; }
+  div.image.medium-image {
+    padding-bottom: 70.27%; }
+  div.image:hover img {
+    transform: scale(1.4);
+    transition: all 1s; }
+
+.cl-blue {
+  color: #095ADB !important; }
+
+.cl-light-blue {
+  color: #0583E0 !important; }
+
+.font-blod {
+  font-weight: bold; }
+
+.category-title {
+  font-weight: bold;
+  padding-bottom: 25px;
+  line-height: 1.7;
+  font-size: 24px; }
+  @media only screen and (min-width: 768px) {
+    .category-title {
+      padding-bottom: 50px;
+      font-size: 48px;
+      line-height: 1.3; } }
+
 header {
   color: #ffffff;
   height: 60px;
@@ -6662,14 +6911,14 @@ header {
     header nav .navbar-toogle::before {
       color: #ffffff; }
 
-.sect1 {
+.page-header {
   background-color: #F7F8FA;
   height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .sect1::before {
+  .page-header::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -6681,30 +6930,30 @@ header {
     left: 0;
     top: 0;
     z-index: 0; }
-  .sect1 .page-caption {
+  .page-header .page-caption {
     text-align: center;
     display: flex;
     align-items: center;
     width: 100%;
     z-index: 0; }
-    .sect1 .page-caption h1 {
+    .page-header .page-caption h1 {
       text-align: center;
       font-weight: bold;
       line-height: 1.75;
-      font-size: 24px;
+      font-size: 18px;
       color: #ffffff; }
-      @media only screen and (min-width: 576px) {
-        .sect1 .page-caption h1 {
+      @media only screen and (min-width: 992px) {
+        .page-header .page-caption h1 {
           font-size: 42px; } }
-    .sect1 .page-caption .caption {
+    .page-header .page-caption .caption {
       color: #ffffff;
       padding: 2rem 0;
       font-family: "SF-Pro-Display-Light"; }
-      @media only screen and (min-width: 576px) {
-        .sect1 .page-caption .caption {
+      @media only screen and (min-width: 992px) {
+        .page-header .page-caption .caption {
           padding: 3rem 0;
           font-size: 20px; } }
-    .sect1 .page-caption .btn-booking-calendar {
+    .page-header .page-caption .btn-booking-calendar {
       border: 1px solid #ffffff;
       border-radius: 30px;
       outline: 0;
@@ -6716,15 +6965,15 @@ header {
       font-family: "SF-Pro-Display-Semibold";
       margin-top: 15px;
       cursor: pointer; }
-      .sect1 .page-caption .btn-booking-calendar:hover {
+      .page-header .page-caption .btn-booking-calendar:hover {
         background-color: #ffffff;
         border: 1px solid #0583E0;
         color: #0583E0; }
       @media only screen and (min-width: 576px) {
-        .sect1 .page-caption .btn-booking-calendar {
+        .page-header .page-caption .btn-booking-calendar {
           padding: 16px 50px;
           font-size: 18px; } }
-  .sect1 .page-title {
+  .page-header .page-title {
     display: flex;
     justify-content: center;
     background-color: #ffffff;
@@ -6734,16 +6983,8 @@ header {
     z-index: 2;
     align-items: center; }
     @media only screen and (min-width: 576px) {
-      .sect1 .page-title {
+      .page-header .page-title {
         height: 180px; } }
-    .sect1 .page-title h2 {
-      text-align: center;
-      font-weight: bold;
-      color: #262626;
-      font-size: 24px; }
-      @media only screen and (min-width: 576px) {
-        .sect1 .page-title h2 {
-          font-size: 48px; } }
 
 main {
   background-color: #F7F8FA;
@@ -6757,10 +6998,10 @@ main {
       height: 100%;
       display: none;
       align-items: flex-start;
-      width: 14%;
+      width: 12vmax;
       justify-content: center;
       background-color: #F7F8FA; }
-      @media only screen and (min-width: 1200px) {
+      @media (min-width: 1300px) {
         main #what .text-bg {
           display: flex; } }
   main #answer {
@@ -6878,7 +7119,8 @@ main {
         @media only screen and (min-width: 768px) {
           main #how .bg-how h3 {
             padding-bottom: 50px;
-            font-size: 48px; } }
+            font-size: 48px;
+            line-height: 1.3; } }
       main #how .bg-how .description {
         font-family: "SF-Pro-Display-Regular";
         line-height: 1.75;
@@ -6922,9 +7164,9 @@ main {
         outline: 0;
         cursor: pointer; }
         main #how .bg-how .btn-view-now:hover {
-          background-color: #ffffff;
-          border: 2px solid #0583E0;
-          color: #0583E0; }
+          background-color: #0583E0;
+          border: 2px solid #ffffff;
+          color: #ffffff; }
         @media only screen and (min-width: 768px) {
           main #how .bg-how .btn-view-now {
             font-size: 20px;
@@ -6980,7 +7222,8 @@ main {
         @media only screen and (min-width: 768px) {
           main #sales-marketing .bg-sales-marketing h3 {
             padding-bottom: 50px;
-            font-size: 48px; } }
+            font-size: 48px;
+            line-height: 1.3; } }
       main #sales-marketing .bg-sales-marketing .description {
         font-family: "SF-Pro-Display-Regular";
         line-height: 1.75;
@@ -7082,7 +7325,8 @@ main {
         @media only screen and (min-width: 768px) {
           main #trademark .bg-trademark h3 {
             padding-bottom: 50px;
-            font-size: 48px; } }
+            font-size: 48px;
+            line-height: 1.3; } }
       main #trademark .bg-trademark .description {
         font-family: "SF-Pro-Display-Regular";
         line-height: 1.75;
@@ -7130,9 +7374,9 @@ main {
             font-size: 20px;
             padding: 10px 45px; } }
         main #trademark .bg-trademark .btn-view-now:hover {
-          background-color: #ffffff;
-          border: 2px solid #0583E0;
-          color: #0583E0; }
+          background-color: #0583E0;
+          border: 2px solid #ffffff;
+          color: #ffffff; }
   main #areas .areas-header {
     position: relative;
     background-color: #091951;
@@ -7158,7 +7402,8 @@ main {
       line-height: 1.7; }
       @media only screen and (min-width: 768px) {
         main #areas .areas-header h3 {
-          font-size: 40px; } }
+          font-size: 40px;
+          line-height: 1.3; } }
     main #areas .areas-header .goby {
       font-family: "SF-Pro-Display-Regular";
       opacity: 0.6; }
@@ -7410,6 +7655,2271 @@ main {
         border: 1px solid #0583E0;
         color: #0583E0; }
 
+.seo {
+  background-color: #F7F8FA;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .seo::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/seo-banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .seo .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0; }
+    .seo .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .seo .page-caption h1 {
+          font-size: 42px; } }
+    .seo .page-caption .caption {
+      color: #ffffff;
+      padding: 2rem 0;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .seo .page-caption .caption {
+          padding: 3rem 0;
+          font-size: 20px; } }
+    .seo .page-caption .btn-booking-calendar {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      outline: 0;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "SF-Pro-Display-Semibold";
+      margin-top: 15px;
+      cursor: pointer; }
+      .seo .page-caption .btn-booking-calendar:hover {
+        background-color: #ffffff;
+        border: 1px solid #0583E0;
+        color: #0583E0; }
+      @media only screen and (min-width: 576px) {
+        .seo .page-caption .btn-booking-calendar {
+          padding: 16px 50px;
+          font-size: 18px; } }
+  .seo .page-title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 -15px 15px #00000010;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .seo .page-title {
+        height: 180px; } }
+    .seo .page-title h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #262626;
+      font-size: 26px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 992px) {
+        .seo .page-title h2 {
+          font-size: 36px; } }
+
+#seo-page {
+  background-color: #F7F8FA;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    #seo-page #when-need {
+      padding-bottom: 200px; } }
+  #seo-page #when-need .list-items {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px #00000010;
+    border-radius: 4px;
+    padding-top: 25px; }
+    @media only screen and (min-width: 992px) {
+      #seo-page #when-need .list-items {
+        padding: 0 50px 80px 50px; } }
+    #seo-page #when-need .list-items .item {
+      background: #F9F9F9;
+      padding: 15px;
+      border-radius: 5px;
+      min-height: 265px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 3px 10px #00000010;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 30px; }
+      @media only screen and (min-width: 1200px) {
+        #seo-page #when-need .list-items .item {
+          margin-bottom: 0; } }
+      #seo-page #when-need .list-items .item:hover {
+        background: #0583E0;
+        color: #ffffff; }
+        #seo-page #when-need .list-items .item:hover * {
+          color: #ffffff; }
+      #seo-page #when-need .list-items .item .icon {
+        min-height: 65px; }
+      #seo-page #when-need .list-items .item h3 {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Semibold";
+        color: #262626;
+        padding: 15px 0px;
+        line-height: 1.55;
+        text-align: center; }
+        @media only screen and (min-width: 768px) {
+          #seo-page #when-need .list-items .item h3 {
+            padding: 30px 0px;
+            font-size: 26px; } }
+      #seo-page #when-need .list-items .item .description {
+        font-family: "SF-Pro-Display-Regular";
+        line-height: 2.25rem; }
+        @media only screen and (min-width: 768px) {
+          #seo-page #when-need .list-items .item .description {
+            font-size: 20px; } }
+  #seo-page #seo-help-how {
+    position: relative;
+    background-color: #095ADB;
+    color: #ffffff;
+    padding: 40px 0; }
+    @media only screen and (min-width: 768px) {
+      #seo-page #seo-help-how {
+        padding-bottom: 100px;
+        padding-top: 0; } }
+    #seo-page #seo-help-how::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-color: #091951; }
+      @media only screen and (min-width: 768px) {
+        #seo-page #seo-help-how::before {
+          height: 120%;
+          left: 3%; } }
+    #seo-page #seo-help-how .name {
+      color: #ffffff;
+      opacity: 0.6;
+      text-align: center; }
+    #seo-page #seo-help-how .title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.6; }
+      @media only screen and (min-width: 768px) {
+        #seo-page #seo-help-how .title {
+          font-size: 36px; } }
+    #seo-page #seo-help-how .item {
+      text-align: center;
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 768px) {
+        #seo-page #seo-help-how .item {
+          margin-bottom: 0; } }
+      #seo-page #seo-help-how .item h4 {
+        font-size: 22px;
+        font-family: "SF-Pro-Display-Semibold";
+        padding: 25px 0; }
+        @media only screen and (min-width: 768px) {
+          #seo-page #seo-help-how .item h4 {
+            font-size: 24px; } }
+      #seo-page #seo-help-how .item .description {
+        font-size: 16px;
+        font-family: "SF-Pro-Display-Light"; }
+        @media only screen and (min-width: 768px) {
+          #seo-page #seo-help-how .item .description {
+            font-size: 18px; } }
+
+#seo-difference {
+  display: flex;
+  align-items: stretch; }
+  #seo-difference .left {
+    background-color: #095ADB;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      #seo-difference .left {
+        display: flex; } }
+  #seo-difference .right {
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 35px; }
+    @media only screen and (min-width: 768px) {
+      #seo-difference .right {
+        padding-right: 50px;
+        padding-bottom: 90px; } }
+    #seo-difference .right .txt-reason {
+      color: #0583E0;
+      font-family: "SF-Pro-Display-Semibold";
+      font-size: 16px;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 768px) {
+        #seo-difference .right .txt-reason {
+          font-size: 20px; } }
+    #seo-difference .right h3 {
+      font-weight: bold;
+      padding-top: 7px;
+      line-height: 1.7;
+      font-size: 24px; }
+      @media only screen and (min-width: 768px) {
+        #seo-difference .right h3 {
+          font-size: 48px; } }
+    #seo-difference .right .list-items {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      #seo-difference .right .list-items .item {
+        flex-basis: 100%;
+        padding: 20px; }
+        @media only screen and (min-width: 768px) {
+          #seo-difference .right .list-items .item {
+            flex-basis: 33%; } }
+        #seo-difference .right .list-items .item .description {
+          font-size: 16px;
+          font-family: "SF-Pro-Display-Regular"; }
+          @media only screen and (min-width: 768px) {
+            #seo-difference .right .list-items .item .description {
+              font-size: 20px; } }
+      #seo-difference .right .list-items h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0; }
+        @media only screen and (min-width: 768px) {
+          #seo-difference .right .list-items h4 {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 30px 0; } }
+
+#process-seo {
+  background-color: #091951;
+  color: #ffffff;
+  padding: 40px 0; }
+  @media only screen and (min-width: 768px) {
+    #process-seo {
+      padding: 150px 0; } }
+  #process-seo .name {
+    font-size: 24px;
+    font-weight: bold; }
+    @media only screen and (min-width: 768px) {
+      #process-seo .name {
+        font-size: 36px; } }
+  #process-seo .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #process-seo .title {
+        font-size: 36px; } }
+  #process-seo .list-process {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px; }
+    @media only screen and (min-width: 768px) {
+      #process-seo .list-process {
+        padding-top: 80px; } }
+    #process-seo .list-process .survey-content {
+      flex-basis: 100%;
+      text-align: center;
+      padding: 10px 0; }
+      @media only screen and (min-width: 768px) {
+        #process-seo .list-process .survey-content {
+          flex-basis: 20%; } }
+      #process-seo .list-process .survey-content h4 {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Regular";
+        padding-top: 30px;
+        line-height: 1.7; }
+        @media only screen and (min-width: 768px) {
+          #process-seo .list-process .survey-content h4 {
+            font-size: 24px; } }
+    #process-seo .list-process .arrow {
+      flex-basis: 100%;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        #process-seo .list-process .arrow {
+          flex-basis: 6.6%; } }
+
+#customer {
+  padding: 40px 0; }
+  @media only screen and (min-width: 768px) {
+    #customer {
+      padding: 150px 0; } }
+  #customer .title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 35px; }
+    @media only screen and (min-width: 768px) {
+      #customer .title {
+        padding-bottom: 90px;
+        font-size: 36px; } }
+  #customer .item {
+    padding-bottom: 10px; }
+    @media only screen and (min-width: 768px) {
+      #customer .item {
+        padding-bottom: 0; } }
+    #customer .item .description {
+      font-size: 20px;
+      font-family: "SF-Pro-Display-Semibold";
+      padding-top: 20px; }
+      @media only screen and (min-width: 768px) {
+        #customer .item .description {
+          font-size: 24px; } }
+
+#contact-consultant {
+  padding: 40px 0;
+  background-image: url("../images/seo-banner.png");
+  background-position: center;
+  background-size: cover; }
+  @media only screen and (min-width: 768px) {
+    #contact-consultant {
+      padding: 90px 0; } }
+  #contact-consultant .title {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #ffffff;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .title {
+        font-size: 48px; } }
+  #contact-consultant .btn-contact {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    padding: 7px 35px;
+    font-family: "SF-Pro-Display-Medium";
+    font-size: 16px;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer; }
+    #contact-consultant .btn-contact:hover {
+      background-color: #ffffff;
+      border: 2px solid #0583E0;
+      color: #0583E0; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .btn-contact {
+        padding: 10px 45px;
+        font-size: 24px; } }
+
+.facebook-marketing {
+  background-color: #F7F8FA;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .facebook-marketing::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/banner-facebook.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .facebook-marketing .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0; }
+    .facebook-marketing .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .facebook-marketing .page-caption h1 {
+          font-size: 42px; } }
+    .facebook-marketing .page-caption .caption {
+      color: #ffffff;
+      padding: 2rem 0;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .facebook-marketing .page-caption .caption {
+          padding: 3rem 0;
+          font-size: 20px; } }
+    .facebook-marketing .page-caption .btn-booking-calendar {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      outline: 0;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "SF-Pro-Display-Semibold";
+      margin-top: 15px;
+      cursor: pointer; }
+      .facebook-marketing .page-caption .btn-booking-calendar:hover {
+        background-color: #ffffff;
+        border: 1px solid #0583E0;
+        color: #0583E0; }
+      @media only screen and (min-width: 576px) {
+        .facebook-marketing .page-caption .btn-booking-calendar {
+          padding: 16px 50px;
+          font-size: 18px; } }
+  .facebook-marketing .page-title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 -15px 15px #00000010;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .facebook-marketing .page-title {
+        height: 180px; } }
+    .facebook-marketing .page-title h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #262626;
+      font-size: 26px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 992px) {
+        .facebook-marketing .page-title h2 {
+          font-size: 36px; } }
+
+#facebook-marketing-page {
+  background-color: #F7F8FA;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    #facebook-marketing-page #when-need {
+      padding-bottom: 200px; } }
+  #facebook-marketing-page #when-need .list-items {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px #00000010;
+    border-radius: 4px;
+    padding-top: 25px; }
+    @media only screen and (min-width: 992px) {
+      #facebook-marketing-page #when-need .list-items {
+        padding: 0 50px 80px 50px; } }
+    #facebook-marketing-page #when-need .list-items .item {
+      background: #F9F9F9;
+      padding: 15px;
+      padding-top: 20px;
+      border-radius: 5px;
+      min-height: 265px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      box-shadow: 0 3px 10px #00000010;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 30px; }
+      @media only screen and (min-width: 1200px) {
+        #facebook-marketing-page #when-need .list-items .item {
+          margin-bottom: 0;
+          height: 100%; } }
+      #facebook-marketing-page #when-need .list-items .item:hover {
+        background: #0583E0;
+        color: #ffffff; }
+        #facebook-marketing-page #when-need .list-items .item:hover * {
+          color: #ffffff; }
+      #facebook-marketing-page #when-need .list-items .item .icon {
+        min-height: 70px; }
+      #facebook-marketing-page #when-need .list-items .item h3 {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Semibold";
+        color: #262626;
+        padding: 15px 0px;
+        line-height: 1.55;
+        text-align: center; }
+        @media only screen and (min-width: 768px) {
+          #facebook-marketing-page #when-need .list-items .item h3 {
+            padding: 30px 0px;
+            font-size: 26px; } }
+      #facebook-marketing-page #when-need .list-items .item .description {
+        font-family: "SF-Pro-Display-Regular";
+        line-height: 2.25rem; }
+        @media only screen and (min-width: 768px) {
+          #facebook-marketing-page #when-need .list-items .item .description {
+            font-size: 20px; } }
+  #facebook-marketing-page #facebook-marketing-help-how {
+    position: relative;
+    background-color: #095ADB;
+    color: #ffffff;
+    padding: 40px 0; }
+    @media only screen and (min-width: 768px) {
+      #facebook-marketing-page #facebook-marketing-help-how {
+        padding-bottom: 100px;
+        padding-top: 0; } }
+    #facebook-marketing-page #facebook-marketing-help-how::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-color: #091951; }
+      @media only screen and (min-width: 768px) {
+        #facebook-marketing-page #facebook-marketing-help-how::before {
+          height: 120%;
+          left: 3%; } }
+    #facebook-marketing-page #facebook-marketing-help-how .name {
+      color: #ffffff;
+      opacity: 0.6;
+      text-align: center; }
+    #facebook-marketing-page #facebook-marketing-help-how .title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.6; }
+      @media only screen and (min-width: 768px) {
+        #facebook-marketing-page #facebook-marketing-help-how .title {
+          font-size: 36px; } }
+    #facebook-marketing-page #facebook-marketing-help-how .item {
+      text-align: center;
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 768px) {
+        #facebook-marketing-page #facebook-marketing-help-how .item {
+          margin-bottom: 0; } }
+      #facebook-marketing-page #facebook-marketing-help-how .item h4 {
+        font-size: 22px;
+        font-family: "SF-Pro-Display-Semibold";
+        padding: 25px 0; }
+        @media only screen and (min-width: 768px) {
+          #facebook-marketing-page #facebook-marketing-help-how .item h4 {
+            font-size: 24px; } }
+      #facebook-marketing-page #facebook-marketing-help-how .item .description {
+        font-size: 16px;
+        font-family: "SF-Pro-Display-Light"; }
+        @media only screen and (min-width: 768px) {
+          #facebook-marketing-page #facebook-marketing-help-how .item .description {
+            font-size: 18px; } }
+
+#facebook-marketing-difference {
+  display: flex;
+  align-items: stretch; }
+  #facebook-marketing-difference .left {
+    background-color: #095ADB;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      #facebook-marketing-difference .left {
+        display: flex; } }
+  #facebook-marketing-difference .right {
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 35px; }
+    @media only screen and (min-width: 768px) {
+      #facebook-marketing-difference .right {
+        padding-right: 50px;
+        padding-bottom: 90px; } }
+    #facebook-marketing-difference .right .txt-reason {
+      color: #0583E0;
+      font-family: "SF-Pro-Display-Semibold";
+      font-size: 16px;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 768px) {
+        #facebook-marketing-difference .right .txt-reason {
+          font-size: 20px; } }
+    #facebook-marketing-difference .right h3 {
+      font-weight: bold;
+      padding-top: 7px;
+      line-height: 1.7;
+      font-size: 24px; }
+      @media only screen and (min-width: 768px) {
+        #facebook-marketing-difference .right h3 {
+          font-size: 48px; } }
+    #facebook-marketing-difference .right .list-items {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      #facebook-marketing-difference .right .list-items .item {
+        flex-basis: 100%;
+        padding: 20px; }
+        @media only screen and (min-width: 768px) {
+          #facebook-marketing-difference .right .list-items .item {
+            flex-basis: 33%; } }
+        #facebook-marketing-difference .right .list-items .item .description {
+          font-size: 16px;
+          font-family: "SF-Pro-Display-Regular"; }
+          @media only screen and (min-width: 768px) {
+            #facebook-marketing-difference .right .list-items .item .description {
+              font-size: 20px; } }
+      #facebook-marketing-difference .right .list-items h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0; }
+        @media only screen and (min-width: 768px) {
+          #facebook-marketing-difference .right .list-items h4 {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 30px 0; } }
+
+#process-facebook-marketing {
+  background-color: #091951;
+  color: #ffffff;
+  padding: 40px 0; }
+  @media only screen and (min-width: 768px) {
+    #process-facebook-marketing {
+      padding: 150px 0; } }
+  #process-facebook-marketing .name {
+    font-size: 24px;
+    font-weight: bold; }
+    @media only screen and (min-width: 768px) {
+      #process-facebook-marketing .name {
+        font-size: 36px; } }
+  #process-facebook-marketing .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #process-facebook-marketing .title {
+        font-size: 36px; } }
+  #process-facebook-marketing .list-process {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px; }
+    @media only screen and (min-width: 768px) {
+      #process-facebook-marketing .list-process {
+        padding-top: 80px; } }
+    #process-facebook-marketing .list-process .survey-content {
+      flex-basis: 100%;
+      text-align: center;
+      padding: 10px 0; }
+      @media only screen and (min-width: 768px) {
+        #process-facebook-marketing .list-process .survey-content {
+          flex-basis: 20%; } }
+      #process-facebook-marketing .list-process .survey-content .icon {
+        min-height: 70px; }
+      #process-facebook-marketing .list-process .survey-content h4 {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Regular";
+        padding-top: 30px;
+        line-height: 1.7; }
+        @media only screen and (min-width: 768px) {
+          #process-facebook-marketing .list-process .survey-content h4 {
+            font-size: 24px; } }
+    #process-facebook-marketing .list-process .arrow {
+      flex-basis: 100%;
+      text-align: center;
+      padding: 10px 0; }
+      @media only screen and (min-width: 768px) {
+        #process-facebook-marketing .list-process .arrow {
+          flex-basis: 6.6%;
+          padding: 3% 0 0 0; } }
+
+#contact-consultant {
+  padding: 40px 0;
+  background-image: url("../images/facebook-bg2.jpg"); }
+  @media only screen and (min-width: 768px) {
+    #contact-consultant {
+      padding: 90px 0; } }
+  #contact-consultant .title {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #ffffff;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .title {
+        font-size: 48px; } }
+  #contact-consultant .btn-contact {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    padding: 7px 35px;
+    font-family: "SF-Pro-Display-Medium";
+    font-size: 16px;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer; }
+    #contact-consultant .btn-contact:hover {
+      background-color: #ffffff;
+      border: 2px solid #0583E0;
+      color: #0583E0; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .btn-contact {
+        padding: 10px 45px;
+        font-size: 24px; } }
+
+.marketing-multichannel {
+  background-color: #F7F8FA;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .marketing-multichannel::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/marketing-multichannel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .marketing-multichannel .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0; }
+    .marketing-multichannel .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .marketing-multichannel .page-caption h1 {
+          font-size: 42px; } }
+    .marketing-multichannel .page-caption .caption {
+      color: #ffffff;
+      padding: 2rem 0;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .marketing-multichannel .page-caption .caption {
+          padding: 3rem 0;
+          font-size: 20px; } }
+    .marketing-multichannel .page-caption .btn-booking-calendar {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      outline: 0;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "SF-Pro-Display-Semibold";
+      margin-top: 15px;
+      cursor: pointer; }
+      .marketing-multichannel .page-caption .btn-booking-calendar:hover {
+        background-color: #ffffff;
+        border: 1px solid #0583E0;
+        color: #0583E0; }
+      @media only screen and (min-width: 576px) {
+        .marketing-multichannel .page-caption .btn-booking-calendar {
+          padding: 16px 50px;
+          font-size: 18px; } }
+  .marketing-multichannel .page-title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 -15px 15px #00000010;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .marketing-multichannel .page-title {
+        height: 180px; } }
+    .marketing-multichannel .page-title h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #262626;
+      font-size: 26px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 992px) {
+        .marketing-multichannel .page-title h2 {
+          font-size: 36px; } }
+
+#marketing-multichannel-page {
+  background-color: #F7F8FA;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    #marketing-multichannel-page #when-need {
+      padding-bottom: 200px; } }
+  #marketing-multichannel-page #when-need .list-items {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px #00000010;
+    border-radius: 4px;
+    padding-top: 25px; }
+    @media only screen and (min-width: 992px) {
+      #marketing-multichannel-page #when-need .list-items {
+        padding: 0 50px 80px 50px; } }
+    #marketing-multichannel-page #when-need .list-items .item {
+      background: #F9F9F9;
+      padding: 15px;
+      border-radius: 5px;
+      min-height: 265px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 3px 10px #00000010;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 30px;
+      height: 100%; }
+      @media only screen and (min-width: 1200px) {
+        #marketing-multichannel-page #when-need .list-items .item {
+          margin-bottom: 0; } }
+      #marketing-multichannel-page #when-need .list-items .item:hover {
+        background: #0583E0;
+        color: #ffffff; }
+        #marketing-multichannel-page #when-need .list-items .item:hover * {
+          color: #ffffff; }
+      #marketing-multichannel-page #when-need .list-items .item .icon {
+        min-height: 65px; }
+      #marketing-multichannel-page #when-need .list-items .item h3 {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Semibold";
+        color: #262626;
+        padding: 15px 0px;
+        line-height: 1.55;
+        text-align: center; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-page #when-need .list-items .item h3 {
+            padding: 30px 0px;
+            font-size: 26px; } }
+      #marketing-multichannel-page #when-need .list-items .item .description {
+        font-family: "SF-Pro-Display-Regular";
+        line-height: 2.25rem; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-page #when-need .list-items .item .description {
+            font-size: 20px; } }
+  #marketing-multichannel-page #marketing-multichannel-help-how {
+    position: relative;
+    background-color: #095ADB;
+    color: #ffffff;
+    padding: 40px 0; }
+    @media only screen and (min-width: 768px) {
+      #marketing-multichannel-page #marketing-multichannel-help-how {
+        padding-bottom: 100px;
+        padding-top: 0; } }
+    #marketing-multichannel-page #marketing-multichannel-help-how::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-color: #091951; }
+      @media only screen and (min-width: 768px) {
+        #marketing-multichannel-page #marketing-multichannel-help-how::before {
+          height: 112%;
+          left: 3%; } }
+    #marketing-multichannel-page #marketing-multichannel-help-how .name {
+      color: #ffffff;
+      opacity: 0.6;
+      text-align: center; }
+    #marketing-multichannel-page #marketing-multichannel-help-how .title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.6; }
+      @media only screen and (min-width: 768px) {
+        #marketing-multichannel-page #marketing-multichannel-help-how .title {
+          font-size: 36px; } }
+    #marketing-multichannel-page #marketing-multichannel-help-how .item {
+      text-align: center;
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 768px) {
+        #marketing-multichannel-page #marketing-multichannel-help-how .item {
+          margin-bottom: 0; } }
+      #marketing-multichannel-page #marketing-multichannel-help-how .item h4 {
+        font-size: 22px;
+        font-family: "SF-Pro-Display-Semibold";
+        padding: 25px 0; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-page #marketing-multichannel-help-how .item h4 {
+            font-size: 24px; } }
+      #marketing-multichannel-page #marketing-multichannel-help-how .item .description {
+        font-size: 16px;
+        font-family: "SF-Pro-Display-Light"; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-page #marketing-multichannel-help-how .item .description {
+            font-size: 18px; } }
+
+#marketing-multichannel-difference {
+  display: flex;
+  align-items: stretch; }
+  #marketing-multichannel-difference .left {
+    background-color: #095ADB;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      #marketing-multichannel-difference .left {
+        display: flex; } }
+  #marketing-multichannel-difference .right {
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 35px; }
+    @media only screen and (min-width: 768px) {
+      #marketing-multichannel-difference .right {
+        padding-right: 50px;
+        padding-bottom: 90px; } }
+    #marketing-multichannel-difference .right .txt-reason {
+      color: #0583E0;
+      font-family: "SF-Pro-Display-Semibold";
+      font-size: 16px;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 768px) {
+        #marketing-multichannel-difference .right .txt-reason {
+          font-size: 20px; } }
+    #marketing-multichannel-difference .right h3 {
+      font-weight: bold;
+      padding-top: 7px;
+      line-height: 1.7;
+      font-size: 24px; }
+      @media only screen and (min-width: 768px) {
+        #marketing-multichannel-difference .right h3 {
+          font-size: 48px; } }
+    #marketing-multichannel-difference .right .list-items {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap; }
+      #marketing-multichannel-difference .right .list-items .item {
+        flex-basis: 100%;
+        padding: 20px; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-difference .right .list-items .item {
+            flex-basis: 33%; } }
+        #marketing-multichannel-difference .right .list-items .item .description {
+          font-size: 16px;
+          font-family: "SF-Pro-Display-Regular"; }
+          @media only screen and (min-width: 768px) {
+            #marketing-multichannel-difference .right .list-items .item .description {
+              font-size: 20px; } }
+      #marketing-multichannel-difference .right .list-items h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-difference .right .list-items h4 {
+            font-size: 26px;
+            font-weight: bold;
+            margin: 30px 0; } }
+
+#process-marketing-multichannel {
+  background-color: #091951;
+  color: #ffffff;
+  padding: 40px 0; }
+  @media only screen and (min-width: 768px) {
+    #process-marketing-multichannel {
+      padding: 150px 0; } }
+  #process-marketing-multichannel .name {
+    font-size: 24px;
+    font-weight: bold; }
+    @media only screen and (min-width: 768px) {
+      #process-marketing-multichannel .name {
+        font-size: 36px; } }
+  #process-marketing-multichannel .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #process-marketing-multichannel .title {
+        font-size: 36px; } }
+  #process-marketing-multichannel .list-process {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px; }
+    @media only screen and (min-width: 768px) {
+      #process-marketing-multichannel .list-process {
+        padding-top: 80px; } }
+    #process-marketing-multichannel .list-process .survey-content {
+      flex-basis: 100%;
+      text-align: center;
+      padding: 10px 0; }
+      @media only screen and (min-width: 768px) {
+        #process-marketing-multichannel .list-process .survey-content {
+          flex-basis: 20%; } }
+      #process-marketing-multichannel .list-process .survey-content h4 {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Regular";
+        padding-top: 30px;
+        line-height: 1.7; }
+        @media only screen and (min-width: 768px) {
+          #process-marketing-multichannel .list-process .survey-content h4 {
+            font-size: 24px; } }
+    #process-marketing-multichannel .list-process .arrow {
+      flex-basis: 100%;
+      text-align: center; }
+      @media only screen and (min-width: 768px) {
+        #process-marketing-multichannel .list-process .arrow {
+          flex-basis: 6.6%; } }
+
+#contact-consultant {
+  padding: 40px 0;
+  background-image: url("../images/facebook-bg2.jpg"); }
+  @media only screen and (min-width: 768px) {
+    #contact-consultant {
+      padding: 90px 0; } }
+  #contact-consultant .title {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #ffffff;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .title {
+        font-size: 48px; } }
+  #contact-consultant .btn-contact {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    padding: 7px 35px;
+    font-family: "SF-Pro-Display-Medium";
+    font-size: 16px;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer; }
+    #contact-consultant .btn-contact:hover {
+      background-color: #ffffff;
+      border: 2px solid #0583E0;
+      color: #0583E0; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .btn-contact {
+        padding: 10px 45px;
+        font-size: 24px; } }
+
+.strategy-marketing {
+  background-color: #F7F8FA;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .strategy-marketing::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .strategy-marketing .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0; }
+    .strategy-marketing .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .strategy-marketing .page-caption h1 {
+          font-size: 42px; } }
+    .strategy-marketing .page-caption .caption {
+      color: #ffffff;
+      padding: 2rem 0;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .strategy-marketing .page-caption .caption {
+          padding: 3rem 0;
+          font-size: 20px; } }
+    .strategy-marketing .page-caption .btn-booking-calendar {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      outline: 0;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "SF-Pro-Display-Semibold";
+      margin-top: 15px;
+      cursor: pointer; }
+      .strategy-marketing .page-caption .btn-booking-calendar:hover {
+        background-color: #ffffff;
+        border: 1px solid #0583E0;
+        color: #0583E0; }
+      @media only screen and (min-width: 576px) {
+        .strategy-marketing .page-caption .btn-booking-calendar {
+          padding: 16px 50px;
+          font-size: 18px; } }
+  .strategy-marketing .page-title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 -15px 15px #00000010;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .strategy-marketing .page-title {
+        height: 180px; } }
+    .strategy-marketing .page-title h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #262626;
+      font-size: 19px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 992px) {
+        .strategy-marketing .page-title h2 {
+          font-size: 36px; } }
+
+#benefits {
+  background-color: #091951;
+  color: #ffffff;
+  padding: 50px 0; }
+  @media only screen and (min-width: 768px) {
+    #benefits {
+      padding: 150px 0; } }
+  #benefits .title {
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold; }
+    @media only screen and (min-width: 768px) {
+      #benefits .title {
+        font-size: 36px;
+        padding-bottom: 75px; } }
+  #benefits .list-benefits .item {
+    text-align: center; }
+    #benefits .list-benefits .item h4 {
+      font-weight: bold;
+      font-size: 18px;
+      color: #ffffff;
+      padding-top: 20px;
+      line-height: 1.55; }
+      @media only screen and (min-width: 992px) {
+        #benefits .list-benefits .item h4 {
+          font-size: 20px;
+          padding-top: 28px; } }
+
+#strategy-marketing-page {
+  background-color: #F7F8FA;
+  position: relative; }
+  @media only screen and (min-width: 768px) {
+    #strategy-marketing-page #when-need {
+      padding-bottom: 200px; } }
+  #strategy-marketing-page #when-need .list-items {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px #00000010;
+    border-radius: 4px;
+    padding-top: 25px; }
+    @media only screen and (min-width: 992px) {
+      #strategy-marketing-page #when-need .list-items {
+        padding: 0 50px 80px 50px; } }
+    #strategy-marketing-page #when-need .list-items .item {
+      background: #F9F9F9;
+      padding: 15px;
+      border-radius: 5px;
+      min-height: 245px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 3px 10px #00000010;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 30px; }
+      @media only screen and (min-width: 1200px) {
+        #strategy-marketing-page #when-need .list-items .item {
+          margin-bottom: 0;
+          height: 100%; } }
+      #strategy-marketing-page #when-need .list-items .item:hover {
+        background: #0583E0;
+        color: #ffffff; }
+        #strategy-marketing-page #when-need .list-items .item:hover * {
+          color: #ffffff; }
+      #strategy-marketing-page #when-need .list-items .item .icon {
+        min-height: 65px; }
+      #strategy-marketing-page #when-need .list-items .item h3 {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Semibold";
+        color: #262626;
+        padding: 15px 0px;
+        line-height: 1.55;
+        text-align: center; }
+        @media only screen and (min-width: 768px) {
+          #strategy-marketing-page #when-need .list-items .item h3 {
+            padding: 30px 0px;
+            font-size: 26px; } }
+      #strategy-marketing-page #when-need .list-items .item .description {
+        font-family: "SF-Pro-Display-Regular";
+        line-height: 2.25rem; }
+        @media only screen and (min-width: 768px) {
+          #strategy-marketing-page #when-need .list-items .item .description {
+            font-size: 20px; } }
+  #strategy-marketing-page #strategy-marketing-help-how {
+    position: relative;
+    background-color: #095ADB;
+    color: #ffffff;
+    padding: 40px 0; }
+    @media only screen and (min-width: 768px) {
+      #strategy-marketing-page #strategy-marketing-help-how {
+        padding-bottom: 100px;
+        padding-top: 0; } }
+    #strategy-marketing-page #strategy-marketing-help-how::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-color: #091951; }
+      @media only screen and (min-width: 768px) {
+        #strategy-marketing-page #strategy-marketing-help-how::before {
+          height: 120%;
+          left: 3%; } }
+    #strategy-marketing-page #strategy-marketing-help-how .name {
+      color: #ffffff;
+      opacity: 0.6;
+      text-align: center; }
+    #strategy-marketing-page #strategy-marketing-help-how .title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.6; }
+      @media only screen and (min-width: 768px) {
+        #strategy-marketing-page #strategy-marketing-help-how .title {
+          font-size: 36px; } }
+    #strategy-marketing-page #strategy-marketing-help-how .item {
+      text-align: center;
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 768px) {
+        #strategy-marketing-page #strategy-marketing-help-how .item {
+          margin-bottom: 0; } }
+      #strategy-marketing-page #strategy-marketing-help-how .item h4 {
+        font-size: 22px;
+        font-family: "SF-Pro-Display-Semibold";
+        padding: 25px 0; }
+        @media only screen and (min-width: 768px) {
+          #strategy-marketing-page #strategy-marketing-help-how .item h4 {
+            font-size: 24px; } }
+      #strategy-marketing-page #strategy-marketing-help-how .item .description {
+        font-size: 16px;
+        font-family: "SF-Pro-Display-Light"; }
+        @media only screen and (min-width: 768px) {
+          #strategy-marketing-page #strategy-marketing-help-how .item .description {
+            font-size: 18px; } }
+
+#process {
+  background-color: #091951;
+  color: #ffffff;
+  padding: 40px 0; }
+  #process.process-benefits {
+    color: #262626;
+    background-color: #ffffff; }
+    #process.process-benefits .list-process {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 30px;
+      justify-content: space-around; }
+      @media only screen and (min-width: 768px) {
+        #process.process-benefits .list-process {
+          padding-top: 80px; } }
+      #process.process-benefits .list-process .survey-content {
+        text-align: center;
+        padding: 10px 0;
+        flex-basis: auto; }
+        #process.process-benefits .list-process .survey-content .icon {
+          min-height: 75px; }
+        #process.process-benefits .list-process .survey-content h4 {
+          font-size: 18px;
+          font-family: "SF-Pro-Display-Regular";
+          padding-top: 15px;
+          line-height: 1.7; }
+          @media only screen and (min-width: 768px) {
+            #process.process-benefits .list-process .survey-content h4 {
+              font-size: 24px;
+              padding-top: 30px; } }
+      #process.process-benefits .list-process .arrow {
+        flex-basis: auto;
+        text-align: center;
+        padding-top: 20px; }
+        @media only screen and (min-width: 768px) {
+          #process.process-benefits .list-process .arrow {
+            flex-basis: auto; } }
+  @media only screen and (min-width: 768px) {
+    #process {
+      padding: 150px 0; } }
+  #process .name {
+    font-size: 24px;
+    font-weight: bold; }
+    @media only screen and (min-width: 768px) {
+      #process .name {
+        font-size: 36px; } }
+  #process .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #process .title {
+        font-size: 36px; } }
+
+#contact-consultant {
+  padding: 40px 0;
+  background-image: url("../images/facebook-bg2.jpg"); }
+  @media only screen and (min-width: 768px) {
+    #contact-consultant {
+      padding: 90px 0; } }
+  #contact-consultant .title {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #ffffff;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .title {
+        font-size: 48px; } }
+  #contact-consultant .btn-contact {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    padding: 7px 35px;
+    font-family: "SF-Pro-Display-Medium";
+    font-size: 16px;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer; }
+    #contact-consultant .btn-contact:hover {
+      background-color: #ffffff;
+      border: 2px solid #0583E0;
+      color: #0583E0; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .btn-contact {
+        padding: 10px 45px;
+        font-size: 24px; } }
+
+.mobile-sip-truck {
+  background-color: #F7F8FA;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .mobile-sip-truck::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/banner-mobile-sip.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .mobile-sip-truck .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0; }
+    .mobile-sip-truck .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .mobile-sip-truck .page-caption h1 {
+          font-size: 42px; } }
+    .mobile-sip-truck .page-caption .caption {
+      color: #ffffff;
+      padding: 2rem 0;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .mobile-sip-truck .page-caption .caption {
+          padding: 3rem 0;
+          font-size: 20px; } }
+    .mobile-sip-truck .page-caption .btn-booking-calendar {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      outline: 0;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "SF-Pro-Display-Semibold";
+      margin-top: 15px;
+      cursor: pointer; }
+      .mobile-sip-truck .page-caption .btn-booking-calendar:hover {
+        background-color: #ffffff;
+        border: 1px solid #0583E0;
+        color: #0583E0; }
+      @media only screen and (min-width: 576px) {
+        .mobile-sip-truck .page-caption .btn-booking-calendar {
+          padding: 16px 50px;
+          font-size: 18px; } }
+  .mobile-sip-truck .page-title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 -15px 15px #00000010;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .mobile-sip-truck .page-title {
+        height: 180px; } }
+    .mobile-sip-truck .page-title h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #262626;
+      font-size: 19px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 992px) {
+        .mobile-sip-truck .page-title h2 {
+          font-size: 36px; } }
+
+#outstanding-point {
+  background-image: url("../images/bg-article-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding: 45px 0; }
+  @media only screen and (min-width: 768px) {
+    #outstanding-point {
+      padding: 90px 0; } }
+  #outstanding-point .title {
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 35px;
+    font-size: 24px;
+    font-weight: bold; }
+    @media only screen and (min-width: 768px) {
+      #outstanding-point .title {
+        font-size: 36px;
+        padding-bottom: 75px; } }
+  #outstanding-point .list-outstanding-point .post-item {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      #outstanding-point .list-outstanding-point .post-item {
+        height: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0; } }
+    #outstanding-point .list-outstanding-point .post-item .post-title {
+      font-size: 22px;
+      font-family: "SF-Pro-Display-Semibold";
+      text-align: center;
+      color: #262626;
+      margin: 25px 0;
+      padding: 0 30px;
+      line-height: 1.5; }
+      @media only screen and (min-width: 768px) {
+        #outstanding-point .list-outstanding-point .post-item .post-title {
+          font-size: 26px; } }
+
+#mobile-sip-truck-page {
+  background-color: #F7F8FA;
+  position: relative; }
+  #mobile-sip-truck-page #when-need {
+    padding-bottom: 50px; }
+    @media only screen and (min-width: 768px) {
+      #mobile-sip-truck-page #when-need {
+        padding-bottom: 90px; } }
+    @media only screen and (min-width: 1300px) {
+      #mobile-sip-truck-page #when-need {
+        padding-bottom: 150px; } }
+    #mobile-sip-truck-page #when-need .list-items {
+      background-color: #ffffff;
+      box-shadow: 0 5px 15px #00000010;
+      border-radius: 4px;
+      padding-top: 25px; }
+      @media only screen and (min-width: 992px) {
+        #mobile-sip-truck-page #when-need .list-items {
+          padding: 0 50px 80px 50px; } }
+      #mobile-sip-truck-page #when-need .list-items .item {
+        background: #F9F9F9;
+        padding: 15px;
+        border-radius: 5px;
+        min-height: 245px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 3px 10px #00000010;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 30px; }
+        #mobile-sip-truck-page #when-need .list-items .item:hover {
+          background: #0583E0;
+          color: #ffffff; }
+          #mobile-sip-truck-page #when-need .list-items .item:hover * {
+            color: #ffffff; }
+        #mobile-sip-truck-page #when-need .list-items .item .icon {
+          min-height: 65px; }
+        #mobile-sip-truck-page #when-need .list-items .item h3 {
+          font-size: 20px;
+          font-family: "SF-Pro-Display-Semibold";
+          color: #262626;
+          padding: 15px 0px;
+          line-height: 1.55;
+          text-align: center; }
+          @media only screen and (min-width: 768px) {
+            #mobile-sip-truck-page #when-need .list-items .item h3 {
+              padding-bottom: 30px;
+              font-size: 26px; } }
+        #mobile-sip-truck-page #when-need .list-items .item .description {
+          font-family: "SF-Pro-Display-Regular";
+          line-height: 2.25rem; }
+          @media only screen and (min-width: 768px) {
+            #mobile-sip-truck-page #when-need .list-items .item .description {
+              font-size: 20px; } }
+      #mobile-sip-truck-page #when-need .list-items .three-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #095ADB;
+        margin-bottom: 30px;
+        font-size: 65px;
+        height: 100%; }
+  #mobile-sip-truck-page #mobile-sip-truck-help-how {
+    position: relative;
+    background-color: #095ADB;
+    color: #ffffff;
+    padding: 40px 0; }
+    @media only screen and (min-width: 768px) {
+      #mobile-sip-truck-page #mobile-sip-truck-help-how {
+        padding-bottom: 100px;
+        padding-top: 0; } }
+    #mobile-sip-truck-page #mobile-sip-truck-help-how::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-color: #091951; }
+      @media only screen and (min-width: 768px) {
+        #mobile-sip-truck-page #mobile-sip-truck-help-how::before {
+          height: 120%;
+          left: 3%; } }
+    #mobile-sip-truck-page #mobile-sip-truck-help-how .name {
+      color: #ffffff;
+      opacity: 0.6;
+      text-align: center; }
+    #mobile-sip-truck-page #mobile-sip-truck-help-how .title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.6; }
+      @media only screen and (min-width: 768px) {
+        #mobile-sip-truck-page #mobile-sip-truck-help-how .title {
+          font-size: 36px; } }
+    #mobile-sip-truck-page #mobile-sip-truck-help-how .item {
+      text-align: center;
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 768px) {
+        #mobile-sip-truck-page #mobile-sip-truck-help-how .item {
+          margin-bottom: 0; } }
+      #mobile-sip-truck-page #mobile-sip-truck-help-how .item h4 {
+        font-size: 22px;
+        font-family: "SF-Pro-Display-Semibold";
+        padding: 25px 0; }
+        @media only screen and (min-width: 768px) {
+          #mobile-sip-truck-page #mobile-sip-truck-help-how .item h4 {
+            font-size: 24px; } }
+      #mobile-sip-truck-page #mobile-sip-truck-help-how .item .description {
+        font-size: 16px;
+        font-family: "SF-Pro-Display-Light"; }
+        @media only screen and (min-width: 768px) {
+          #mobile-sip-truck-page #mobile-sip-truck-help-how .item .description {
+            font-size: 18px; } }
+
+#process {
+  background-color: #ffffff;
+  padding: 40px 0;
+  color: #262626; }
+  @media only screen and (min-width: 768px) {
+    #process {
+      padding: 100px 0; } }
+  #process .title {
+    padding-bottom: 35px; }
+    @media only screen and (min-width: 768px) {
+      #process .title {
+        padding-bottom: 75px; } }
+  #process .line-arrow {
+    position: absolute;
+    right: -2%;
+    width: 3%; }
+  #process .setup-switchboard .type {
+    color: #0583E0;
+    font-size: 20px;
+    text-align: center; }
+  #process .setup-switchboard.initiate-call {
+    padding-top: 35px; }
+    @media only screen and (min-width: 768px) {
+      #process .setup-switchboard.initiate-call {
+        padding-top: 75px; } }
+  #process .process-setup-switchboard {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid #C1C1C1;
+    border-style: dashed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px; }
+    #process .process-setup-switchboard .survey-content {
+      text-align: center;
+      padding: 10px 0;
+      flex-basis: auto; }
+      #process .process-setup-switchboard .survey-content .icon {
+        min-height: 65px; }
+      #process .process-setup-switchboard .survey-content h4 {
+        font-size: 18px;
+        font-family: "SF-Pro-Display-Regular";
+        padding-top: 15px;
+        line-height: 1.7; }
+        @media only screen and (min-width: 768px) {
+          #process .process-setup-switchboard .survey-content h4 {
+            font-size: 24px;
+            padding-top: 25px; } }
+    #process .process-setup-switchboard .arrow {
+      flex-basis: auto;
+      text-align: center;
+      padding-top: 25px; }
+      @media only screen and (min-width: 768px) {
+        #process .process-setup-switchboard .arrow {
+          flex-basis: auto; } }
+
+#contact-consultant {
+  padding: 40px 0;
+  background-image: url("../images/facebook-bg2.jpg"); }
+  @media only screen and (min-width: 768px) {
+    #contact-consultant {
+      padding: 90px 0; } }
+  #contact-consultant .title {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #ffffff;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .title {
+        font-size: 48px; } }
+  #contact-consultant .btn-contact {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    padding: 7px 35px;
+    font-family: "SF-Pro-Display-Medium";
+    font-size: 16px;
+    border-radius: 25px;
+    color: #ffffff;
+    cursor: pointer; }
+    #contact-consultant .btn-contact:hover {
+      background-color: #ffffff;
+      border: 2px solid #0583E0;
+      color: #0583E0; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .btn-contact {
+        padding: 10px 45px;
+        font-size: 24px; } }
+
+.about {
+  background-color: #F7F8FA;
+  height: 85vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .about::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/banner-mobile-sip.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .about .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+    height: 100%; }
+    .about .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .about .page-caption h1 {
+          font-size: 42px; } }
+    .about .page-caption .caption {
+      color: #ffffff;
+      padding: 2rem 0;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .about .page-caption .caption {
+          padding: 3rem 0;
+          font-size: 20px; } }
+    .about .page-caption .btn-booking-calendar {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      outline: 0;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "SF-Pro-Display-Semibold";
+      margin-top: 15px;
+      cursor: pointer; }
+      .about .page-caption .btn-booking-calendar:hover {
+        background-color: #ffffff;
+        border: 1px solid #0583E0;
+        color: #0583E0; }
+      @media only screen and (min-width: 576px) {
+        .about .page-caption .btn-booking-calendar {
+          padding: 16px 50px;
+          font-size: 18px; } }
+  .about .page-title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 -15px 15px #00000010;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .about .page-title {
+        height: 180px; } }
+    .about .page-title h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #262626;
+      font-size: 19px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 992px) {
+        .about .page-title h2 {
+          font-size: 36px; } }
+
+#about-page {
+  background-color: #F7F8FA;
+  position: relative; }
+  #about-page .description {
+    font-size: 20px; }
+    @media only screen and (min-width: 768px) {
+      #about-page .description {
+        font-size: 24px; } }
+  #about-page #when-need {
+    padding-bottom: 50px; }
+    @media only screen and (min-width: 768px) {
+      #about-page #when-need {
+        padding-bottom: 90px; } }
+    @media only screen and (min-width: 1300px) {
+      #about-page #when-need {
+        padding-bottom: 150px; } }
+    #about-page #when-need .list-items {
+      background-color: #ffffff;
+      box-shadow: 0 5px 15px #00000010;
+      border-radius: 4px;
+      padding-top: 25px; }
+      @media only screen and (min-width: 992px) {
+        #about-page #when-need .list-items {
+          padding: 0 50px 80px 50px; } }
+      #about-page #when-need .list-items .item {
+        background: #F9F9F9;
+        padding: 15px;
+        border-radius: 5px;
+        min-height: 245px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 3px 10px #00000010;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 30px; }
+        #about-page #when-need .list-items .item:hover {
+          background: #0583E0;
+          color: #ffffff; }
+          #about-page #when-need .list-items .item:hover * {
+            color: #ffffff; }
+        #about-page #when-need .list-items .item .icon {
+          min-height: 65px; }
+        #about-page #when-need .list-items .item h3 {
+          font-size: 20px;
+          font-family: "SF-Pro-Display-Semibold";
+          color: #262626;
+          padding: 15px 0px;
+          line-height: 1.55;
+          text-align: center; }
+          @media only screen and (min-width: 768px) {
+            #about-page #when-need .list-items .item h3 {
+              padding-bottom: 30px;
+              font-size: 26px; } }
+        #about-page #when-need .list-items .item .description {
+          font-family: "SF-Pro-Display-Regular";
+          line-height: 2.25rem; }
+          @media only screen and (min-width: 768px) {
+            #about-page #when-need .list-items .item .description {
+              font-size: 20px; } }
+      #about-page #when-need .list-items .three-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #095ADB;
+        margin-bottom: 30px;
+        font-size: 65px;
+        height: 100%; }
+  #about-page #about-help-how {
+    position: relative;
+    background-color: #095ADB;
+    color: #ffffff;
+    padding: 40px 0; }
+    @media only screen and (min-width: 768px) {
+      #about-page #about-help-how {
+        padding-bottom: 100px;
+        padding-top: 0; } }
+    #about-page #about-help-how::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-color: #091951; }
+      @media only screen and (min-width: 768px) {
+        #about-page #about-help-how::before {
+          height: 120%;
+          left: 3%; } }
+    #about-page #about-help-how .name {
+      color: #ffffff;
+      opacity: 0.6;
+      text-align: center; }
+    #about-page #about-help-how .title {
+      color: #ffffff;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.6; }
+      @media only screen and (min-width: 768px) {
+        #about-page #about-help-how .title {
+          font-size: 36px; } }
+    #about-page #about-help-how .item {
+      text-align: center;
+      margin-bottom: 25px; }
+      @media only screen and (min-width: 768px) {
+        #about-page #about-help-how .item {
+          margin-bottom: 0; } }
+      #about-page #about-help-how .item h4 {
+        font-size: 22px;
+        font-family: "SF-Pro-Display-Semibold";
+        padding: 25px 0; }
+        @media only screen and (min-width: 768px) {
+          #about-page #about-help-how .item h4 {
+            font-size: 24px; } }
+      #about-page #about-help-how .item .description {
+        font-size: 16px;
+        font-family: "SF-Pro-Display-Light"; }
+        @media only screen and (min-width: 768px) {
+          #about-page #about-help-how .item .description {
+            font-size: 18px; } }
+  #about-page #quote {
+    background-image: url("../images/bg.jpg");
+    height: 275px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (min-width: 768px) {
+      #about-page #quote {
+        height: 400px; } }
+    #about-page #quote h2 {
+      color: #ffffff;
+      font-size: 22px;
+      text-align: center;
+      line-height: 1.55; }
+      @media only screen and (min-width: 768px) {
+        #about-page #quote h2 {
+          font-size: 36px; } }
+  #about-page #core-value h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      #about-page #core-value h3 {
+        font-size: 32px;
+        margin-bottom: 40px; } }
+  #about-page #core-value .value-items {
+    display: flex;
+    flex-wrap: wrap; }
+    #about-page #core-value .value-items .item {
+      flex-basis: 50%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px; }
+    #about-page #core-value .value-items .item-name {
+      font-size: 16px;
+      font-family: "SF-Pro-Display-Medium";
+      margin-bottom: 0; }
+      @media only screen and (min-width: 768px) {
+        #about-page #core-value .value-items .item-name {
+          font-size: 18px; } }
+    #about-page #core-value .value-items .icon {
+      margin-right: 8px;
+      min-width: 25px; }
+  #about-page #goby-digital-team {
+    background-image: url("../images/bg-team.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #about-page #goby-digital-team h3 {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      padding-bottom: 25px; }
+      @media only screen and (min-width: 768px) {
+        #about-page #goby-digital-team h3 {
+          padding-bottom: 55px;
+          font-size: 32px; } }
+    #about-page #goby-digital-team .item {
+      padding: 0 15px; }
+      #about-page #goby-digital-team .item img {
+        border-radius: 100%; }
+      #about-page #goby-digital-team .item .bg-item {
+        padding: 30px 0;
+        background-color: #1A2568;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #ffffff; }
+      #about-page #goby-digital-team .item .name {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Semibold";
+        margin: 15px 0; }
+      #about-page #goby-digital-team .item .position {
+        font-size: 20px;
+        font-family: "SF-Pro-Display-Regular";
+        margin-bottom: 0; }
+    #about-page #goby-digital-team .slick-dots li button:before {
+      background-color: #ffffff;
+      border-radius: 25px;
+      width: 12px;
+      height: 12px; }
+    #about-page #goby-digital-team .slick-dots {
+      bottom: -40px; }
+      @media only screen and (min-width: 768px) {
+        #about-page #goby-digital-team .slick-dots {
+          bottom: -55px; } }
+  #about-page #recruitment h3 {
+    font-size: 20px;
+    font-family: "SF-Pro-Display-Semibold";
+    padding-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      #about-page #recruitment h3 {
+        padding-bottom: 35px;
+        font-size: 32px; } }
+  #about-page #recruitment .btn-view-recruitment {
+    padding: 10px 25px;
+    background-color: #095ADB;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "SF-Pro-Display-Medium";
+    border-radius: 25px; }
+    @media only screen and (min-width: 768px) {
+      #about-page #recruitment .btn-view-recruitment {
+        font-size: 20px;
+        padding: 12px 33px; } }
+
+.blogs {
+  background-color: #F7F8FA;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .blogs::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/banner-blogs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .blogs .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+    height: 100%; }
+    .blogs .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .blogs .page-caption h1 {
+          font-size: 42px; } }
+    .blogs .page-caption .caption {
+      color: #ffffff;
+      padding: 2rem 0;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .blogs .page-caption .caption {
+          padding: 3rem 0;
+          font-size: 20px; } }
+    .blogs .page-caption .btn-booking-calendar {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      outline: 0;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "SF-Pro-Display-Semibold";
+      margin-top: 15px;
+      cursor: pointer; }
+      .blogs .page-caption .btn-booking-calendar:hover {
+        background-color: #ffffff;
+        border: 1px solid #0583E0;
+        color: #0583E0; }
+      @media only screen and (min-width: 576px) {
+        .blogs .page-caption .btn-booking-calendar {
+          padding: 16px 50px;
+          font-size: 18px; } }
+  .blogs .page-title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 -15px 15px #00000010;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .blogs .page-title {
+        height: 180px; } }
+    .blogs .page-title h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #262626;
+      font-size: 19px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 992px) {
+        .blogs .page-title h2 {
+          font-size: 36px; } }
+
+#list-blogs .post-item {
+  padding-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    #list-blogs .post-item {
+      padding-bottom: 35px; } }
+  #list-blogs .post-item .post-title {
+    font-size: 18px;
+    font-family: "SF-Pro-Display-Medium";
+    padding-top: 15px; }
+
+#list-blogs .btn-view-more {
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #0583E0;
+  color: #0583E0;
+  font-size: 16px;
+  font-family: "SF-Pro-Display-Medium";
+  padding: 7px 28px;
+  cursor: pointer; }
+  @media only screen and (min-width: 768px) {
+    #list-blogs .btn-view-more {
+      font-size: 20px; } }
+  #list-blogs .btn-view-more:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #0583E0; }
+
+.blog-detail {
+  background-color: #F7F8FA;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .blog-detail::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/banner-blogs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .blog-detail .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+    height: 100%; }
+    .blog-detail .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .blog-detail .page-caption h1 {
+          font-size: 42px; } }
+    .blog-detail .page-caption .caption {
+      color: #ffffff;
+      padding: 2rem 0;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .blog-detail .page-caption .caption {
+          padding: 3rem 0;
+          font-size: 20px; } }
+    .blog-detail .page-caption .btn-booking-calendar {
+      border: 1px solid #ffffff;
+      border-radius: 30px;
+      outline: 0;
+      background-color: transparent;
+      color: #ffffff;
+      padding: 12px 40px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-family: "SF-Pro-Display-Semibold";
+      margin-top: 15px;
+      cursor: pointer; }
+      .blog-detail .page-caption .btn-booking-calendar:hover {
+        background-color: #ffffff;
+        border: 1px solid #0583E0;
+        color: #0583E0; }
+      @media only screen and (min-width: 576px) {
+        .blog-detail .page-caption .btn-booking-calendar {
+          padding: 16px 50px;
+          font-size: 18px; } }
+  .blog-detail .page-title {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0 -15px 15px #00000010;
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    align-items: center; }
+    @media only screen and (min-width: 576px) {
+      .blog-detail .page-title {
+        height: 180px; } }
+    .blog-detail .page-title h2 {
+      text-align: center;
+      font-weight: bold;
+      color: #262626;
+      font-size: 19px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 992px) {
+        .blog-detail .page-title h2 {
+          font-size: 36px; } }
+  .blog-detail .breadcrumb {
+    background-color: transparent;
+    align-items: center;
+    justify-content: center; }
+    .blog-detail .breadcrumb .breadcrumb-item {
+      font-family: "SF-Pro-Display-Light";
+      font-size: 18px;
+      color: #ffffff;
+      opacity: 0.5; }
+      .blog-detail .breadcrumb .breadcrumb-item.active {
+        font-family: "SF-Pro-Display-Regular";
+        opacity: 1; }
+      .blog-detail .breadcrumb .breadcrumb-item::before {
+        color: #ffffff; }
+
+.content h2 {
+  font-size: 24px;
+  font-family: "SF-Pro-Display-Medium";
+  padding-bottom: 25px; }
+  @media only screen and (min-width: 768px) {
+    .content h2 {
+      font-size: 36px;
+      padding-bottom: 30px; } }
+
+.content p {
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    .content p {
+      padding-bottom: 35px; } }
+
+.content img {
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 768px) {
+    .content img {
+      padding-bottom: 30px; } }
+
+.hr hr {
+  width: 90%; }
+
+.feature-posts .feature-posts-title {
+  font-weight: bold;
+  font-size: 20px; }
+  @media only screen and (min-width: 768px) {
+    .feature-posts .feature-posts-title {
+      font-size: 32px; } }
+
+.feature-posts .post-item {
+  padding-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    .feature-posts .post-item {
+      padding-bottom: 35px; } }
+  .feature-posts .post-item .post-title {
+    font-size: 18px;
+    font-family: "SF-Pro-Display-Medium";
+    padding-top: 15px; }
+
 footer {
   background-color: #091951;
   color: #DCDCDC;
@@ -7427,7 +9937,11 @@ footer {
   footer .copyright {
     border-top: 1px solid #222C5D;
     padding: 20px 0;
-    color: #DCDCDC; }
+    color: #DCDCDC;
+    margin-top: 25px; }
+    @media only screen and (min-width: 768px) {
+      footer .copyright {
+        margin-top: 90px; } }
     footer .copyright p {
       margin-bottom: 0;
       text-align: center; }
