@@ -1,6 +1,6 @@
-.about {
+.marketing-multichannel {
     background-color: #F7F8FA;
-    height: 85vh;
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -9,11 +9,11 @@
         content: "";
         position: absolute;
         width: 100%;
-        background-image: url('../images/banner-mobile-sip.jpg');
+        background-image: url('../images/marketing-multichannel.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100%;
+        height: 92%;
         left: 0;
         top: 0;
         z-index: 0;
@@ -24,7 +24,6 @@
         align-items: center;
         width: 100%;
         z-index: 0;
-        height: 100%;
         h1 {
             text-align: center;
             font-weight: bold;
@@ -83,7 +82,7 @@
             text-align: center;
             font-weight: bold;
             color: $colorBlack;
-            font-size: $fontSize19;
+            font-size: $fontSize26;
             line-height: 1.6;
             @include responsive(lg) {
                 font-size: $fontSize36;
@@ -92,22 +91,12 @@
     }
 }
 
-#about-page {
+#marketing-multichannel-page {
     background-color: #F7F8FA;
     position: relative;
-    .description {
-        font-size: $fontSize20;
-        @include responsive(md) {
-            font-size: $fontSize24;
-        }
-    }
     #when-need {
-        padding-bottom: 50px;
         @include responsive(md) {
-            padding-bottom: 90px;
-        }
-        @include responsive(xxl) {
-            padding-bottom: 150px;
+            padding-bottom: 200px;
         }
         .list-items {
             background-color: $colorWhite;
@@ -121,7 +110,7 @@
                 background: #F9F9F9;
                 padding: 15px;
                 border-radius: 5px;
-                min-height: 245px;
+                min-height: 265px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -130,10 +119,17 @@
                 border-radius: 5px;
                 cursor: pointer;
                 margin-bottom: 30px;
+                height: 100%;
+                @include responsive(xl) {
+                    margin-bottom: 0;
+                }
                 &:hover {
                     background: $colorLightBlue;
                     color: $colorWhite;
                     * {
+                        color: $colorWhite;
+                    }
+                    i::before {
                         color: $colorWhite;
                     }
                 }
@@ -148,7 +144,7 @@
                     line-height: 1.55;
                     text-align: center;
                     @include responsive(md) {
-                        padding-bottom: 30px;
+                        padding: 30px 0px;
                         font-size: $fontSize26;
                     }
                 }
@@ -160,18 +156,9 @@
                     }
                 }
             }
-            .three-dots {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: $colorBlue;
-                margin-bottom: 30px;
-                font-size: $fontSize65;
-                height: 100%;
-            }
         }
     }
-    #about-help-how {
+    #marketing-multichannel-help-how {
         position: relative;
         background-color: $colorBlue;
         color: $colorWhite;
@@ -189,7 +176,7 @@
             left: 0;
             background-color: $colorDarkBlue;
             @include responsive(md) {
-                height: 120%;
+                height: 112%;
                 left: 3%;
             }
         }
@@ -231,136 +218,133 @@
             }
         }
     }
-    #quote {
-        background-image: url('../images/bg.jpg');
-        height: 275px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
+}
+
+#marketing-multichannel-difference {
+    display: flex;
+    align-items: stretch;
+    .left {
+        background-color: $colorBlue;
+        width: 15%;
         align-items: center;
         justify-content: center;
+        display: none;
         @include responsive(md) {
-            height: 400px;
-        }
-        h2 {
-            color: $colorWhite;
-            font-size: $fontSize22;
-            text-align: center;
-            line-height: 1.55;
-            @include responsive(md) {
-                font-size: $fontSize36;
-            }
+            display: flex;
         }
     }
-    #core-value {
-        h3 {
-            font-size: $fontSize20;
-            font-weight: bold;
-            margin-bottom: 20px;
+    .right {
+        width: 100%;
+        background-color: $colorWhite;
+        padding-bottom: 35px;
+        @include responsive(md) {
+            padding-right: 50px;
+            padding-bottom: 90px;
+        }
+        .txt-reason {
+            color: $colorLightBlue;
+            font-family: $fontSFProSemiBold;
+            font-size: $fontSize16;
+            text-transform: uppercase;
             @include responsive(md) {
-                font-size: $fontSize32;
-                margin-bottom: 40px;
+                font-size: $fontSize20;
             }
         }
-        .value-items {
+        h3 {
+            font-weight: bold;
+            padding-top: 7px;
+            line-height: 1.7;
+            font-size: $fontSize24;
+            @include responsive(md) {
+                font-size: $fontSize48;
+            }
+        }
+        .list-items {
             display: flex;
+            align-items: flex-start;
             flex-wrap: wrap;
             .item {
-                flex-basis: 50%;
-                display: flex;
-                align-items: center;
-                margin-bottom: 30px;
-            }
-            .item-name {
-                font-size: $fontSize16;
-                font-family: $fontSFProMedium;
-                margin-bottom: 0;
+                flex-basis: 100%;
+                padding: 20px;
                 @include responsive(md) {
-                    font-size: $fontSize18;
+                    flex-basis: 33%;
+                }
+                .description {
+                    font-size: $fontSize16;
+                    font-family: $fontSFProRegular;
+                    @include responsive(md) {
+                        font-size: $fontSize20;
+                    }
                 }
             }
             .icon {
-                margin-right: 8px;
-                min-width: 25px;
+                min-height: 70px;
+            }
+            h4 {
+                font-size: $fontSize20;
+                font-weight: bold;
+                margin: 20px 0;
+                @include responsive(md) {
+                    font-size: $fontSize26;
+                    font-weight: bold;
+                    margin: 30px 0;
+                }
             }
         }
     }
-    #goby-digital-team {
-        background-image: url('../images/bg-team.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        h3 {
-            font-size: $fontSize20;
-            font-weight: bold;
-            color: $colorWhite;
-            text-align: center;
-            padding-bottom: 25px;
-            @include responsive(md) {
-                padding-bottom: 55px;
-                font-size: $fontSize32;
-            }
+}
+
+#process-marketing-multichannel {
+    background-color: $colorDarkBlue;
+    color: $colorWhite;
+    padding: 40px 0;
+    @include responsive(md) {
+        padding: 150px 0;
+    }
+    .name {
+        font-size: $fontSize24;
+        font-weight: bold;
+        @include responsive(md) {
+            font-size: $fontSize36;
         }
-        .item {
-            padding: 0 15px;
-            img {
-                border-radius: 100%;
+    }
+    .title {
+        font-size: $fontSize24;
+        font-weight: bold;
+        line-height: 1.6;
+        @include responsive(md) {
+            font-size: $fontSize36;
+        }
+    }
+    .list-process {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        @include responsive(md) {
+            padding-top: 80px;
+        }
+        .survey-content {
+            flex-basis: 100%;
+            text-align: center;
+            padding: 10px 0;
+            @include responsive(md) {
+                flex-basis: 20%;
             }
-            .bg-item {
-                padding: 30px 0;
-                background-color: #1A2568;
-                display: flex !important;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                color: $colorWhite;
-            }
-            .name {
-                font-size: $fontSize20;
-                font-family: $fontSFProSemiBold;
-                margin: 15px 0;
-            }
-            .position {
+            h4 {
                 font-size: $fontSize20;
                 font-family: $fontSFProRegular;
-                margin-bottom: 0;
+                padding-top: 30px;
+                line-height: 1.7;
+                @include responsive(md) {
+                    font-size: $fontSize24;
+                }
             }
         }
-        .slick-dots li button:before {
-            background-color: $colorWhite;
-            border-radius: 25px;
-            width: 12px;
-            height: 12px;
-        }
-        .slick-dots {
-            bottom: -40px;
+        .arrow {
+            flex-basis: 100%;
+            text-align: center;
             @include responsive(md) {
-                bottom: -55px;
-            }
-        }
-    }
-    #recruitment {
-        h3 {
-            font-size: $fontSize20;
-            font-family: $fontSFProSemiBold;
-            padding-bottom: 20px;
-            @include responsive(md) {
-                padding-bottom: 35px;
-                font-size: $fontSize32;
-            }
-        }
-        .btn-view-recruitment {
-            padding: 10px 25px;
-            background-color: $colorBlue;
-            color: $colorWhite;
-            font-size: $fontSize14;
-            text-transform: uppercase;
-            font-family: $fontSFProMedium;
-            border-radius: 25px;
-            @include responsive(md) {
-                font-size: $fontSize20;
-                padding: 12px 33px;
+                flex-basis: 6.6%;
             }
         }
     }

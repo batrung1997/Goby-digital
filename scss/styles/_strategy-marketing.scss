@@ -1,4 +1,4 @@
-.facebook-marketing {
+.strategy-marketing {
     background-color: #F7F8FA;
     height: 100vh;
     position: relative;
@@ -9,7 +9,7 @@
         content: "";
         position: absolute;
         width: 100%;
-        background-image: url('../images/banner-facebook.jpg');
+        background-image: url('../images/bg.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -82,7 +82,7 @@
             text-align: center;
             font-weight: bold;
             color: $colorBlack;
-            font-size: $fontSize26;
+            font-size: $fontSize19;
             line-height: 1.6;
             @include responsive(lg) {
                 font-size: $fontSize36;
@@ -91,7 +91,43 @@
     }
 }
 
-#facebook-marketing-page {
+#benefits {
+    background-color: $colorDarkBlue;
+    color: $colorWhite;
+    padding: 50px 0;
+    @include responsive(md) {
+        padding: 150px 0;
+    }
+    .title {
+        font-weight: bold;
+        line-height: 1.5;
+        padding-bottom: 40px;
+        font-size: $fontSize24;
+        font-weight: bold;
+        @include responsive(md) {
+            font-size: $fontSize36;
+            padding-bottom: 75px;
+        }
+    }
+    .list-benefits {
+        .item {
+            text-align: center;
+            h4 {
+                font-weight: bold;
+                font-size: $fontSize18;
+                color: $colorWhite;
+                padding-top: 20px;
+                line-height: 1.55;
+                @include responsive(lg) {
+                    font-size: $fontSize20;
+                    padding-top: 28px;
+                }
+            }
+        }
+    }
+}
+
+#strategy-marketing-main {
     background-color: #F7F8FA;
     position: relative;
     #when-need {
@@ -109,12 +145,11 @@
             .item {
                 background: #F9F9F9;
                 padding: 15px;
-                padding-top: 20px;
                 border-radius: 5px;
-                min-height: 265px;
+                min-height: 270px;
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-start;
+                justify-content: center;
                 align-items: center;
                 box-shadow: 0 3px 10px #00000010;
                 border-radius: 5px;
@@ -130,9 +165,12 @@
                     * {
                         color: $colorWhite;
                     }
+                    i::before {
+                        color: $colorWhite;
+                    }
                 }
                 .icon {
-                    min-height: 70px;
+                    min-height: 65px;
                 }
                 h3 {
                     font-size: $fontSize20;
@@ -156,7 +194,7 @@
             }
         }
     }
-    #facebook-marketing-help-how {
+    #strategy-marketing-help-how {
         position: relative;
         background-color: $colorBlue;
         color: $colorWhite;
@@ -218,81 +256,49 @@
     }
 }
 
-#facebook-marketing-difference {
-    display: flex;
-    align-items: stretch;
-    .left {
-        background-color: $colorBlue;
-        width: 15%;
-        align-items: center;
-        justify-content: center;
-        display: none;
-        @include responsive(md) {
-            display: flex;
-        }
-    }
-    .right {
-        width: 100%;
-        background-color: $colorWhite;
-        padding-bottom: 35px;
-        @include responsive(md) {
-            padding-right: 50px;
-            padding-bottom: 90px;
-        }
-        .txt-reason {
-            color: $colorLightBlue;
-            font-family: $fontSFProSemiBold;
-            font-size: $fontSize16;
-            text-transform: uppercase;
-            @include responsive(md) {
-                font-size: $fontSize20;
-            }
-        }
-        h3 {
-            font-weight: bold;
-            padding-top: 7px;
-            line-height: 1.7;
-            font-size: $fontSize24;
-            @include responsive(md) {
-                font-size: $fontSize48;
-            }
-        }
-        .list-items {
-            display: flex;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            .item {
-                flex-basis: 100%;
-                padding: 20px;
-                @include responsive(md) {
-                    flex-basis: 33%;
-                }
-                .description {
-                    font-size: $fontSize16;
-                    font-family: $fontSFProRegular;
-                    @include responsive(md) {
-                        font-size: $fontSize20;
-                    }
-                }
-            }
-            h4 {
-                font-size: $fontSize20;
-                font-weight: bold;
-                margin: 20px 0;
-                @include responsive(md) {
-                    font-size: $fontSize26;
-                    font-weight: bold;
-                    margin: 30px 0;
-                }
-            }
-        }
-    }
-}
-
-#process-facebook-marketing {
+#process {
     background-color: $colorDarkBlue;
     color: $colorWhite;
     padding: 40px 0;
+    &.process-benefits {
+        color: $colorBlack;
+        background-color: $colorWhite;
+        .list-process {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 30px;
+            justify-content: space-around;
+            @include responsive(md) {
+                padding-top: 80px;
+            }
+            .survey-content {
+                text-align: center;
+                padding: 10px 0;
+                flex-basis: auto;
+                .icon {
+                    min-height: 75px;
+                }
+                h4 {
+                    font-size: $fontSize18;
+                    font-family: $fontSFProRegular;
+                    padding-top: 15px;
+                    line-height: 1.7;
+                    @include responsive(md) {
+                        font-size: $fontSize24;
+                        padding-top: 30px;
+                    }
+                }
+            }
+            .arrow {
+                flex-basis: auto;
+                text-align: center;
+                padding-top: 20px;
+                @include responsive(md) {
+                    flex-basis: auto;
+                }
+            }
+        }
+    }
     @include responsive(md) {
         padding: 150px 0;
     }
@@ -309,81 +315,6 @@
         line-height: 1.6;
         @include responsive(md) {
             font-size: $fontSize36;
-        }
-    }
-    .list-process {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 30px;
-        @include responsive(md) {
-            padding-top: 80px;
-        }
-        .survey-content {
-            flex-basis: 100%;
-            text-align: center;
-            padding: 10px 0;
-            @include responsive(md) {
-                flex-basis: 20%;
-            }
-            .icon {
-                min-height: 70px;
-            }
-            h4 {
-                font-size: $fontSize20;
-                font-family: $fontSFProRegular;
-                padding-top: 30px;
-                line-height: 1.7;
-                @include responsive(md) {
-                    font-size: $fontSize24;
-                }
-            }
-        }
-        .arrow {
-            flex-basis: 100%;
-            text-align: center;
-            padding: 10px 0;
-            @include responsive(md) {
-                flex-basis: 6.6%;
-                padding: 3% 0 0 0;
-            }
-        }
-    }
-}
-
-#contact-consultant {
-    padding: 40px 0;
-    background-image: url('../images/facebook-bg2.jpg');
-    @include responsive(md) {
-        padding: 90px 0;
-    }
-    .title {
-        font-size: $fontSize26;
-        font-weight: bold;
-        padding-bottom: 40px;
-        color: $colorWhite;
-        line-height: 1.6;
-        @include responsive(md) {
-            font-size: $fontSize48;
-        }
-    }
-    .btn-contact {
-        background-color: transparent;
-        border: 2px solid $colorWhite;
-        text-transform: uppercase;
-        padding: 7px 35px;
-        font-family: $fontSFProMedium;
-        font-size: $fontSize16;
-        border-radius: 25px;
-        color: $colorWhite;
-        cursor: pointer;
-        &:hover {
-            background-color: $colorWhite;
-            border: 2px solid $colorLightBlue;
-            color: $colorLightBlue;
-        }
-        @include responsive(md) {
-            padding: 10px 45px;
-            font-size: $fontSize24;
         }
     }
 }

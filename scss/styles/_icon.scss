@@ -1,0 +1,339 @@
+@font-face {
+    font-family: 'gobyicons';
+    src: url('../fonts/gobyicons.ttf?3q0b3a') format('truetype');
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'gobyicons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fb-crown:before {
+    font-size: 58px;
+    content: "\e900";
+    color: #009eff;
+}
+
+.icon-fb-discount:before {
+    font-size: 58px;
+    content: "\e901";
+    color: #095adb;
+}
+
+.icon-fb-facebook:before {
+    font-size: 58px;
+    content: "\e902";
+    color: #009eff;
+}
+
+.icon-fb-growth:before {
+    font-size: 58px;
+    content: "\e903";
+    color: #095adb;
+}
+
+.icon-fb-message:before {
+    font-size: 58px;
+    content: "\e904";
+    color: #009eff;
+}
+
+.icon-fb-online-advertising:before {
+    font-size: 58px;
+    content: "\e905";
+    color: #009eff;
+}
+
+.icon-fb-profit:before {
+    font-size: 58px;
+    content: "\e906";
+    color: #095adb;
+}
+
+.icon-fb-reduce:before {
+    font-size: 58px;
+    content: "\e907";
+    color: #095adb;
+}
+
+.icon-fb-target:before {
+    font-size: 58px;
+    content: "\e908";
+    color: #095adb;
+}
+
+.icon-fb-touchscreen:before {
+    font-size: 58px;
+    content: "\e909";
+    color: #095adb;
+}
+
+.icon-home-leadership:before {
+    font-size: 58px;
+    content: "\e90a";
+    color: #095adb;
+}
+
+.icon-home-profits:before {
+    font-size: 58px;
+    content: "\e90b";
+    color: #095adb;
+}
+
+.icon-home-resources:before {
+    font-size: 58px;
+    content: "\e90c";
+    color: #095adb;
+}
+
+.icon-home-service-banle:before {
+    font-size: 58px;
+    content: "\e90d";
+    color: #0583e0;
+}
+
+.icon-home-service-bds:before {
+    font-size: 58px;
+    content: "\e90e";
+    color: #0583e0;
+}
+
+.icon-home-service-sukien:before {
+    font-size: 58px;
+    content: "\e90f";
+    color: #0583e0;
+}
+
+.icon-home-service-taichinh:before {
+    font-size: 58px;
+    content: "\e910";
+    color: #0583e0;
+}
+
+.icon-home-service-tmdt:before {
+    font-size: 58px;
+    content: "\e911";
+    color: #0583e0;
+}
+
+.icon-home-service-travel:before {
+    font-size: 58px;
+    content: "\e912";
+    color: #0583e0;
+}
+
+.icon-home-why:before {
+    font-size: 58px;
+    content: "\e913";
+    color: #095adb;
+}
+
+.icon-home-why-2:before {
+    font-size: 58px;
+    content: "\e914";
+    color: #095adb;
+}
+
+.icon-home-why-3:before {
+    font-size: 58px;
+    content: "\e915";
+    color: #095adb;
+}
+
+.icon-mkt-development:before {
+    font-size: 58px;
+    content: "\e916";
+    color: #095adb;
+}
+
+.icon-mkt-kpi:before {
+    font-size: 58px;
+    content: "\e917";
+    color: #095adb;
+}
+
+.icon-mkt-skills:before {
+    font-size: 58px;
+    content: "\e918";
+    color: #095adb;
+}
+
+.icon-mkt-solution:before {
+    font-size: 58px;
+    content: "\e919";
+    color: #095adb;
+}
+
+.icon-mkt-stock:before {
+    font-size: 58px;
+    content: "\e91a";
+    color: #009eff;
+}
+
+.icon-mkt--verify:before {
+    font-size: 58px;
+    content: "\e91b";
+    color: #095adb;
+}
+
+.icon-seo-1:before {
+    font-size: 58px;
+    content: "\e91c";
+    color: #095adb;
+}
+
+.icon-seo-2:before {
+    font-size: 58px;
+    content: "\e91d";
+    color: #095adb;
+}
+
+.icon-seo-3:before {
+    font-size: 58px;
+    content: "\e91e";
+    color: #009eff;
+}
+
+.icon-seo-4:before {
+    font-size: 58px;
+    content: "\e91f";
+    color: #009eff;
+}
+
+.icon-seo-5:before {
+    font-size: 58px;
+    content: "\e920";
+    color: #009eff;
+}
+
+.icon-seo-6:before {
+    font-size: 58px;
+    content: "\e921";
+    color: #009eff;
+}
+
+.icon-seo-7:before {
+    font-size: 58px;
+    content: "\e922";
+    color: #095adb;
+}
+
+.icon-seo-8:before {
+    font-size: 58px;
+    content: "\e923";
+    color: #095adb;
+}
+
+.icon-seo-9:before {
+    font-size: 58px;
+    content: "\e924";
+    color: #009eff;
+}
+
+.icon-seo-10:before {
+    font-size: 58px;
+    content: "\e925";
+    color: #009eff;
+}
+
+.icon-seo-11:before {
+    font-size: 58px;
+    content: "\e926";
+    color: #009eff;
+}
+
+.icon-seo-12:before {
+    font-size: 58px;
+    content: "\e927";
+    color: #009eff;
+}
+
+.icon-trunk-approval:before {
+    font-size: 58px;
+    content: "\e928";
+    color: #095adb;
+}
+
+.icon-trunk-call:before {
+    font-size: 58px;
+    content: "\e929";
+    color: #095adb;
+}
+
+.icon-trunk-conversation:before {
+    font-size: 58px;
+    content: "\e92a";
+    color: #095adb;
+}
+
+.icon-trunk-handle:before {
+    font-size: 58px;
+    content: "\e92b";
+    color: #095adb;
+}
+
+.icon-trunk-horizontal:before {
+    font-size: 58px;
+    content: "\e92c";
+    color: #095adb;
+}
+
+.icon-trunk-infinity:before {
+    font-size: 58px;
+    content: "\e92d";
+    color: #095adb;
+}
+
+.icon-trunk-like:before {
+    font-size: 58px;
+    content: "\e92e";
+    color: #095adb;
+}
+
+.icon-trunk-location:before {
+    font-size: 58px;
+    content: "\e92f";
+    color: #095adb;
+}
+
+.icon-trunk-operation:before {
+    font-size: 58px;
+    content: "\e930";
+    color: #095adb;
+}
+
+.icon-trunk-pie-chart:before {
+    font-size: 58px;
+    content: "\e931";
+    color: #095adb;
+}
+
+.icon-trunk-save-money:before {
+    font-size: 58px;
+    content: "\e932";
+    color: #095adb;
+}
+
+.icon-trunk-social-media:before {
+    font-size: 58px;
+    content: "\e933";
+    color: #095adb;
+}
+
+.icon-trunk-system:before {
+    font-size: 58px;
+    content: "\e934";
+    color: #095adb;
+}

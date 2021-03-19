@@ -78,6 +78,9 @@
         @include responsive(sm) {
             height: 180px;
         }
+        h2 {
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -130,6 +133,9 @@ main {
                 background: $colorLightBlue;
                 color: $colorWhite;
                 * {
+                    color: $colorWhite;
+                }
+                i::before {
                     color: $colorWhite;
                 }
             }
@@ -220,17 +226,6 @@ main {
                 display: none;
                 @include responsive(lg) {
                     display: block;
-                }
-            }
-            h3 {
-                font-weight: bold;
-                padding-bottom: 25px;
-                font-size: $fontSize24;
-                line-height: 1.7;
-                @include responsive(md) {
-                    padding-bottom: 50px;
-                    font-size: $fontSize48;
-                    line-height: 1.3;
                 }
             }
             .description {
@@ -339,17 +334,6 @@ main {
                     display: block;
                 }
             }
-            h3 {
-                font-weight: bold;
-                padding-bottom: 25px;
-                line-height: 1.7;
-                font-size: $fontSize24;
-                @include responsive(md) {
-                    padding-bottom: 50px;
-                    font-size: $fontSize48;
-                    line-height: 1.3;
-                }
-            }
             .description {
                 font-family: $fontSFProRegular;
                 line-height: 1.75;
@@ -383,7 +367,6 @@ main {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-bottom: 10px;
                 @include responsive(md) {
                     font-size: $fontSize20;
                 }
@@ -549,15 +532,6 @@ main {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            h3 {
-                font-weight: bold;
-                font-size: $fontSize22;
-                line-height: 1.7;
-                @include responsive(md) {
-                    font-size: $fontSize40;
-                    line-height: 1.3;
-                }
-            }
             .goby {
                 font-family: $fontSFProRegular;
                 opacity: 0.6;
@@ -686,15 +660,6 @@ main {
                 text-transform: uppercase;
                 @include responsive(md) {
                     font-size: $fontSize20;
-                }
-            }
-            h3 {
-                font-weight: bold;
-                padding-top: 7px;
-                line-height: 1.7;
-                font-size: $fontSize24;
-                @include responsive(md) {
-                    font-size: $fontSize48;
                 }
             }
             .list-items {

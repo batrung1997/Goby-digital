@@ -6717,6 +6717,291 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'gobyicons';
+  src: url("../fonts/gobyicons.ttf?3q0b3a") format("truetype");
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'gobyicons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-fb-crown:before {
+  font-size: 58px;
+  content: "\e900";
+  color: #009eff; }
+
+.icon-fb-discount:before {
+  font-size: 58px;
+  content: "\e901";
+  color: #095adb; }
+
+.icon-fb-facebook:before {
+  font-size: 58px;
+  content: "\e902";
+  color: #009eff; }
+
+.icon-fb-growth:before {
+  font-size: 58px;
+  content: "\e903";
+  color: #095adb; }
+
+.icon-fb-message:before {
+  font-size: 58px;
+  content: "\e904";
+  color: #009eff; }
+
+.icon-fb-online-advertising:before {
+  font-size: 58px;
+  content: "\e905";
+  color: #009eff; }
+
+.icon-fb-profit:before {
+  font-size: 58px;
+  content: "\e906";
+  color: #095adb; }
+
+.icon-fb-reduce:before {
+  font-size: 58px;
+  content: "\e907";
+  color: #095adb; }
+
+.icon-fb-target:before {
+  font-size: 58px;
+  content: "\e908";
+  color: #095adb; }
+
+.icon-fb-touchscreen:before {
+  font-size: 58px;
+  content: "\e909";
+  color: #095adb; }
+
+.icon-home-leadership:before {
+  font-size: 58px;
+  content: "\e90a";
+  color: #095adb; }
+
+.icon-home-profits:before {
+  font-size: 58px;
+  content: "\e90b";
+  color: #095adb; }
+
+.icon-home-resources:before {
+  font-size: 58px;
+  content: "\e90c";
+  color: #095adb; }
+
+.icon-home-service-banle:before {
+  font-size: 58px;
+  content: "\e90d";
+  color: #0583e0; }
+
+.icon-home-service-bds:before {
+  font-size: 58px;
+  content: "\e90e";
+  color: #0583e0; }
+
+.icon-home-service-sukien:before {
+  font-size: 58px;
+  content: "\e90f";
+  color: #0583e0; }
+
+.icon-home-service-taichinh:before {
+  font-size: 58px;
+  content: "\e910";
+  color: #0583e0; }
+
+.icon-home-service-tmdt:before {
+  font-size: 58px;
+  content: "\e911";
+  color: #0583e0; }
+
+.icon-home-service-travel:before {
+  font-size: 58px;
+  content: "\e912";
+  color: #0583e0; }
+
+.icon-home-why:before {
+  font-size: 58px;
+  content: "\e913";
+  color: #095adb; }
+
+.icon-home-why-2:before {
+  font-size: 58px;
+  content: "\e914";
+  color: #095adb; }
+
+.icon-home-why-3:before {
+  font-size: 58px;
+  content: "\e915";
+  color: #095adb; }
+
+.icon-mkt-development:before {
+  font-size: 58px;
+  content: "\e916";
+  color: #095adb; }
+
+.icon-mkt-kpi:before {
+  font-size: 58px;
+  content: "\e917";
+  color: #095adb; }
+
+.icon-mkt-skills:before {
+  font-size: 58px;
+  content: "\e918";
+  color: #095adb; }
+
+.icon-mkt-solution:before {
+  font-size: 58px;
+  content: "\e919";
+  color: #095adb; }
+
+.icon-mkt-stock:before {
+  font-size: 58px;
+  content: "\e91a";
+  color: #009eff; }
+
+.icon-mkt--verify:before {
+  font-size: 58px;
+  content: "\e91b";
+  color: #095adb; }
+
+.icon-seo-1:before {
+  font-size: 58px;
+  content: "\e91c";
+  color: #095adb; }
+
+.icon-seo-2:before {
+  font-size: 58px;
+  content: "\e91d";
+  color: #095adb; }
+
+.icon-seo-3:before {
+  font-size: 58px;
+  content: "\e91e";
+  color: #009eff; }
+
+.icon-seo-4:before {
+  font-size: 58px;
+  content: "\e91f";
+  color: #009eff; }
+
+.icon-seo-5:before {
+  font-size: 58px;
+  content: "\e920";
+  color: #009eff; }
+
+.icon-seo-6:before {
+  font-size: 58px;
+  content: "\e921";
+  color: #009eff; }
+
+.icon-seo-7:before {
+  font-size: 58px;
+  content: "\e922";
+  color: #095adb; }
+
+.icon-seo-8:before {
+  font-size: 58px;
+  content: "\e923";
+  color: #095adb; }
+
+.icon-seo-9:before {
+  font-size: 58px;
+  content: "\e924";
+  color: #009eff; }
+
+.icon-seo-10:before {
+  font-size: 58px;
+  content: "\e925";
+  color: #009eff; }
+
+.icon-seo-11:before {
+  font-size: 58px;
+  content: "\e926";
+  color: #009eff; }
+
+.icon-seo-12:before {
+  font-size: 58px;
+  content: "\e927";
+  color: #009eff; }
+
+.icon-trunk-approval:before {
+  font-size: 58px;
+  content: "\e928";
+  color: #095adb; }
+
+.icon-trunk-call:before {
+  font-size: 58px;
+  content: "\e929";
+  color: #095adb; }
+
+.icon-trunk-conversation:before {
+  font-size: 58px;
+  content: "\e92a";
+  color: #095adb; }
+
+.icon-trunk-handle:before {
+  font-size: 58px;
+  content: "\e92b";
+  color: #095adb; }
+
+.icon-trunk-horizontal:before {
+  font-size: 58px;
+  content: "\e92c";
+  color: #095adb; }
+
+.icon-trunk-infinity:before {
+  font-size: 58px;
+  content: "\e92d";
+  color: #095adb; }
+
+.icon-trunk-like:before {
+  font-size: 58px;
+  content: "\e92e";
+  color: #095adb; }
+
+.icon-trunk-location:before {
+  font-size: 58px;
+  content: "\e92f";
+  color: #095adb; }
+
+.icon-trunk-operation:before {
+  font-size: 58px;
+  content: "\e930";
+  color: #095adb; }
+
+.icon-trunk-pie-chart:before {
+  font-size: 58px;
+  content: "\e931";
+  color: #095adb; }
+
+.icon-trunk-save-money:before {
+  font-size: 58px;
+  content: "\e932";
+  color: #095adb; }
+
+.icon-trunk-social-media:before {
+  font-size: 58px;
+  content: "\e933";
+  color: #095adb; }
+
+.icon-trunk-system:before {
+  font-size: 58px;
+  content: "\e934";
+  color: #095adb; }
+
 html {
   overflow-x: hidden; }
   html body {
@@ -6849,6 +7134,40 @@ div.image {
       padding-bottom: 50px;
       font-size: 48px;
       line-height: 1.3; } }
+
+#contact-consultant {
+  padding: 40px 0;
+  background-image: url("../images/facebook-bg2.jpg"); }
+  @media only screen and (min-width: 768px) {
+    #contact-consultant {
+      padding: 90px 0; } }
+  #contact-consultant .title {
+    font-size: 26px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #ffffff;
+    line-height: 1.6; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .title {
+        font-size: 48px; } }
+  #contact-consultant .btn-contact {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    padding: 7px 35px;
+    font-family: "SF-Pro-Display-Medium";
+    font-size: 16px;
+    border-radius: 45px;
+    color: #ffffff;
+    cursor: pointer; }
+    #contact-consultant .btn-contact:hover {
+      background-color: #ffffff;
+      border: 2px solid #0583E0;
+      color: #0583E0; }
+    @media only screen and (min-width: 768px) {
+      #contact-consultant .btn-contact {
+        padding: 10px 45px;
+        font-size: 24px; } }
 
 header {
   color: #ffffff;
@@ -6985,6 +7304,8 @@ header {
     @media only screen and (min-width: 576px) {
       .page-header .page-title {
         height: 180px; } }
+    .page-header .page-title h2 {
+      padding-bottom: 0; }
 
 main {
   background-color: #F7F8FA;
@@ -7033,6 +7354,8 @@ main {
         background: #0583E0;
         color: #ffffff; }
         main #answer .item:hover * {
+          color: #ffffff; }
+        main #answer .item:hover i::before {
           color: #ffffff; }
       main #answer .item .icon {
         min-height: 65px; }
@@ -7111,16 +7434,6 @@ main {
         @media only screen and (min-width: 992px) {
           main #how .bg-how::before {
             display: block; } }
-      main #how .bg-how h3 {
-        font-weight: bold;
-        padding-bottom: 25px;
-        font-size: 24px;
-        line-height: 1.7; }
-        @media only screen and (min-width: 768px) {
-          main #how .bg-how h3 {
-            padding-bottom: 50px;
-            font-size: 48px;
-            line-height: 1.3; } }
       main #how .bg-how .description {
         font-family: "SF-Pro-Display-Regular";
         line-height: 1.75;
@@ -7214,16 +7527,6 @@ main {
         @media only screen and (min-width: 992px) {
           main #sales-marketing .bg-sales-marketing::before {
             display: block; } }
-      main #sales-marketing .bg-sales-marketing h3 {
-        font-weight: bold;
-        padding-bottom: 25px;
-        line-height: 1.7;
-        font-size: 24px; }
-        @media only screen and (min-width: 768px) {
-          main #sales-marketing .bg-sales-marketing h3 {
-            padding-bottom: 50px;
-            font-size: 48px;
-            line-height: 1.3; } }
       main #sales-marketing .bg-sales-marketing .description {
         font-family: "SF-Pro-Display-Regular";
         line-height: 1.75;
@@ -7250,8 +7553,7 @@ main {
         font-family: "SF-Pro-Display-Medium";
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding-bottom: 10px; }
+        justify-content: space-between; }
         @media only screen and (min-width: 768px) {
           main #sales-marketing .bg-sales-marketing a {
             font-size: 20px; } }
@@ -7396,14 +7698,6 @@ main {
       @media only screen and (min-width: 992px) {
         main #areas .areas-header::before {
           display: flex; } }
-    main #areas .areas-header h3 {
-      font-weight: bold;
-      font-size: 22px;
-      line-height: 1.7; }
-      @media only screen and (min-width: 768px) {
-        main #areas .areas-header h3 {
-          font-size: 40px;
-          line-height: 1.3; } }
     main #areas .areas-header .goby {
       font-family: "SF-Pro-Display-Regular";
       opacity: 0.6; }
@@ -7517,14 +7811,6 @@ main {
         @media only screen and (min-width: 768px) {
           main #reason .right .txt-reason {
             font-size: 20px; } }
-      main #reason .right h3 {
-        font-weight: bold;
-        padding-top: 7px;
-        line-height: 1.7;
-        font-size: 24px; }
-        @media only screen and (min-width: 768px) {
-          main #reason .right h3 {
-            font-size: 48px; } }
       main #reason .right .list-items {
         display: flex;
         align-items: flex-start;
@@ -7774,6 +8060,8 @@ main {
         color: #ffffff; }
         #seo-page #when-need .list-items .item:hover * {
           color: #ffffff; }
+        #seo-page #when-need .list-items .item:hover i::before {
+          color: #ffffff; }
       #seo-page #when-need .list-items .item .icon {
         min-height: 65px; }
       #seo-page #when-need .list-items .item h3 {
@@ -7817,7 +8105,8 @@ main {
     #seo-page #seo-help-how .name {
       color: #ffffff;
       opacity: 0.6;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 0; }
     #seo-page #seo-help-how .title {
       color: #ffffff;
       text-align: center;
@@ -7956,7 +8245,8 @@ main {
       text-align: center; }
       @media only screen and (min-width: 768px) {
         #process-seo .list-process .arrow {
-          flex-basis: 6.6%; } }
+          flex-basis: 6.6%;
+          padding-top: 25px; } }
 
 #customer {
   padding: 40px 0; }
@@ -7984,42 +8274,6 @@ main {
       @media only screen and (min-width: 768px) {
         #customer .item .description {
           font-size: 24px; } }
-
-#contact-consultant {
-  padding: 40px 0;
-  background-image: url("../images/seo-banner.png");
-  background-position: center;
-  background-size: cover; }
-  @media only screen and (min-width: 768px) {
-    #contact-consultant {
-      padding: 90px 0; } }
-  #contact-consultant .title {
-    font-size: 26px;
-    font-weight: bold;
-    padding-bottom: 40px;
-    color: #ffffff;
-    line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .title {
-        font-size: 48px; } }
-  #contact-consultant .btn-contact {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    text-transform: uppercase;
-    padding: 7px 35px;
-    font-family: "SF-Pro-Display-Medium";
-    font-size: 16px;
-    border-radius: 25px;
-    color: #ffffff;
-    cursor: pointer; }
-    #contact-consultant .btn-contact:hover {
-      background-color: #ffffff;
-      border: 2px solid #0583E0;
-      color: #0583E0; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .btn-contact {
-        padding: 10px 45px;
-        font-size: 24px; } }
 
 .facebook-marketing {
   background-color: #F7F8FA;
@@ -8185,7 +8439,8 @@ main {
     #facebook-marketing-page #facebook-marketing-help-how .name {
       color: #ffffff;
       opacity: 0.6;
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 0; }
     #facebook-marketing-page #facebook-marketing-help-how .title {
       color: #ffffff;
       text-align: center;
@@ -8330,40 +8585,6 @@ main {
           flex-basis: 6.6%;
           padding: 3% 0 0 0; } }
 
-#contact-consultant {
-  padding: 40px 0;
-  background-image: url("../images/facebook-bg2.jpg"); }
-  @media only screen and (min-width: 768px) {
-    #contact-consultant {
-      padding: 90px 0; } }
-  #contact-consultant .title {
-    font-size: 26px;
-    font-weight: bold;
-    padding-bottom: 40px;
-    color: #ffffff;
-    line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .title {
-        font-size: 48px; } }
-  #contact-consultant .btn-contact {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    text-transform: uppercase;
-    padding: 7px 35px;
-    font-family: "SF-Pro-Display-Medium";
-    font-size: 16px;
-    border-radius: 25px;
-    color: #ffffff;
-    cursor: pointer; }
-    #contact-consultant .btn-contact:hover {
-      background-color: #ffffff;
-      border: 2px solid #0583E0;
-      color: #0583E0; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .btn-contact {
-        padding: 10px 45px;
-        font-size: 24px; } }
-
 .marketing-multichannel {
   background-color: #F7F8FA;
   height: 100vh;
@@ -8483,6 +8704,8 @@ main {
         background: #0583E0;
         color: #ffffff; }
         #marketing-multichannel-page #when-need .list-items .item:hover * {
+          color: #ffffff; }
+        #marketing-multichannel-page #when-need .list-items .item:hover i::before {
           color: #ffffff; }
       #marketing-multichannel-page #when-need .list-items .item .icon {
         min-height: 65px; }
@@ -8609,6 +8832,8 @@ main {
           @media only screen and (min-width: 768px) {
             #marketing-multichannel-difference .right .list-items .item .description {
               font-size: 20px; } }
+      #marketing-multichannel-difference .right .list-items .icon {
+        min-height: 70px; }
       #marketing-multichannel-difference .right .list-items h4 {
         font-size: 20px;
         font-weight: bold;
@@ -8667,40 +8892,6 @@ main {
       @media only screen and (min-width: 768px) {
         #process-marketing-multichannel .list-process .arrow {
           flex-basis: 6.6%; } }
-
-#contact-consultant {
-  padding: 40px 0;
-  background-image: url("../images/facebook-bg2.jpg"); }
-  @media only screen and (min-width: 768px) {
-    #contact-consultant {
-      padding: 90px 0; } }
-  #contact-consultant .title {
-    font-size: 26px;
-    font-weight: bold;
-    padding-bottom: 40px;
-    color: #ffffff;
-    line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .title {
-        font-size: 48px; } }
-  #contact-consultant .btn-contact {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    text-transform: uppercase;
-    padding: 7px 35px;
-    font-family: "SF-Pro-Display-Medium";
-    font-size: 16px;
-    border-radius: 25px;
-    color: #ffffff;
-    cursor: pointer; }
-    #contact-consultant .btn-contact:hover {
-      background-color: #ffffff;
-      border: 2px solid #0583E0;
-      color: #0583E0; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .btn-contact {
-        padding: 10px 45px;
-        font-size: 24px; } }
 
 .strategy-marketing {
   background-color: #F7F8FA;
@@ -8816,25 +9007,25 @@ main {
           font-size: 20px;
           padding-top: 28px; } }
 
-#strategy-marketing-page {
+#strategy-marketing-main {
   background-color: #F7F8FA;
   position: relative; }
   @media only screen and (min-width: 768px) {
-    #strategy-marketing-page #when-need {
+    #strategy-marketing-main #when-need {
       padding-bottom: 200px; } }
-  #strategy-marketing-page #when-need .list-items {
+  #strategy-marketing-main #when-need .list-items {
     background-color: #ffffff;
     box-shadow: 0 5px 15px #00000010;
     border-radius: 4px;
     padding-top: 25px; }
     @media only screen and (min-width: 992px) {
-      #strategy-marketing-page #when-need .list-items {
+      #strategy-marketing-main #when-need .list-items {
         padding: 0 50px 80px 50px; } }
-    #strategy-marketing-page #when-need .list-items .item {
+    #strategy-marketing-main #when-need .list-items .item {
       background: #F9F9F9;
       padding: 15px;
       border-radius: 5px;
-      min-height: 245px;
+      min-height: 270px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -8844,17 +9035,19 @@ main {
       cursor: pointer;
       margin-bottom: 30px; }
       @media only screen and (min-width: 1200px) {
-        #strategy-marketing-page #when-need .list-items .item {
+        #strategy-marketing-main #when-need .list-items .item {
           margin-bottom: 0;
           height: 100%; } }
-      #strategy-marketing-page #when-need .list-items .item:hover {
+      #strategy-marketing-main #when-need .list-items .item:hover {
         background: #0583E0;
         color: #ffffff; }
-        #strategy-marketing-page #when-need .list-items .item:hover * {
+        #strategy-marketing-main #when-need .list-items .item:hover * {
           color: #ffffff; }
-      #strategy-marketing-page #when-need .list-items .item .icon {
+        #strategy-marketing-main #when-need .list-items .item:hover i::before {
+          color: #ffffff; }
+      #strategy-marketing-main #when-need .list-items .item .icon {
         min-height: 65px; }
-      #strategy-marketing-page #when-need .list-items .item h3 {
+      #strategy-marketing-main #when-need .list-items .item h3 {
         font-size: 20px;
         font-family: "SF-Pro-Display-Semibold";
         color: #262626;
@@ -8862,25 +9055,25 @@ main {
         line-height: 1.55;
         text-align: center; }
         @media only screen and (min-width: 768px) {
-          #strategy-marketing-page #when-need .list-items .item h3 {
+          #strategy-marketing-main #when-need .list-items .item h3 {
             padding: 30px 0px;
             font-size: 26px; } }
-      #strategy-marketing-page #when-need .list-items .item .description {
+      #strategy-marketing-main #when-need .list-items .item .description {
         font-family: "SF-Pro-Display-Regular";
         line-height: 2.25rem; }
         @media only screen and (min-width: 768px) {
-          #strategy-marketing-page #when-need .list-items .item .description {
+          #strategy-marketing-main #when-need .list-items .item .description {
             font-size: 20px; } }
-  #strategy-marketing-page #strategy-marketing-help-how {
+  #strategy-marketing-main #strategy-marketing-help-how {
     position: relative;
     background-color: #095ADB;
     color: #ffffff;
     padding: 40px 0; }
     @media only screen and (min-width: 768px) {
-      #strategy-marketing-page #strategy-marketing-help-how {
+      #strategy-marketing-main #strategy-marketing-help-how {
         padding-bottom: 100px;
         padding-top: 0; } }
-    #strategy-marketing-page #strategy-marketing-help-how::before {
+    #strategy-marketing-main #strategy-marketing-help-how::before {
       content: "";
       position: absolute;
       bottom: 0;
@@ -8889,40 +9082,40 @@ main {
       left: 0;
       background-color: #091951; }
       @media only screen and (min-width: 768px) {
-        #strategy-marketing-page #strategy-marketing-help-how::before {
+        #strategy-marketing-main #strategy-marketing-help-how::before {
           height: 120%;
           left: 3%; } }
-    #strategy-marketing-page #strategy-marketing-help-how .name {
+    #strategy-marketing-main #strategy-marketing-help-how .name {
       color: #ffffff;
       opacity: 0.6;
       text-align: center; }
-    #strategy-marketing-page #strategy-marketing-help-how .title {
+    #strategy-marketing-main #strategy-marketing-help-how .title {
       color: #ffffff;
       text-align: center;
       font-size: 24px;
       font-weight: bold;
       line-height: 1.6; }
       @media only screen and (min-width: 768px) {
-        #strategy-marketing-page #strategy-marketing-help-how .title {
+        #strategy-marketing-main #strategy-marketing-help-how .title {
           font-size: 36px; } }
-    #strategy-marketing-page #strategy-marketing-help-how .item {
+    #strategy-marketing-main #strategy-marketing-help-how .item {
       text-align: center;
       margin-bottom: 25px; }
       @media only screen and (min-width: 768px) {
-        #strategy-marketing-page #strategy-marketing-help-how .item {
+        #strategy-marketing-main #strategy-marketing-help-how .item {
           margin-bottom: 0; } }
-      #strategy-marketing-page #strategy-marketing-help-how .item h4 {
+      #strategy-marketing-main #strategy-marketing-help-how .item h4 {
         font-size: 22px;
         font-family: "SF-Pro-Display-Semibold";
         padding: 25px 0; }
         @media only screen and (min-width: 768px) {
-          #strategy-marketing-page #strategy-marketing-help-how .item h4 {
+          #strategy-marketing-main #strategy-marketing-help-how .item h4 {
             font-size: 24px; } }
-      #strategy-marketing-page #strategy-marketing-help-how .item .description {
+      #strategy-marketing-main #strategy-marketing-help-how .item .description {
         font-size: 16px;
         font-family: "SF-Pro-Display-Light"; }
         @media only screen and (min-width: 768px) {
-          #strategy-marketing-page #strategy-marketing-help-how .item .description {
+          #strategy-marketing-main #strategy-marketing-help-how .item .description {
             font-size: 18px; } }
 
 #process {
@@ -8978,40 +9171,6 @@ main {
     @media only screen and (min-width: 768px) {
       #process .title {
         font-size: 36px; } }
-
-#contact-consultant {
-  padding: 40px 0;
-  background-image: url("../images/facebook-bg2.jpg"); }
-  @media only screen and (min-width: 768px) {
-    #contact-consultant {
-      padding: 90px 0; } }
-  #contact-consultant .title {
-    font-size: 26px;
-    font-weight: bold;
-    padding-bottom: 40px;
-    color: #ffffff;
-    line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .title {
-        font-size: 48px; } }
-  #contact-consultant .btn-contact {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    text-transform: uppercase;
-    padding: 7px 35px;
-    font-family: "SF-Pro-Display-Medium";
-    font-size: 16px;
-    border-radius: 25px;
-    color: #ffffff;
-    cursor: pointer; }
-    #contact-consultant .btn-contact:hover {
-      background-color: #ffffff;
-      border: 2px solid #0583E0;
-      color: #0583E0; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .btn-contact {
-        padding: 10px 45px;
-        font-size: 24px; } }
 
 .mobile-sip-truck {
   background-color: #F7F8FA;
@@ -9161,7 +9320,7 @@ main {
         background: #F9F9F9;
         padding: 15px;
         border-radius: 5px;
-        min-height: 245px;
+        min-height: 275px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -9174,6 +9333,8 @@ main {
           background: #0583E0;
           color: #ffffff; }
           #mobile-sip-truck-page #when-need .list-items .item:hover * {
+            color: #ffffff; }
+          #mobile-sip-truck-page #when-need .list-items .item:hover i::before {
             color: #ffffff; }
         #mobile-sip-truck-page #when-need .list-items .item .icon {
           min-height: 65px; }
@@ -9315,48 +9476,14 @@ main {
         #process .process-setup-switchboard .arrow {
           flex-basis: auto; } }
 
-#contact-consultant {
-  padding: 40px 0;
-  background-image: url("../images/facebook-bg2.jpg"); }
-  @media only screen and (min-width: 768px) {
-    #contact-consultant {
-      padding: 90px 0; } }
-  #contact-consultant .title {
-    font-size: 26px;
-    font-weight: bold;
-    padding-bottom: 40px;
-    color: #ffffff;
-    line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .title {
-        font-size: 48px; } }
-  #contact-consultant .btn-contact {
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    text-transform: uppercase;
-    padding: 7px 35px;
-    font-family: "SF-Pro-Display-Medium";
-    font-size: 16px;
-    border-radius: 25px;
-    color: #ffffff;
-    cursor: pointer; }
-    #contact-consultant .btn-contact:hover {
-      background-color: #ffffff;
-      border: 2px solid #0583E0;
-      color: #0583E0; }
-    @media only screen and (min-width: 768px) {
-      #contact-consultant .btn-contact {
-        padding: 10px 45px;
-        font-size: 24px; } }
-
-.about {
+.about-header {
   background-color: #F7F8FA;
   height: 85vh;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  .about::before {
+  .about-header::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -9368,31 +9495,32 @@ main {
     left: 0;
     top: 0;
     z-index: 0; }
-  .about .page-caption {
+  .about-header .page-caption {
     text-align: center;
     display: flex;
     align-items: center;
     width: 100%;
     z-index: 0;
     height: 100%; }
-    .about .page-caption h1 {
+    .about-header .page-caption h1 {
       text-align: center;
       font-weight: bold;
       line-height: 1.75;
       font-size: 18px;
-      color: #ffffff; }
+      color: #ffffff;
+      text-transform: uppercase; }
       @media only screen and (min-width: 992px) {
-        .about .page-caption h1 {
+        .about-header .page-caption h1 {
           font-size: 42px; } }
-    .about .page-caption .caption {
+    .about-header .page-caption .caption {
       color: #ffffff;
       padding: 2rem 0;
       font-family: "SF-Pro-Display-Light"; }
       @media only screen and (min-width: 992px) {
-        .about .page-caption .caption {
+        .about-header .page-caption .caption {
           padding: 3rem 0;
           font-size: 20px; } }
-    .about .page-caption .btn-booking-calendar {
+    .about-header .page-caption .btn-booking-calendar {
       border: 1px solid #ffffff;
       border-radius: 30px;
       outline: 0;
@@ -9404,15 +9532,15 @@ main {
       font-family: "SF-Pro-Display-Semibold";
       margin-top: 15px;
       cursor: pointer; }
-      .about .page-caption .btn-booking-calendar:hover {
+      .about-header .page-caption .btn-booking-calendar:hover {
         background-color: #ffffff;
         border: 1px solid #0583E0;
         color: #0583E0; }
       @media only screen and (min-width: 576px) {
-        .about .page-caption .btn-booking-calendar {
+        .about-header .page-caption .btn-booking-calendar {
           padding: 16px 50px;
           font-size: 18px; } }
-  .about .page-title {
+  .about-header .page-title {
     display: flex;
     justify-content: center;
     background-color: #ffffff;
@@ -9422,17 +9550,8 @@ main {
     z-index: 2;
     align-items: center; }
     @media only screen and (min-width: 576px) {
-      .about .page-title {
+      .about-header .page-title {
         height: 180px; } }
-    .about .page-title h2 {
-      text-align: center;
-      font-weight: bold;
-      color: #262626;
-      font-size: 19px;
-      line-height: 1.6; }
-      @media only screen and (min-width: 992px) {
-        .about .page-title h2 {
-          font-size: 36px; } }
 
 #about-page {
   background-color: #F7F8FA;
@@ -9442,120 +9561,6 @@ main {
     @media only screen and (min-width: 768px) {
       #about-page .description {
         font-size: 24px; } }
-  #about-page #when-need {
-    padding-bottom: 50px; }
-    @media only screen and (min-width: 768px) {
-      #about-page #when-need {
-        padding-bottom: 90px; } }
-    @media only screen and (min-width: 1300px) {
-      #about-page #when-need {
-        padding-bottom: 150px; } }
-    #about-page #when-need .list-items {
-      background-color: #ffffff;
-      box-shadow: 0 5px 15px #00000010;
-      border-radius: 4px;
-      padding-top: 25px; }
-      @media only screen and (min-width: 992px) {
-        #about-page #when-need .list-items {
-          padding: 0 50px 80px 50px; } }
-      #about-page #when-need .list-items .item {
-        background: #F9F9F9;
-        padding: 15px;
-        border-radius: 5px;
-        min-height: 245px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 3px 10px #00000010;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-bottom: 30px; }
-        #about-page #when-need .list-items .item:hover {
-          background: #0583E0;
-          color: #ffffff; }
-          #about-page #when-need .list-items .item:hover * {
-            color: #ffffff; }
-        #about-page #when-need .list-items .item .icon {
-          min-height: 65px; }
-        #about-page #when-need .list-items .item h3 {
-          font-size: 20px;
-          font-family: "SF-Pro-Display-Semibold";
-          color: #262626;
-          padding: 15px 0px;
-          line-height: 1.55;
-          text-align: center; }
-          @media only screen and (min-width: 768px) {
-            #about-page #when-need .list-items .item h3 {
-              padding-bottom: 30px;
-              font-size: 26px; } }
-        #about-page #when-need .list-items .item .description {
-          font-family: "SF-Pro-Display-Regular";
-          line-height: 2.25rem; }
-          @media only screen and (min-width: 768px) {
-            #about-page #when-need .list-items .item .description {
-              font-size: 20px; } }
-      #about-page #when-need .list-items .three-dots {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #095ADB;
-        margin-bottom: 30px;
-        font-size: 65px;
-        height: 100%; }
-  #about-page #about-help-how {
-    position: relative;
-    background-color: #095ADB;
-    color: #ffffff;
-    padding: 40px 0; }
-    @media only screen and (min-width: 768px) {
-      #about-page #about-help-how {
-        padding-bottom: 100px;
-        padding-top: 0; } }
-    #about-page #about-help-how::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      background-color: #091951; }
-      @media only screen and (min-width: 768px) {
-        #about-page #about-help-how::before {
-          height: 120%;
-          left: 3%; } }
-    #about-page #about-help-how .name {
-      color: #ffffff;
-      opacity: 0.6;
-      text-align: center; }
-    #about-page #about-help-how .title {
-      color: #ffffff;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 1.6; }
-      @media only screen and (min-width: 768px) {
-        #about-page #about-help-how .title {
-          font-size: 36px; } }
-    #about-page #about-help-how .item {
-      text-align: center;
-      margin-bottom: 25px; }
-      @media only screen and (min-width: 768px) {
-        #about-page #about-help-how .item {
-          margin-bottom: 0; } }
-      #about-page #about-help-how .item h4 {
-        font-size: 22px;
-        font-family: "SF-Pro-Display-Semibold";
-        padding: 25px 0; }
-        @media only screen and (min-width: 768px) {
-          #about-page #about-help-how .item h4 {
-            font-size: 24px; } }
-      #about-page #about-help-how .item .description {
-        font-size: 16px;
-        font-family: "SF-Pro-Display-Light"; }
-        @media only screen and (min-width: 768px) {
-          #about-page #about-help-how .item .description {
-            font-size: 18px; } }
   #about-page #quote {
     background-image: url("../images/bg.jpg");
     height: 275px;
