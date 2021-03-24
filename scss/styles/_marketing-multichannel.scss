@@ -91,7 +91,7 @@
     }
 }
 
-#marketing-multichannel-page {
+#marketing-multichannel-body {
     background-color: #F7F8FA;
     position: relative;
     #when-need {
@@ -119,22 +119,15 @@
                 border-radius: 5px;
                 cursor: pointer;
                 margin-bottom: 30px;
-                height: 100%;
                 @include responsive(xl) {
                     margin-bottom: 0;
-                }
-                &:hover {
-                    background: $colorLightBlue;
-                    color: $colorWhite;
-                    * {
-                        color: $colorWhite;
-                    }
-                    i::before {
-                        color: $colorWhite;
-                    }
+                    height: 100%;
                 }
                 .icon {
                     min-height: 65px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
                 }
                 h3 {
                     font-size: $fontSize20;
@@ -218,133 +211,134 @@
             }
         }
     }
-}
-
-#marketing-multichannel-difference {
-    display: flex;
-    align-items: stretch;
-    .left {
-        background-color: $colorBlue;
-        width: 15%;
-        align-items: center;
-        justify-content: center;
-        display: none;
-        @include responsive(md) {
-            display: flex;
-        }
-    }
-    .right {
-        width: 100%;
-        background-color: $colorWhite;
-        padding-bottom: 35px;
-        @include responsive(md) {
-            padding-right: 50px;
-            padding-bottom: 90px;
-        }
-        .txt-reason {
-            color: $colorLightBlue;
-            font-family: $fontSFProSemiBold;
-            font-size: $fontSize16;
-            text-transform: uppercase;
+    #marketing-multichannel-difference {
+        display: flex;
+        align-items: stretch;
+        .left {
+            background-color: $colorBlue;
+            width: 15%;
+            align-items: center;
+            justify-content: center;
+            display: none;
             @include responsive(md) {
-                font-size: $fontSize20;
+                display: flex;
             }
         }
-        h3 {
-            font-weight: bold;
-            padding-top: 7px;
-            line-height: 1.7;
-            font-size: $fontSize24;
+        .right {
+            width: 100%;
+            background-color: $colorWhite;
+            padding-bottom: 35px;
             @include responsive(md) {
-                font-size: $fontSize48;
+                padding-right: 50px;
+                padding-bottom: 90px;
             }
-        }
-        .list-items {
-            display: flex;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            .item {
-                flex-basis: 100%;
-                padding: 20px;
+            .txt-reason {
+                color: $colorLightBlue;
+                font-family: $fontSFProSemiBold;
+                font-size: $fontSize16;
+                text-transform: uppercase;
                 @include responsive(md) {
-                    flex-basis: 33%;
+                    font-size: $fontSize20;
                 }
-                .description {
-                    font-size: $fontSize16;
-                    font-family: $fontSFProRegular;
+            }
+            h3 {
+                font-weight: bold;
+                padding-top: 7px;
+                line-height: 1.7;
+                font-size: $fontSize24;
+                @include responsive(md) {
+                    font-size: $fontSize48;
+                }
+            }
+            .list-items {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                .item {
+                    flex-basis: 100%;
+                    padding: 20px;
                     @include responsive(md) {
-                        font-size: $fontSize20;
+                        flex-basis: 33%;
+                    }
+                    .description {
+                        font-size: $fontSize16;
+                        font-family: $fontSFProRegular;
+                        @include responsive(md) {
+                            font-size: $fontSize20;
+                        }
+                    }
+                }
+                .icon {
+                    min-height: 65px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+                h4 {
+                    font-size: $fontSize20;
+                    font-weight: bold;
+                    margin: 20px 0;
+                    @include responsive(md) {
+                        font-size: $fontSize26;
+                        font-weight: bold;
+                        margin: 30px 0;
                     }
                 }
             }
-            .icon {
-                min-height: 70px;
+        }
+    }
+    #process-marketing-multichannel {
+        background-color: $colorDarkBlue;
+        color: $colorWhite;
+        padding: 40px 0;
+        @include responsive(md) {
+            padding: 150px 0;
+        }
+        .name {
+            font-size: $fontSize24;
+            font-weight: bold;
+            @include responsive(md) {
+                font-size: $fontSize36;
             }
-            h4 {
-                font-size: $fontSize20;
-                font-weight: bold;
-                margin: 20px 0;
+        }
+        .title {
+            font-size: $fontSize24;
+            font-weight: bold;
+            line-height: 1.6;
+            @include responsive(md) {
+                font-size: $fontSize36;
+            }
+        }
+        .list-process {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 30px;
+            @include responsive(md) {
+                padding-top: 80px;
+            }
+            .survey-content {
+                flex-basis: 100%;
+                text-align: center;
+                padding: 10px 0;
                 @include responsive(md) {
-                    font-size: $fontSize26;
-                    font-weight: bold;
-                    margin: 30px 0;
+                    flex-basis: 20%;
+                }
+                h4 {
+                    font-size: $fontSize20;
+                    font-family: $fontSFProRegular;
+                    padding-top: 30px;
+                    line-height: 1.7;
+                    @include responsive(md) {
+                        font-size: $fontSize24;
+                    }
                 }
             }
-        }
-    }
-}
-
-#process-marketing-multichannel {
-    background-color: $colorDarkBlue;
-    color: $colorWhite;
-    padding: 40px 0;
-    @include responsive(md) {
-        padding: 150px 0;
-    }
-    .name {
-        font-size: $fontSize24;
-        font-weight: bold;
-        @include responsive(md) {
-            font-size: $fontSize36;
-        }
-    }
-    .title {
-        font-size: $fontSize24;
-        font-weight: bold;
-        line-height: 1.6;
-        @include responsive(md) {
-            font-size: $fontSize36;
-        }
-    }
-    .list-process {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 30px;
-        @include responsive(md) {
-            padding-top: 80px;
-        }
-        .survey-content {
-            flex-basis: 100%;
-            text-align: center;
-            padding: 10px 0;
-            @include responsive(md) {
-                flex-basis: 20%;
-            }
-            h4 {
-                font-size: $fontSize20;
-                font-family: $fontSFProRegular;
-                padding-top: 30px;
-                line-height: 1.7;
+            .arrow {
+                flex-basis: 100%;
+                text-align: center;
                 @include responsive(md) {
-                    font-size: $fontSize24;
+                    flex-basis: 6.6%;
                 }
-            }
-        }
-        .arrow {
-            flex-basis: 100%;
-            text-align: center;
-            @include responsive(md) {
-                flex-basis: 6.6%;
             }
         }
     }

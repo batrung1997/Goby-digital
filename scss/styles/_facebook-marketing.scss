@@ -84,6 +84,7 @@
             color: $colorBlack;
             font-size: $fontSize26;
             line-height: 1.6;
+            padding-bottom: 0;
             @include responsive(lg) {
                 font-size: $fontSize36;
             }
@@ -124,15 +125,11 @@
                     margin-bottom: 0;
                     height: 100%;
                 }
-                &:hover {
-                    background: $colorLightBlue;
-                    color: $colorWhite;
-                    * {
-                        color: $colorWhite;
-                    }
-                }
                 .icon {
-                    min-height: 70px;
+                    min-height: 65px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
                 }
                 h3 {
                     font-size: $fontSize20;
@@ -327,7 +324,10 @@
                 flex-basis: 20%;
             }
             .icon {
-                min-height: 70px;
+                min-height: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
             }
             h4 {
                 font-size: $fontSize20;

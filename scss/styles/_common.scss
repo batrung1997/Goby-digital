@@ -122,6 +122,9 @@ div.image {
 #contact-consultant {
     padding: 40px 0;
     background-image: url('../images/facebook-bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     @include responsive(md) {
         padding: 90px 0;
     }

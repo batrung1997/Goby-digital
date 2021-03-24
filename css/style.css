@@ -7137,7 +7137,10 @@ div.image {
 
 #contact-consultant {
   padding: 40px 0;
-  background-image: url("../images/facebook-bg2.jpg"); }
+  background-image: url("../images/facebook-bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
   @media only screen and (min-width: 768px) {
     #contact-consultant {
       padding: 90px 0; } }
@@ -7343,22 +7346,17 @@ main {
       align-items: flex-start;
       box-shadow: 0 3px 10px #00000010;
       border-radius: 5px;
-      cursor: pointer;
       margin-bottom: 30px; }
       @media only screen and (min-width: 1200px) {
         main #answer .item {
           margin-bottom: 0;
           padding: 45px;
           min-height: 420px; } }
-      main #answer .item:hover {
-        background: #0583E0;
-        color: #ffffff; }
-        main #answer .item:hover * {
-          color: #ffffff; }
-        main #answer .item:hover i::before {
-          color: #ffffff; }
       main #answer .item .icon {
-        min-height: 65px; }
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
       main #answer .item h3 {
         font-size: 22px;
         font-family: "SF-Pro-Display-Semibold";
@@ -7411,7 +7409,8 @@ main {
       align-items: center;
       width: 14%;
       justify-content: center;
-      background-color: #F7F8FA; }
+      background-color: #F7F8FA;
+      z-index: 4; }
       @media only screen and (min-width: 1200px) {
         main #how .text-bg {
           display: flex; } }
@@ -7762,8 +7761,11 @@ main {
           main #areas .areas-content .item h4 {
             font-size: 20px; } }
       main #areas .areas-content .item .icon {
-        min-height: 57px;
-        margin-bottom: 20px; }
+        min-height: 65px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
     main #areas .areas-content .btn-contact {
       position: absolute;
       width: 100%;
@@ -7855,7 +7857,8 @@ main {
         main #share h3 {
           font-size: 48px; } }
     main #share article {
-      margin-bottom: 25px; }
+      margin-bottom: 25px;
+      overflow: hidden; }
       @media only screen and (min-width: 768px) {
         main #share article {
           margin-bottom: 0; } }
@@ -7866,6 +7869,9 @@ main {
         @media only screen and (min-width: 768px) {
           main #share article .name {
             font-size: 24px; } }
+      main #share article:hover img {
+        transform: scale(1.2);
+        transition: all 1s; }
   main #contact {
     background-color: #ffffff;
     position: relative; }
@@ -8055,15 +8061,11 @@ main {
       @media only screen and (min-width: 1200px) {
         #seo-page #when-need .list-items .item {
           margin-bottom: 0; } }
-      #seo-page #when-need .list-items .item:hover {
-        background: #0583E0;
-        color: #ffffff; }
-        #seo-page #when-need .list-items .item:hover * {
-          color: #ffffff; }
-        #seo-page #when-need .list-items .item:hover i::before {
-          color: #ffffff; }
       #seo-page #when-need .list-items .item .icon {
-        min-height: 65px; }
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
       #seo-page #when-need .list-items .item h3 {
         font-size: 20px;
         font-family: "SF-Pro-Display-Semibold";
@@ -8354,7 +8356,8 @@ main {
       font-weight: bold;
       color: #262626;
       font-size: 26px;
-      line-height: 1.6; }
+      line-height: 1.6;
+      padding-bottom: 0; }
       @media only screen and (min-width: 992px) {
         .facebook-marketing .page-title h2 {
           font-size: 36px; } }
@@ -8391,13 +8394,11 @@ main {
         #facebook-marketing-page #when-need .list-items .item {
           margin-bottom: 0;
           height: 100%; } }
-      #facebook-marketing-page #when-need .list-items .item:hover {
-        background: #0583E0;
-        color: #ffffff; }
-        #facebook-marketing-page #when-need .list-items .item:hover * {
-          color: #ffffff; }
       #facebook-marketing-page #when-need .list-items .item .icon {
-        min-height: 70px; }
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
       #facebook-marketing-page #when-need .list-items .item h3 {
         font-size: 20px;
         font-family: "SF-Pro-Display-Semibold";
@@ -8567,7 +8568,10 @@ main {
         #process-facebook-marketing .list-process .survey-content {
           flex-basis: 20%; } }
       #process-facebook-marketing .list-process .survey-content .icon {
-        min-height: 70px; }
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
       #process-facebook-marketing .list-process .survey-content h4 {
         font-size: 20px;
         font-family: "SF-Pro-Display-Regular";
@@ -8669,21 +8673,21 @@ main {
         .marketing-multichannel .page-title h2 {
           font-size: 36px; } }
 
-#marketing-multichannel-page {
+#marketing-multichannel-body {
   background-color: #F7F8FA;
   position: relative; }
   @media only screen and (min-width: 768px) {
-    #marketing-multichannel-page #when-need {
+    #marketing-multichannel-body #when-need {
       padding-bottom: 200px; } }
-  #marketing-multichannel-page #when-need .list-items {
+  #marketing-multichannel-body #when-need .list-items {
     background-color: #ffffff;
     box-shadow: 0 5px 15px #00000010;
     border-radius: 4px;
     padding-top: 25px; }
     @media only screen and (min-width: 992px) {
-      #marketing-multichannel-page #when-need .list-items {
+      #marketing-multichannel-body #when-need .list-items {
         padding: 0 50px 80px 50px; } }
-    #marketing-multichannel-page #when-need .list-items .item {
+    #marketing-multichannel-body #when-need .list-items .item {
       background: #F9F9F9;
       padding: 15px;
       border-radius: 5px;
@@ -8695,21 +8699,17 @@ main {
       box-shadow: 0 3px 10px #00000010;
       border-radius: 5px;
       cursor: pointer;
-      margin-bottom: 30px;
-      height: 100%; }
+      margin-bottom: 30px; }
       @media only screen and (min-width: 1200px) {
-        #marketing-multichannel-page #when-need .list-items .item {
-          margin-bottom: 0; } }
-      #marketing-multichannel-page #when-need .list-items .item:hover {
-        background: #0583E0;
-        color: #ffffff; }
-        #marketing-multichannel-page #when-need .list-items .item:hover * {
-          color: #ffffff; }
-        #marketing-multichannel-page #when-need .list-items .item:hover i::before {
-          color: #ffffff; }
-      #marketing-multichannel-page #when-need .list-items .item .icon {
-        min-height: 65px; }
-      #marketing-multichannel-page #when-need .list-items .item h3 {
+        #marketing-multichannel-body #when-need .list-items .item {
+          margin-bottom: 0;
+          height: 100%; } }
+      #marketing-multichannel-body #when-need .list-items .item .icon {
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
+      #marketing-multichannel-body #when-need .list-items .item h3 {
         font-size: 20px;
         font-family: "SF-Pro-Display-Semibold";
         color: #262626;
@@ -8717,25 +8717,25 @@ main {
         line-height: 1.55;
         text-align: center; }
         @media only screen and (min-width: 768px) {
-          #marketing-multichannel-page #when-need .list-items .item h3 {
+          #marketing-multichannel-body #when-need .list-items .item h3 {
             padding: 30px 0px;
             font-size: 26px; } }
-      #marketing-multichannel-page #when-need .list-items .item .description {
+      #marketing-multichannel-body #when-need .list-items .item .description {
         font-family: "SF-Pro-Display-Regular";
         line-height: 2.25rem; }
         @media only screen and (min-width: 768px) {
-          #marketing-multichannel-page #when-need .list-items .item .description {
+          #marketing-multichannel-body #when-need .list-items .item .description {
             font-size: 20px; } }
-  #marketing-multichannel-page #marketing-multichannel-help-how {
+  #marketing-multichannel-body #marketing-multichannel-help-how {
     position: relative;
     background-color: #095ADB;
     color: #ffffff;
     padding: 40px 0; }
     @media only screen and (min-width: 768px) {
-      #marketing-multichannel-page #marketing-multichannel-help-how {
+      #marketing-multichannel-body #marketing-multichannel-help-how {
         padding-bottom: 100px;
         padding-top: 0; } }
-    #marketing-multichannel-page #marketing-multichannel-help-how::before {
+    #marketing-multichannel-body #marketing-multichannel-help-how::before {
       content: "";
       position: absolute;
       bottom: 0;
@@ -8744,154 +8744,155 @@ main {
       left: 0;
       background-color: #091951; }
       @media only screen and (min-width: 768px) {
-        #marketing-multichannel-page #marketing-multichannel-help-how::before {
+        #marketing-multichannel-body #marketing-multichannel-help-how::before {
           height: 112%;
           left: 3%; } }
-    #marketing-multichannel-page #marketing-multichannel-help-how .name {
+    #marketing-multichannel-body #marketing-multichannel-help-how .name {
       color: #ffffff;
       opacity: 0.6;
       text-align: center; }
-    #marketing-multichannel-page #marketing-multichannel-help-how .title {
+    #marketing-multichannel-body #marketing-multichannel-help-how .title {
       color: #ffffff;
       text-align: center;
       font-size: 24px;
       font-weight: bold;
       line-height: 1.6; }
       @media only screen and (min-width: 768px) {
-        #marketing-multichannel-page #marketing-multichannel-help-how .title {
+        #marketing-multichannel-body #marketing-multichannel-help-how .title {
           font-size: 36px; } }
-    #marketing-multichannel-page #marketing-multichannel-help-how .item {
+    #marketing-multichannel-body #marketing-multichannel-help-how .item {
       text-align: center;
       margin-bottom: 25px; }
       @media only screen and (min-width: 768px) {
-        #marketing-multichannel-page #marketing-multichannel-help-how .item {
+        #marketing-multichannel-body #marketing-multichannel-help-how .item {
           margin-bottom: 0; } }
-      #marketing-multichannel-page #marketing-multichannel-help-how .item h4 {
+      #marketing-multichannel-body #marketing-multichannel-help-how .item h4 {
         font-size: 22px;
         font-family: "SF-Pro-Display-Semibold";
         padding: 25px 0; }
         @media only screen and (min-width: 768px) {
-          #marketing-multichannel-page #marketing-multichannel-help-how .item h4 {
+          #marketing-multichannel-body #marketing-multichannel-help-how .item h4 {
             font-size: 24px; } }
-      #marketing-multichannel-page #marketing-multichannel-help-how .item .description {
+      #marketing-multichannel-body #marketing-multichannel-help-how .item .description {
         font-size: 16px;
         font-family: "SF-Pro-Display-Light"; }
         @media only screen and (min-width: 768px) {
-          #marketing-multichannel-page #marketing-multichannel-help-how .item .description {
+          #marketing-multichannel-body #marketing-multichannel-help-how .item .description {
             font-size: 18px; } }
-
-#marketing-multichannel-difference {
-  display: flex;
-  align-items: stretch; }
-  #marketing-multichannel-difference .left {
-    background-color: #095ADB;
-    width: 15%;
-    align-items: center;
-    justify-content: center;
-    display: none; }
-    @media only screen and (min-width: 768px) {
-      #marketing-multichannel-difference .left {
-        display: flex; } }
-  #marketing-multichannel-difference .right {
-    width: 100%;
-    background-color: #ffffff;
-    padding-bottom: 35px; }
-    @media only screen and (min-width: 768px) {
-      #marketing-multichannel-difference .right {
-        padding-right: 50px;
-        padding-bottom: 90px; } }
-    #marketing-multichannel-difference .right .txt-reason {
-      color: #0583E0;
-      font-family: "SF-Pro-Display-Semibold";
-      font-size: 16px;
-      text-transform: uppercase; }
-      @media only screen and (min-width: 768px) {
-        #marketing-multichannel-difference .right .txt-reason {
-          font-size: 20px; } }
-    #marketing-multichannel-difference .right h3 {
-      font-weight: bold;
-      padding-top: 7px;
-      line-height: 1.7;
-      font-size: 24px; }
-      @media only screen and (min-width: 768px) {
-        #marketing-multichannel-difference .right h3 {
-          font-size: 48px; } }
-    #marketing-multichannel-difference .right .list-items {
-      display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap; }
-      #marketing-multichannel-difference .right .list-items .item {
-        flex-basis: 100%;
-        padding: 20px; }
-        @media only screen and (min-width: 768px) {
-          #marketing-multichannel-difference .right .list-items .item {
-            flex-basis: 33%; } }
-        #marketing-multichannel-difference .right .list-items .item .description {
-          font-size: 16px;
-          font-family: "SF-Pro-Display-Regular"; }
-          @media only screen and (min-width: 768px) {
-            #marketing-multichannel-difference .right .list-items .item .description {
-              font-size: 20px; } }
-      #marketing-multichannel-difference .right .list-items .icon {
-        min-height: 70px; }
-      #marketing-multichannel-difference .right .list-items h4 {
-        font-size: 20px;
-        font-weight: bold;
-        margin: 20px 0; }
-        @media only screen and (min-width: 768px) {
-          #marketing-multichannel-difference .right .list-items h4 {
-            font-size: 26px;
-            font-weight: bold;
-            margin: 30px 0; } }
-
-#process-marketing-multichannel {
-  background-color: #091951;
-  color: #ffffff;
-  padding: 40px 0; }
-  @media only screen and (min-width: 768px) {
-    #process-marketing-multichannel {
-      padding: 150px 0; } }
-  #process-marketing-multichannel .name {
-    font-size: 24px;
-    font-weight: bold; }
-    @media only screen and (min-width: 768px) {
-      #process-marketing-multichannel .name {
-        font-size: 36px; } }
-  #process-marketing-multichannel .title {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
-      #process-marketing-multichannel .title {
-        font-size: 36px; } }
-  #process-marketing-multichannel .list-process {
+  #marketing-multichannel-body #marketing-multichannel-difference {
     display: flex;
-    flex-wrap: wrap;
-    padding-top: 30px; }
-    @media only screen and (min-width: 768px) {
-      #process-marketing-multichannel .list-process {
-        padding-top: 80px; } }
-    #process-marketing-multichannel .list-process .survey-content {
-      flex-basis: 100%;
-      text-align: center;
-      padding: 10px 0; }
+    align-items: stretch; }
+    #marketing-multichannel-body #marketing-multichannel-difference .left {
+      background-color: #095ADB;
+      width: 15%;
+      align-items: center;
+      justify-content: center;
+      display: none; }
       @media only screen and (min-width: 768px) {
-        #process-marketing-multichannel .list-process .survey-content {
-          flex-basis: 20%; } }
-      #process-marketing-multichannel .list-process .survey-content h4 {
-        font-size: 20px;
-        font-family: "SF-Pro-Display-Regular";
-        padding-top: 30px;
-        line-height: 1.7; }
+        #marketing-multichannel-body #marketing-multichannel-difference .left {
+          display: flex; } }
+    #marketing-multichannel-body #marketing-multichannel-difference .right {
+      width: 100%;
+      background-color: #ffffff;
+      padding-bottom: 35px; }
+      @media only screen and (min-width: 768px) {
+        #marketing-multichannel-body #marketing-multichannel-difference .right {
+          padding-right: 50px;
+          padding-bottom: 90px; } }
+      #marketing-multichannel-body #marketing-multichannel-difference .right .txt-reason {
+        color: #0583E0;
+        font-family: "SF-Pro-Display-Semibold";
+        font-size: 16px;
+        text-transform: uppercase; }
         @media only screen and (min-width: 768px) {
-          #process-marketing-multichannel .list-process .survey-content h4 {
-            font-size: 24px; } }
-    #process-marketing-multichannel .list-process .arrow {
-      flex-basis: 100%;
-      text-align: center; }
+          #marketing-multichannel-body #marketing-multichannel-difference .right .txt-reason {
+            font-size: 20px; } }
+      #marketing-multichannel-body #marketing-multichannel-difference .right h3 {
+        font-weight: bold;
+        padding-top: 7px;
+        line-height: 1.7;
+        font-size: 24px; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-body #marketing-multichannel-difference .right h3 {
+            font-size: 48px; } }
+      #marketing-multichannel-body #marketing-multichannel-difference .right .list-items {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap; }
+        #marketing-multichannel-body #marketing-multichannel-difference .right .list-items .item {
+          flex-basis: 100%;
+          padding: 20px; }
+          @media only screen and (min-width: 768px) {
+            #marketing-multichannel-body #marketing-multichannel-difference .right .list-items .item {
+              flex-basis: 33%; } }
+          #marketing-multichannel-body #marketing-multichannel-difference .right .list-items .item .description {
+            font-size: 16px;
+            font-family: "SF-Pro-Display-Regular"; }
+            @media only screen and (min-width: 768px) {
+              #marketing-multichannel-body #marketing-multichannel-difference .right .list-items .item .description {
+                font-size: 20px; } }
+        #marketing-multichannel-body #marketing-multichannel-difference .right .list-items .icon {
+          min-height: 65px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; }
+        #marketing-multichannel-body #marketing-multichannel-difference .right .list-items h4 {
+          font-size: 20px;
+          font-weight: bold;
+          margin: 20px 0; }
+          @media only screen and (min-width: 768px) {
+            #marketing-multichannel-body #marketing-multichannel-difference .right .list-items h4 {
+              font-size: 26px;
+              font-weight: bold;
+              margin: 30px 0; } }
+  #marketing-multichannel-body #process-marketing-multichannel {
+    background-color: #091951;
+    color: #ffffff;
+    padding: 40px 0; }
+    @media only screen and (min-width: 768px) {
+      #marketing-multichannel-body #process-marketing-multichannel {
+        padding: 150px 0; } }
+    #marketing-multichannel-body #process-marketing-multichannel .name {
+      font-size: 24px;
+      font-weight: bold; }
       @media only screen and (min-width: 768px) {
-        #process-marketing-multichannel .list-process .arrow {
-          flex-basis: 6.6%; } }
+        #marketing-multichannel-body #process-marketing-multichannel .name {
+          font-size: 36px; } }
+    #marketing-multichannel-body #process-marketing-multichannel .title {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 1.6; }
+      @media only screen and (min-width: 768px) {
+        #marketing-multichannel-body #process-marketing-multichannel .title {
+          font-size: 36px; } }
+    #marketing-multichannel-body #process-marketing-multichannel .list-process {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 30px; }
+      @media only screen and (min-width: 768px) {
+        #marketing-multichannel-body #process-marketing-multichannel .list-process {
+          padding-top: 80px; } }
+      #marketing-multichannel-body #process-marketing-multichannel .list-process .survey-content {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 10px 0; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-body #process-marketing-multichannel .list-process .survey-content {
+            flex-basis: 20%; } }
+        #marketing-multichannel-body #process-marketing-multichannel .list-process .survey-content h4 {
+          font-size: 20px;
+          font-family: "SF-Pro-Display-Regular";
+          padding-top: 30px;
+          line-height: 1.7; }
+          @media only screen and (min-width: 768px) {
+            #marketing-multichannel-body #process-marketing-multichannel .list-process .survey-content h4 {
+              font-size: 24px; } }
+      #marketing-multichannel-body #process-marketing-multichannel .list-process .arrow {
+        flex-basis: 100%;
+        text-align: center; }
+        @media only screen and (min-width: 768px) {
+          #marketing-multichannel-body #process-marketing-multichannel .list-process .arrow {
+            flex-basis: 6.6%; } }
 
 .strategy-marketing {
   background-color: #F7F8FA;
@@ -8977,36 +8978,6 @@ main {
         .strategy-marketing .page-title h2 {
           font-size: 36px; } }
 
-#benefits {
-  background-color: #091951;
-  color: #ffffff;
-  padding: 50px 0; }
-  @media only screen and (min-width: 768px) {
-    #benefits {
-      padding: 150px 0; } }
-  #benefits .title {
-    font-weight: bold;
-    line-height: 1.5;
-    padding-bottom: 40px;
-    font-size: 24px;
-    font-weight: bold; }
-    @media only screen and (min-width: 768px) {
-      #benefits .title {
-        font-size: 36px;
-        padding-bottom: 75px; } }
-  #benefits .list-benefits .item {
-    text-align: center; }
-    #benefits .list-benefits .item h4 {
-      font-weight: bold;
-      font-size: 18px;
-      color: #ffffff;
-      padding-top: 20px;
-      line-height: 1.55; }
-      @media only screen and (min-width: 992px) {
-        #benefits .list-benefits .item h4 {
-          font-size: 20px;
-          padding-top: 28px; } }
-
 #strategy-marketing-main {
   background-color: #F7F8FA;
   position: relative; }
@@ -9038,15 +9009,11 @@ main {
         #strategy-marketing-main #when-need .list-items .item {
           margin-bottom: 0;
           height: 100%; } }
-      #strategy-marketing-main #when-need .list-items .item:hover {
-        background: #0583E0;
-        color: #ffffff; }
-        #strategy-marketing-main #when-need .list-items .item:hover * {
-          color: #ffffff; }
-        #strategy-marketing-main #when-need .list-items .item:hover i::before {
-          color: #ffffff; }
       #strategy-marketing-main #when-need .list-items .item .icon {
-        min-height: 65px; }
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
       #strategy-marketing-main #when-need .list-items .item h3 {
         font-size: 20px;
         font-family: "SF-Pro-Display-Semibold";
@@ -9064,113 +9031,88 @@ main {
         @media only screen and (min-width: 768px) {
           #strategy-marketing-main #when-need .list-items .item .description {
             font-size: 20px; } }
-  #strategy-marketing-main #strategy-marketing-help-how {
-    position: relative;
-    background-color: #095ADB;
+  #strategy-marketing-main #benefits {
+    background-color: #091951;
+    color: #ffffff;
+    padding: 50px 0; }
+    @media only screen and (min-width: 768px) {
+      #strategy-marketing-main #benefits {
+        padding: 150px 0; } }
+    #strategy-marketing-main #benefits .title {
+      font-weight: bold;
+      line-height: 1.5;
+      padding-bottom: 40px;
+      font-size: 24px;
+      font-weight: bold; }
+      @media only screen and (min-width: 768px) {
+        #strategy-marketing-main #benefits .title {
+          font-size: 36px;
+          padding-bottom: 75px; } }
+    #strategy-marketing-main #benefits .list-benefits .item {
+      text-align: center; }
+      #strategy-marketing-main #benefits .list-benefits .item h4 {
+        font-weight: bold;
+        font-size: 18px;
+        color: #ffffff;
+        padding-top: 20px;
+        line-height: 1.55; }
+        @media only screen and (min-width: 992px) {
+          #strategy-marketing-main #benefits .list-benefits .item h4 {
+            font-size: 20px;
+            padding-top: 28px; } }
+  #strategy-marketing-main #process {
+    background-color: #091951;
     color: #ffffff;
     padding: 40px 0; }
+    #strategy-marketing-main #process.process-benefits {
+      color: #262626;
+      background-color: #ffffff; }
+      #strategy-marketing-main #process.process-benefits .list-process {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        justify-content: space-around; }
+        @media only screen and (min-width: 768px) {
+          #strategy-marketing-main #process.process-benefits .list-process {
+            padding-top: 80px; } }
+        #strategy-marketing-main #process.process-benefits .list-process .survey-content {
+          text-align: center;
+          padding: 10px 0;
+          flex-basis: auto; }
+          #strategy-marketing-main #process.process-benefits .list-process .survey-content .icon {
+            min-height: 65px; }
+          #strategy-marketing-main #process.process-benefits .list-process .survey-content h4 {
+            font-size: 18px;
+            font-family: "SF-Pro-Display-Regular";
+            padding-top: 15px;
+            line-height: 1.7; }
+            @media only screen and (min-width: 768px) {
+              #strategy-marketing-main #process.process-benefits .list-process .survey-content h4 {
+                font-size: 24px;
+                padding-top: 30px; } }
+        #strategy-marketing-main #process.process-benefits .list-process .arrow {
+          flex-basis: auto;
+          text-align: center;
+          padding-top: 20px; }
+          @media only screen and (min-width: 768px) {
+            #strategy-marketing-main #process.process-benefits .list-process .arrow {
+              flex-basis: auto; } }
     @media only screen and (min-width: 768px) {
-      #strategy-marketing-main #strategy-marketing-help-how {
-        padding-bottom: 100px;
-        padding-top: 0; } }
-    #strategy-marketing-main #strategy-marketing-help-how::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      background-color: #091951; }
+      #strategy-marketing-main #process {
+        padding: 150px 0; } }
+    #strategy-marketing-main #process .name {
+      font-size: 24px;
+      font-weight: bold; }
       @media only screen and (min-width: 768px) {
-        #strategy-marketing-main #strategy-marketing-help-how::before {
-          height: 120%;
-          left: 3%; } }
-    #strategy-marketing-main #strategy-marketing-help-how .name {
-      color: #ffffff;
-      opacity: 0.6;
-      text-align: center; }
-    #strategy-marketing-main #strategy-marketing-help-how .title {
-      color: #ffffff;
-      text-align: center;
+        #strategy-marketing-main #process .name {
+          font-size: 36px; } }
+    #strategy-marketing-main #process .title {
       font-size: 24px;
       font-weight: bold;
       line-height: 1.6; }
       @media only screen and (min-width: 768px) {
-        #strategy-marketing-main #strategy-marketing-help-how .title {
+        #strategy-marketing-main #process .title {
           font-size: 36px; } }
-    #strategy-marketing-main #strategy-marketing-help-how .item {
-      text-align: center;
-      margin-bottom: 25px; }
-      @media only screen and (min-width: 768px) {
-        #strategy-marketing-main #strategy-marketing-help-how .item {
-          margin-bottom: 0; } }
-      #strategy-marketing-main #strategy-marketing-help-how .item h4 {
-        font-size: 22px;
-        font-family: "SF-Pro-Display-Semibold";
-        padding: 25px 0; }
-        @media only screen and (min-width: 768px) {
-          #strategy-marketing-main #strategy-marketing-help-how .item h4 {
-            font-size: 24px; } }
-      #strategy-marketing-main #strategy-marketing-help-how .item .description {
-        font-size: 16px;
-        font-family: "SF-Pro-Display-Light"; }
-        @media only screen and (min-width: 768px) {
-          #strategy-marketing-main #strategy-marketing-help-how .item .description {
-            font-size: 18px; } }
-
-#process {
-  background-color: #091951;
-  color: #ffffff;
-  padding: 40px 0; }
-  #process.process-benefits {
-    color: #262626;
-    background-color: #ffffff; }
-    #process.process-benefits .list-process {
-      display: flex;
-      flex-wrap: wrap;
-      padding-top: 30px;
-      justify-content: space-around; }
-      @media only screen and (min-width: 768px) {
-        #process.process-benefits .list-process {
-          padding-top: 80px; } }
-      #process.process-benefits .list-process .survey-content {
-        text-align: center;
-        padding: 10px 0;
-        flex-basis: auto; }
-        #process.process-benefits .list-process .survey-content .icon {
-          min-height: 75px; }
-        #process.process-benefits .list-process .survey-content h4 {
-          font-size: 18px;
-          font-family: "SF-Pro-Display-Regular";
-          padding-top: 15px;
-          line-height: 1.7; }
-          @media only screen and (min-width: 768px) {
-            #process.process-benefits .list-process .survey-content h4 {
-              font-size: 24px;
-              padding-top: 30px; } }
-      #process.process-benefits .list-process .arrow {
-        flex-basis: auto;
-        text-align: center;
-        padding-top: 20px; }
-        @media only screen and (min-width: 768px) {
-          #process.process-benefits .list-process .arrow {
-            flex-basis: auto; } }
-  @media only screen and (min-width: 768px) {
-    #process {
-      padding: 150px 0; } }
-  #process .name {
-    font-size: 24px;
-    font-weight: bold; }
-    @media only screen and (min-width: 768px) {
-      #process .name {
-        font-size: 36px; } }
-  #process .title {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
-      #process .title {
-        font-size: 36px; } }
 
 .mobile-sip-truck {
   background-color: #F7F8FA;
@@ -9297,26 +9239,26 @@ main {
         #outstanding-point .list-outstanding-point .post-item .post-title {
           font-size: 26px; } }
 
-#mobile-sip-truck-page {
+#mobile-sip-truck-body {
   background-color: #F7F8FA;
   position: relative; }
-  #mobile-sip-truck-page #when-need {
+  #mobile-sip-truck-body #when-need {
     padding-bottom: 50px; }
     @media only screen and (min-width: 768px) {
-      #mobile-sip-truck-page #when-need {
+      #mobile-sip-truck-body #when-need {
         padding-bottom: 90px; } }
     @media only screen and (min-width: 1300px) {
-      #mobile-sip-truck-page #when-need {
+      #mobile-sip-truck-body #when-need {
         padding-bottom: 150px; } }
-    #mobile-sip-truck-page #when-need .list-items {
+    #mobile-sip-truck-body #when-need .list-items {
       background-color: #ffffff;
       box-shadow: 0 5px 15px #00000010;
       border-radius: 4px;
       padding-top: 25px; }
       @media only screen and (min-width: 992px) {
-        #mobile-sip-truck-page #when-need .list-items {
+        #mobile-sip-truck-body #when-need .list-items {
           padding: 0 50px 80px 50px; } }
-      #mobile-sip-truck-page #when-need .list-items .item {
+      #mobile-sip-truck-body #when-need .list-items .item {
         background: #F9F9F9;
         padding: 15px;
         border-radius: 5px;
@@ -9329,16 +9271,12 @@ main {
         border-radius: 5px;
         cursor: pointer;
         margin-bottom: 30px; }
-        #mobile-sip-truck-page #when-need .list-items .item:hover {
-          background: #0583E0;
-          color: #ffffff; }
-          #mobile-sip-truck-page #when-need .list-items .item:hover * {
-            color: #ffffff; }
-          #mobile-sip-truck-page #when-need .list-items .item:hover i::before {
-            color: #ffffff; }
-        #mobile-sip-truck-page #when-need .list-items .item .icon {
-          min-height: 65px; }
-        #mobile-sip-truck-page #when-need .list-items .item h3 {
+        #mobile-sip-truck-body #when-need .list-items .item .icon {
+          min-height: 65px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start; }
+        #mobile-sip-truck-body #when-need .list-items .item h3 {
           font-size: 20px;
           font-family: "SF-Pro-Display-Semibold";
           color: #262626;
@@ -9346,16 +9284,16 @@ main {
           line-height: 1.55;
           text-align: center; }
           @media only screen and (min-width: 768px) {
-            #mobile-sip-truck-page #when-need .list-items .item h3 {
+            #mobile-sip-truck-body #when-need .list-items .item h3 {
               padding-bottom: 30px;
               font-size: 26px; } }
-        #mobile-sip-truck-page #when-need .list-items .item .description {
+        #mobile-sip-truck-body #when-need .list-items .item .description {
           font-family: "SF-Pro-Display-Regular";
           line-height: 2.25rem; }
           @media only screen and (min-width: 768px) {
-            #mobile-sip-truck-page #when-need .list-items .item .description {
+            #mobile-sip-truck-body #when-need .list-items .item .description {
               font-size: 20px; } }
-      #mobile-sip-truck-page #when-need .list-items .three-dots {
+      #mobile-sip-truck-body #when-need .list-items .three-dots {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -9363,59 +9301,6 @@ main {
         margin-bottom: 30px;
         font-size: 65px;
         height: 100%; }
-  #mobile-sip-truck-page #mobile-sip-truck-help-how {
-    position: relative;
-    background-color: #095ADB;
-    color: #ffffff;
-    padding: 40px 0; }
-    @media only screen and (min-width: 768px) {
-      #mobile-sip-truck-page #mobile-sip-truck-help-how {
-        padding-bottom: 100px;
-        padding-top: 0; } }
-    #mobile-sip-truck-page #mobile-sip-truck-help-how::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      background-color: #091951; }
-      @media only screen and (min-width: 768px) {
-        #mobile-sip-truck-page #mobile-sip-truck-help-how::before {
-          height: 120%;
-          left: 3%; } }
-    #mobile-sip-truck-page #mobile-sip-truck-help-how .name {
-      color: #ffffff;
-      opacity: 0.6;
-      text-align: center; }
-    #mobile-sip-truck-page #mobile-sip-truck-help-how .title {
-      color: #ffffff;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-      line-height: 1.6; }
-      @media only screen and (min-width: 768px) {
-        #mobile-sip-truck-page #mobile-sip-truck-help-how .title {
-          font-size: 36px; } }
-    #mobile-sip-truck-page #mobile-sip-truck-help-how .item {
-      text-align: center;
-      margin-bottom: 25px; }
-      @media only screen and (min-width: 768px) {
-        #mobile-sip-truck-page #mobile-sip-truck-help-how .item {
-          margin-bottom: 0; } }
-      #mobile-sip-truck-page #mobile-sip-truck-help-how .item h4 {
-        font-size: 22px;
-        font-family: "SF-Pro-Display-Semibold";
-        padding: 25px 0; }
-        @media only screen and (min-width: 768px) {
-          #mobile-sip-truck-page #mobile-sip-truck-help-how .item h4 {
-            font-size: 24px; } }
-      #mobile-sip-truck-page #mobile-sip-truck-help-how .item .description {
-        font-size: 16px;
-        font-family: "SF-Pro-Display-Light"; }
-        @media only screen and (min-width: 768px) {
-          #mobile-sip-truck-page #mobile-sip-truck-help-how .item .description {
-            font-size: 18px; } }
 
 #process {
   background-color: #ffffff;
@@ -9458,7 +9343,10 @@ main {
       padding: 10px 0;
       flex-basis: auto; }
       #process .process-setup-switchboard .survey-content .icon {
-        min-height: 65px; }
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; }
       #process .process-setup-switchboard .survey-content h4 {
         font-size: 18px;
         font-family: "SF-Pro-Display-Regular";
@@ -9487,7 +9375,7 @@ main {
     content: "";
     position: absolute;
     width: 100%;
-    background-image: url("../images/banner-mobile-sip.jpg");
+    background-image: url("../images/banner-about.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9553,15 +9441,15 @@ main {
       .about-header .page-title {
         height: 180px; } }
 
-#about-page {
+#about-page-body {
   background-color: #F7F8FA;
   position: relative; }
-  #about-page .description {
+  #about-page-body .description {
     font-size: 20px; }
     @media only screen and (min-width: 768px) {
-      #about-page .description {
+      #about-page-body .description {
         font-size: 24px; } }
-  #about-page #quote {
+  #about-page-body #quote {
     background-image: url("../images/bg.jpg");
     height: 275px;
     background-position: center;
@@ -9571,62 +9459,62 @@ main {
     align-items: center;
     justify-content: center; }
     @media only screen and (min-width: 768px) {
-      #about-page #quote {
+      #about-page-body #quote {
         height: 400px; } }
-    #about-page #quote h2 {
+    #about-page-body #quote h2 {
       color: #ffffff;
       font-size: 22px;
       text-align: center;
       line-height: 1.55; }
       @media only screen and (min-width: 768px) {
-        #about-page #quote h2 {
+        #about-page-body #quote h2 {
           font-size: 36px; } }
-  #about-page #core-value h3 {
+  #about-page-body #core-value h3 {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px; }
     @media only screen and (min-width: 768px) {
-      #about-page #core-value h3 {
+      #about-page-body #core-value h3 {
         font-size: 32px;
         margin-bottom: 40px; } }
-  #about-page #core-value .value-items {
+  #about-page-body #core-value .value-items {
     display: flex;
     flex-wrap: wrap; }
-    #about-page #core-value .value-items .item {
+    #about-page-body #core-value .value-items .item {
       flex-basis: 50%;
       display: flex;
       align-items: center;
       margin-bottom: 30px; }
-    #about-page #core-value .value-items .item-name {
+    #about-page-body #core-value .value-items .item-name {
       font-size: 16px;
       font-family: "SF-Pro-Display-Medium";
       margin-bottom: 0; }
       @media only screen and (min-width: 768px) {
-        #about-page #core-value .value-items .item-name {
+        #about-page-body #core-value .value-items .item-name {
           font-size: 18px; } }
-    #about-page #core-value .value-items .icon {
+    #about-page-body #core-value .value-items .icon {
       margin-right: 8px;
       min-width: 25px; }
-  #about-page #goby-digital-team {
+  #about-page-body #goby-digital-team {
     background-image: url("../images/bg-team.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; }
-    #about-page #goby-digital-team h3 {
+    #about-page-body #goby-digital-team h3 {
       font-size: 20px;
       font-weight: bold;
       color: #ffffff;
       text-align: center;
       padding-bottom: 25px; }
       @media only screen and (min-width: 768px) {
-        #about-page #goby-digital-team h3 {
+        #about-page-body #goby-digital-team h3 {
           padding-bottom: 55px;
           font-size: 32px; } }
-    #about-page #goby-digital-team .item {
+    #about-page-body #goby-digital-team .item {
       padding: 0 15px; }
-      #about-page #goby-digital-team .item img {
+      #about-page-body #goby-digital-team .item img {
         border-radius: 100%; }
-      #about-page #goby-digital-team .item .bg-item {
+      #about-page-body #goby-digital-team .item .bg-item {
         padding: 30px 0;
         background-color: #1A2568;
         display: flex !important;
@@ -9634,33 +9522,33 @@ main {
         justify-content: center;
         flex-direction: column;
         color: #ffffff; }
-      #about-page #goby-digital-team .item .name {
+      #about-page-body #goby-digital-team .item .name {
         font-size: 20px;
         font-family: "SF-Pro-Display-Semibold";
         margin: 15px 0; }
-      #about-page #goby-digital-team .item .position {
+      #about-page-body #goby-digital-team .item .position {
         font-size: 20px;
         font-family: "SF-Pro-Display-Regular";
         margin-bottom: 0; }
-    #about-page #goby-digital-team .slick-dots li button:before {
+    #about-page-body #goby-digital-team .slick-dots li button:before {
       background-color: #ffffff;
       border-radius: 25px;
       width: 12px;
       height: 12px; }
-    #about-page #goby-digital-team .slick-dots {
+    #about-page-body #goby-digital-team .slick-dots {
       bottom: -40px; }
       @media only screen and (min-width: 768px) {
-        #about-page #goby-digital-team .slick-dots {
+        #about-page-body #goby-digital-team .slick-dots {
           bottom: -55px; } }
-  #about-page #recruitment h3 {
+  #about-page-body #recruitment h3 {
     font-size: 20px;
     font-family: "SF-Pro-Display-Semibold";
     padding-bottom: 20px; }
     @media only screen and (min-width: 768px) {
-      #about-page #recruitment h3 {
+      #about-page-body #recruitment h3 {
         padding-bottom: 35px;
         font-size: 32px; } }
-  #about-page #recruitment .btn-view-recruitment {
+  #about-page-body #recruitment .btn-view-recruitment {
     padding: 10px 25px;
     background-color: #095ADB;
     color: #ffffff;
@@ -9669,7 +9557,7 @@ main {
     font-family: "SF-Pro-Display-Medium";
     border-radius: 25px; }
     @media only screen and (min-width: 768px) {
-      #about-page #recruitment .btn-view-recruitment {
+      #about-page-body #recruitment .btn-view-recruitment {
         font-size: 20px;
         padding: 12px 33px; } }
 
@@ -9900,7 +9788,9 @@ main {
       padding-bottom: 35px; } }
 
 .content img {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin: auto;
+  display: block; }
   @media only screen and (min-width: 768px) {
     .content img {
       padding-bottom: 30px; } }

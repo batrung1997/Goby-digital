@@ -122,25 +122,17 @@ main {
             align-items: flex-start;
             box-shadow: 0 3px 10px #00000010;
             border-radius: 5px;
-            cursor: pointer;
             margin-bottom: 30px;
             @include responsive(xl) {
                 margin-bottom: 0;
                 padding: 45px;
                 min-height: 420px;
             }
-            &:hover {
-                background: $colorLightBlue;
-                color: $colorWhite;
-                * {
-                    color: $colorWhite;
-                }
-                i::before {
-                    color: $colorWhite;
-                }
-            }
             .icon {
                 min-height: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
             }
             h3 {
                 font-size: $fontSize22;
@@ -204,6 +196,7 @@ main {
             width: 14%;
             justify-content: center;
             background-color: #F7F8FA;
+            z-index: 4;
             @include responsive(xl) {
                 display: flex;
             }
@@ -605,8 +598,11 @@ main {
                     }
                 }
                 .icon {
-                    min-height: 57px;
+                    min-height: 65px;
                     margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
                 }
             }
             .btn-contact {
@@ -715,6 +711,7 @@ main {
         }
         article {
             margin-bottom: 25px;
+            overflow: hidden;
             @include responsive(md) {
                 margin-bottom: 0;
             }
@@ -724,6 +721,12 @@ main {
                 padding-top: 20px;
                 @include responsive(md) {
                     font-size: $fontSize24;
+                }
+            }
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                    transition: all 1s;
                 }
             }
         }

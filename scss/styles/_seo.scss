@@ -122,18 +122,11 @@
                 @include responsive(xl) {
                     margin-bottom: 0;
                 }
-                &:hover {
-                    background: $colorLightBlue;
-                    color: $colorWhite;
-                    * {
-                        color: $colorWhite;
-                    }
-                    i::before {
-                        color: $colorWhite;
-                    }
-                }
                 .icon {
                     min-height: 65px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
                 }
                 h3 {
                     font-size: $fontSize20;
