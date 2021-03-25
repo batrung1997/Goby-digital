@@ -30,7 +30,7 @@
             line-height: 1.75;
             font-size: $fontSize18;
             color: $colorWhite;
-            @include responsive(lg) {
+            @include responsive(xl) {
                 font-size: $fontSize42;
             }
         }
@@ -38,7 +38,7 @@
             color: $colorWhite;
             padding: 2rem 0;
             font-family: $fontSFProLight;
-            @include responsive(lg) {
+            @include responsive(xl) {
                 padding: 3rem 0;
                 font-size: $fontSize20;
             }
@@ -60,7 +60,7 @@
                 border: 1px solid $colorLightBlue;
                 color: $colorLightBlue;
             }
-            @include responsive(sm) {
+            @include responsive(lg) {
                 padding: 16px 50px;
                 font-size: $fontSize18;
             }
@@ -90,17 +90,13 @@ main {
     #what {
         position: relative;
         .text-bg {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
             display: none;
-            align-items: flex-start;
-            width: 12vmax;
-            justify-content: center;
+            width: 13%;
             background-color: #F7F8FA;
-            @media (min-width: 1300px) {
+            @include responsive(lg) {
                 display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
     }
@@ -127,6 +123,7 @@ main {
                 margin-bottom: 0;
                 padding: 45px;
                 min-height: 420px;
+                height: 100%;
             }
             .icon {
                 min-height: 65px;
@@ -140,7 +137,7 @@ main {
                 color: $colorBlack;
                 padding: 15px 0px;
                 line-height: 1.55;
-                @include responsive(md) {
+                @include responsive(xl) {
                     padding: 30px 0px;
                     font-size: $fontSize30;
                 }
@@ -148,14 +145,15 @@ main {
             .description {
                 font-family: $fontSFProRegular;
                 line-height: 2.25rem;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                 }
             }
         }
     }
     #stated {
-        @include responsive(md) {
+        width: 74%;
+        @include responsive(xl) {
             padding: 0 50px;
         }
         h4 {
@@ -163,7 +161,7 @@ main {
             font-family: $fontSFProBold;
             padding-bottom: 20px;
             line-height: 1.6;
-            @include responsive(md) {
+            @include responsive(xl) {
                 font-size: $fontSize36;
                 padding-bottom: 45px;
                 padding-bottom: 30px;
@@ -178,7 +176,7 @@ main {
             border-top: 1px solid #DFDFDF;
             padding-top: 20px;
             font-size: $fontSize20;
-            @include responsive(md) {
+            @include responsive(xl) {
                 font-size: $fontSize24;
                 padding-top: 30px;
             }
@@ -187,18 +185,13 @@ main {
     #how {
         position: relative;
         .text-bg {
-            position: absolute;
-            right: 0;
-            top: 0;
-            height: 100%;
             display: none;
-            align-items: center;
-            width: 14%;
-            justify-content: center;
+            width: 13%;
             background-color: #F7F8FA;
-            z-index: 4;
-            @include responsive(xl) {
+            @include responsive(lg) {
                 display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         .bg-how {
@@ -225,7 +218,7 @@ main {
                 font-family: $fontSFProRegular;
                 line-height: 1.75;
                 padding-bottom: 10px;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                 }
             }
@@ -255,7 +248,7 @@ main {
                 align-items: center;
                 justify-content: space-between;
                 padding-bottom: 10px;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                 }
             }
@@ -275,7 +268,7 @@ main {
                     border: 2px solid $colorWhite;
                     color: $colorWhite;
                 }
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                     padding: 10px 45px;
                 }
@@ -286,17 +279,13 @@ main {
         z-index: 2;
         position: relative;
         .text-bg {
-            position: absolute;
-            left: 0;
-            top: 70px;
-            height: 100%;
             display: none;
-            align-items: center;
-            width: 14%;
-            justify-content: center;
+            width: 13%;
             background-color: #F7F8FA;
-            @include responsive(xl) {
+            @include responsive(lg) {
                 display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         .bg-sales-marketing {
@@ -309,7 +298,7 @@ main {
             z-index: 4;
             padding-top: 0;
             padding-bottom: 50px;
-            @include responsive(lg) {
+            @include responsive(xl) {
                 padding-top: 150px;
                 padding-bottom: 0;
             }
@@ -331,7 +320,7 @@ main {
                 font-family: $fontSFProRegular;
                 line-height: 1.75;
                 padding-bottom: 10px;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                 }
             }
@@ -360,7 +349,7 @@ main {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                 }
             }
@@ -380,7 +369,7 @@ main {
                     border: 2px solid $colorLightBlue;
                     color: $colorLightBlue;
                 }
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                     padding: 10px 45px;
                 }
@@ -391,18 +380,13 @@ main {
         z-index: 1;
         position: relative;
         .text-bg {
-            position: absolute;
-            right: 0;
-            top: 70px;
-            height: 92%;
-            display: flex;
-            align-items: center;
-            width: 14%;
-            justify-content: center;
-            background-color: #F7F8FA;
             display: none;
-            @include responsive(xl) {
+            width: 13%;
+            background-color: #F7F8FA;
+            @include responsive(lg) {
                 display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         .bg-trademark {
@@ -414,7 +398,7 @@ main {
             z-index: 1;
             padding-top: 0;
             padding-bottom: 35px;
-            @include responsive(lg) {
+            @include responsive(xl) {
                 padding-top: 150px;
                 padding-bottom: 0;
             }
@@ -447,7 +431,7 @@ main {
                 font-family: $fontSFProRegular;
                 line-height: 1.75;
                 padding-bottom: 10px;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                 }
             }
@@ -477,7 +461,7 @@ main {
                 align-items: center;
                 justify-content: space-between;
                 padding-bottom: 10px;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                 }
             }
@@ -492,7 +476,7 @@ main {
                 border-radius: 30px;
                 outline: 0;
                 cursor: pointer;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                     padding: 10px 45px;
                 }
@@ -593,7 +577,7 @@ main {
                 h4 {
                     font-family: $fontSFProRegular;
                     font-size: $fontSize16;
-                    @include responsive(md) {
+                    @include responsive(xl) {
                         font-size: $fontSize20;
                     }
                 }
@@ -622,7 +606,7 @@ main {
                     width: max-content;
                     padding-bottom: 10px;
                     font-size: $fontSize18;
-                    @include responsive(md) {
+                    @include responsive(xl) {
                         padding-bottom: 20px;
                         font-size: $fontSize20;
                     }
@@ -654,7 +638,7 @@ main {
                 font-family: $fontSFProSemiBold;
                 font-size: $fontSize16;
                 text-transform: uppercase;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize20;
                 }
             }
@@ -671,7 +655,7 @@ main {
                     .description {
                         font-size: $fontSize16;
                         font-family: $fontSFProRegular;
-                        @include responsive(md) {
+                        @include responsive(xl) {
                             font-size: $fontSize20;
                         }
                     }
@@ -680,7 +664,7 @@ main {
                     font-size: $fontSize20;
                     font-weight: bold;
                     margin: 20px 0;
-                    @include responsive(md) {
+                    @include responsive(xl) {
                         font-size: $fontSize26;
                         font-weight: bold;
                         margin: 30px 0;
@@ -696,7 +680,7 @@ main {
             font-family: $fontSFProSemiBold;
             font-size: $fontSize16;
             text-transform: uppercase;
-            @include responsive(md) {
+            @include responsive(xl) {
                 font-size: $fontSize20;
             }
         }
@@ -705,21 +689,21 @@ main {
             padding-top: 7px;
             font-size: $fontSize24;
             line-height: 1.7;
-            @include responsive(md) {
+            @include responsive(xl) {
                 font-size: $fontSize48;
             }
         }
         article {
             margin-bottom: 25px;
             overflow: hidden;
-            @include responsive(md) {
+            @include responsive(xl) {
                 margin-bottom: 0;
             }
             .name {
                 font-family: $fontSFProSemiBold;
                 font-size: $fontSize20;
                 padding-top: 20px;
-                @include responsive(md) {
+                @include responsive(xl) {
                     font-size: $fontSize24;
                 }
             }
@@ -735,17 +719,13 @@ main {
         background-color: $colorWhite;
         position: relative;
         .text-bg {
-            position: absolute;
-            right: 0;
             background: $colorBlue;
-            top: 0;
-            height: 100%;
-            align-items: center;
-            width: 14%;
-            justify-content: center;
             display: none;
-            @include responsive(xl) {
+            width: 15%;
+            @include responsive(lg) {
                 display: flex;
+                justify-content: center;
+                align-items: center;
             }
         }
         .txt-contact {
@@ -753,7 +733,7 @@ main {
             font-family: $fontSFProSemiBold;
             font-size: $fontSize16;
             text-transform: uppercase;
-            @include responsive(md) {
+            @include responsive(xl) {
                 font-size: $fontSize20;
             }
         }
@@ -763,7 +743,7 @@ main {
             padding-bottom: 15px;
             font-size: $fontSize24;
             line-height: 1.7;
-            @include responsive(md) {
+            @include responsive(xl) {
                 font-size: $fontSize48;
                 padding-bottom: 25px;
             }
@@ -771,7 +751,7 @@ main {
         .description {
             font-size: $fontSize16;
             margin-bottom: 30px;
-            @include responsive(md) {
+            @include responsive(xl) {
                 font-size: $fontSize24;
             }
         }
@@ -801,7 +781,7 @@ main {
                 border: 0;
                 margin-top: 35px;
                 border: 1px solid $colorLightBlue;
-                @include responsive(md) {
+                @include responsive(xl) {
                     padding: 13px 34px;
                     font-size: $fontSize14;
                 }

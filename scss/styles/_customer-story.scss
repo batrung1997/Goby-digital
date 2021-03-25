@@ -1,0 +1,102 @@
+.customer-story {
+    background-color: #F7F8FA;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-image: url('../images/banner-blogs.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    .page-caption {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        z-index: 0;
+        height: 100%;
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.75;
+            font-size: $fontSize18;
+            color: $colorWhite;
+            @include responsive(lg) {
+                font-size: $fontSize42;
+            }
+        }
+        .caption {
+            color: $colorWhite;
+            font-family: $fontSFProLight;
+            @include responsive(lg) {
+                font-size: $fontSize20;
+            }
+        }
+    }
+}
+
+#list-blogs {
+    .post-item {
+        padding-bottom: 20px;
+        @include responsive(md) {
+            padding-bottom: 35px;
+        }
+        .note {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 55px;
+            background: #26262678;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $colorWhite;
+        }
+        .post-title {
+            font-size: $fontSize18;
+            padding: 10px 0;
+            font-weight: bold;
+            line-height: 1.7rem;
+            @include responsive(md) {
+                font-size: $fontSize24;
+                padding: 15px 0;
+                line-height: 2.2rem;
+            }
+        }
+        .read-more {
+            font-size: $fontSize18;
+            color: $colorBlue;
+            @include responsive(md) {
+                font-size: $fontSize24;
+            }
+        }
+    }
+    .btn-view-more {
+        background-color: $colorWhite;
+        border-radius: 25px;
+        border: 2px solid $colorLightBlue;
+        color: $colorLightBlue;
+        font-size: $fontSize16;
+        font-family: $fontSFProMedium;
+        padding: 7px 28px;
+        cursor: pointer;
+        @include responsive(md) {
+            font-size: $fontSize20;
+        }
+        &:hover {
+            border: 2px solid $colorWhite;
+            color: $colorWhite;
+            background-color: $colorLightBlue;
+        }
+    }
+}

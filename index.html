@@ -22,11 +22,55 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Giải pháp</a>
+                                <li class="nav-item active dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="sub-menu1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Giải pháp</a>
+                                    <ul class="sub-menu sub-menu1 dropdown-menu" aria-labelledby="sub-menu1">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" href="#" id="sub-menu2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub menu</a>
+                                            <ul class="sub-menu sub-menu2 dropdown-menu" aria-labelledby="sub-menu2">
+                                                <li class="dropdown">
+                                                    <a href="#" class="dropdown-toggle" href="#" id="sub-menu3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub menu2</a>
+                                                    <ul class="sub-menu sub-menu2 dropdown-menu" aria-labelledby="sub-menu3">
+                                                        <li>
+                                                            <a href="#">Sub menu3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Sub menu3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Sub menu3</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sub menu2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sub menu2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" href="#" id="sub-menu2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub menu</a>
+                                            <ul class="sub-menu sub-menu2 dropdown-menu" aria-labelledby="sub-menu2">
+                                                <li>
+                                                    <a href="#">Sub menu2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sub menu2</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Sub menu2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Sub menu</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="#">Sản phẩm</a>
+                                    <a class="nav-link" href="#">Dịch vụ</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#">Câu chuyện khách hàng</a>
@@ -44,6 +88,7 @@
                 </div>
             </div>
         </header>
+
         <div class="page-caption">
             <div class="container zIndex-2">
                 <h1>GIẢI PHÁP MARKETING TOÀN DIỆN <br /> TỪ CHUYÊN GIA VÀ TỐI ƯU BẰNG CÔNG NGHỆ</h1>
@@ -53,7 +98,7 @@
                 <button class="btn-booking-calendar">đặt lịch tư vấn miễn phí</button>
             </div>
         </div>
-        <div class="container page-title">
+        <div class="page-title w-74 px-15 mx-auto">
             <h2 class="zIndex-2 category-title">Bạn đang tìm kiếm</h2>
         </div>
     </section>
@@ -61,36 +106,38 @@
     <!-- main -->
     <main>
         <section id="what">
-            <div class="text-bg">
-                <img src="./images/what.svg" alt="what">
-            </div>
-            <div class="container" id="answer">
-                <div class="row">
-                    <div class="col-md-6 col-xl-4">
-                        <div class="item">
-                            <div class="icon d-flex align-items-center justify-content-start">
-                                <img src="./images/profits.svg" alt="profits">
+            <div class="d-flex align-items-center justify-content-start">
+                <div class="text-bg">
+                    <img src="./images/what.svg" alt="what">
+                </div>
+                <div id="answer" class="w-74 px-15">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="item">
+                                <div class="icon d-flex align-items-center justify-content-start">
+                                    <img src="./images/profits.svg" alt="profits">
+                                </div>
+                                <h3>Nguồn lực <br />tăng trưởng</h3>
+                                <p class="description">Để đứng vững trên thị trường <br /> và tối đa hóa lợi nhuận trong <br /> dài hạn</p>
                             </div>
-                            <h3>Nguồn lực <br />tăng trưởng</h3>
-                            <p class="description">Để đứng vững trên thị trường <br /> và tối đa hóa lợi nhuận trong <br /> dài hạn</p>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <div class="item">
-                            <div class="icon">
-                                <img src="./images/human-resources.svg" alt="human-resources">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="./images/human-resources.svg" alt="human-resources">
+                                </div>
+                                <h3>Đội ngũ nhân <br /> lực mạnh</h3>
+                                <p class="description">Để triển khai mạnh và giải <br /> quyết triệt để các bài toán <br /> bạn đang gặp phải</p>
                             </div>
-                            <h3>Đội ngũ nhân <br /> lực mạnh</h3>
-                            <p class="description">Để triển khai mạnh và giải <br /> quyết triệt để các bài toán <br /> bạn đang gặp phải</p>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-xl-4">
-                        <div class="item">
-                            <div class="icon">
-                                <img src="./images/leadership.svg" alt="profits">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="item">
+                                <div class="icon">
+                                    <img src="./images/leadership.svg" alt="profits">
+                                </div>
+                                <h3>Chiến lược <br /> phát triển lâu dài</h3>
+                                <p class="description">Bắt đầu mọi thứ bằng <br /> Chiến lược để Doanh <br /> nghiệp phát triển bền vững</p>
                             </div>
-                            <h3>Chiến lược <br /> phát triển lâu dài</h3>
-                            <p class="description">Bắt đầu mọi thứ bằng <br /> Chiến lược để Doanh <br /> nghiệp phát triển bền vững</p>
                         </div>
                     </div>
                 </div>
@@ -103,176 +150,183 @@
             </div>
         </section>
         <section id="how">
-            <div class="text-bg">
-                <img src="./images/how.svg" alt="how">
-            </div>
-            <div class="container bg-how pt-150">
-                <div class="row zIndex-3">
-                    <div class="col-lg-6">
-                        <h3 class="category-title">Tăng trưởng dữ liệu <br /> khách hàng tiềm năng</h3>
-                        <p class="description">Phát triển tập dữ liệu khách hàng tiềm năng là chìa khóa tăng trưởng của Doanh nghiệp. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <ul>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-md-3">
-                                    <a data-toggle="collapse" href="#seo" role="button" aria-expanded="true" aria-controls="seo">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="w-74 px-15 bg-how pt-150 pb-4 pb-lg-0">
+                    <div class="row zIndex-3">
+                        <div class="col-lg-6 order-1 order-lg-0">
+                            <h3 class="category-title">Tăng trưởng dữ liệu <br /> khách hàng tiềm năng</h3>
+                            <p class="description">Phát triển tập dữ liệu khách hàng tiềm năng là chìa khóa tăng trưởng của Doanh nghiệp. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-md-3">
+                                        <a data-toggle="collapse" href="#seo" role="button" aria-expanded="true" aria-controls="seo">
                                         Dịch vụ SEO - content SEO 
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="seo" class="collapse">
-                                        Xây dựng website chuẩn SEO và hệ thống Content chất lượng, thu hút khách hàng tự nhiên
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-md-3">
-                                    <a data-toggle="collapse" href="#facebook-marketing" role="button" aria-expanded="true" aria-controls="facebook-marketing">
+                                        <p id="seo" class="collapse">
+                                            Xây dựng website chuẩn SEO và hệ thống Content chất lượng, thu hút khách hàng tự nhiên
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-md-3">
+                                        <a data-toggle="collapse" href="#facebook-marketing" role="button" aria-expanded="true" aria-controls="facebook-marketing">
                                         Social Media Marketing
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="facebook-marketing" class="collapse">
-                                        Sử dụng mạng xã hội (Facebook, Tiktok,...) và các quảng cáo để tăng trưởng khách hàng nhanh chóng
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-md-3">
-                                    <a data-toggle="collapse" href="#email-marketing" role="button" aria-expanded="true" aria-controls="email-marketing">
+                                        <p id="facebook-marketing" class="collapse">
+                                            Sử dụng mạng xã hội (Facebook, Tiktok,...) và các quảng cáo để tăng trưởng khách hàng nhanh chóng
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-md-3">
+                                        <a data-toggle="collapse" href="#email-marketing" role="button" aria-expanded="true" aria-controls="email-marketing">
                                         Phần mềm Email Marketing
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="email-marketing" class="collapse">
-                                        Chiến lược nuôi dưỡng khách hàng tiềm năng bằng Email Marketing và tự động hóa quy trình định kỳ
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="btn-view-now">Tìm hiểu ngay</button>
+                                        <p id="email-marketing" class="collapse">
+                                            Chiến lược nuôi dưỡng khách hàng tiềm năng bằng Email Marketing và tự động hóa quy trình định kỳ
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn-view-now">Tìm hiểu ngay</button>
+                        </div>
+                        <div class="col-lg-5 offset-lg-1 py-4 py-lg-0 order-0 order-lg-1 text-center">
+                            <img src="./images/home1.jpg" alt="Image 30">
+                        </div>
                     </div>
-                    <div class="col-lg-5 offset-lg-1 py-4 py-lg-0">
-                        <img src="./images/home1.jpg" alt="Image 30">
-                    </div>
+                </div>
+                <div class="text-bg">
+                    <img src="./images/how.svg" alt="how">
                 </div>
             </div>
         </section>
 
         <section id="sales-marketing">
-            <div class="text-bg">
-                <img src="./images/how.svg" alt="how">
-            </div>
-            <div class="container bg-sales-marketing">
-                <div class="row zIndex-10 pt-90">
-                    <div class="col-lg-5 d-flex align-items-center pl-lg-5">
-                        <img src="./images/home2.png" alt="Tối ưu hóa quy trình">
-                    </div>
-                    <div class="col-lg-7 pt-5 pt-lg-0">
-                        <h3 class="category-title">Tối ưu hóa quy trình <br /> Sales và marketing</h3>
-                        <p class="description">
-                            Phối hợp chặt chẽ giữa đội bán hàng và hỗ trợ bán hàng để tối ưu chuyển đổi Tiết kiệm các chi phí không đáng có. Phối hợp chặt chẽ giữa đội bán hàng và hỗ trợ bán hàng để tối ưu chuyển đổi
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-lg-3">
-                                    <a data-toggle="collapse" href="#marketing-automation" role="button" aria-expanded="true" aria-controls="marketing-automation">
+            <div class="d-flex align-items-center justify-content-start">
+                <div class="text-bg">
+                    <img src="./images/how.svg" alt="how">
+                </div>
+                <div class="w-74 px-15 bg-sales-marketing">
+                    <div class="row zIndex-10 pt-90">
+                        <div class="col-lg-5 d-flex align-items-center pl-lg-5">
+                            <img src="./images/home2.png" alt="Tối ưu hóa quy trình">
+                        </div>
+                        <div class="col-lg-7 pt-5 pt-lg-0">
+                            <h3 class="category-title">Tối ưu hóa quy trình <br /> Sales và marketing</h3>
+                            <p class="description">
+                                Phối hợp chặt chẽ giữa đội bán hàng và hỗ trợ bán hàng để tối ưu chuyển đổi Tiết kiệm các chi phí không đáng có. Phối hợp chặt chẽ giữa đội bán hàng và hỗ trợ bán hàng để tối ưu chuyển đổi
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-lg-3">
+                                        <a data-toggle="collapse" href="#marketing-automation" role="button" aria-expanded="true" aria-controls="marketing-automation">
                                         Marketing Automation
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="marketing-automation" class="collapse">
-                                        Xây dựng website chuẩn SEO và hệ thống Content chất lượng, thu hút khách hàng tự nhiên
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-lg-3">
-                                    <a data-toggle="collapse" href="#profile-management" role="button" aria-expanded="true" aria-controls="profile-management">
+                                        <p id="marketing-automation" class="collapse">
+                                            Xây dựng website chuẩn SEO và hệ thống Content chất lượng, thu hút khách hàng tự nhiên
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-lg-3">
+                                        <a data-toggle="collapse" href="#profile-management" role="button" aria-expanded="true" aria-controls="profile-management">
                                         Customer Profile Management
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="profile-management" class="collapse">
-                                        Quản lý và phân khúc khách hàng theo chiều sâu để định hướng đúng chiến lược Marketing
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-lg-3">
-                                    <a data-toggle="collapse" href="#mobile-SIP" role="button" aria-expanded="true" aria-controls="mobile-SIP">
+                                        <p id="profile-management" class="collapse">
+                                            Quản lý và phân khúc khách hàng theo chiều sâu để định hướng đúng chiến lược Marketing
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-lg-3">
+                                        <a data-toggle="collapse" href="#mobile-SIP" role="button" aria-expanded="true" aria-controls="mobile-SIP">
                                         Mobile SIP Trunk
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="mobile-SIP" class="collapse">
-                                        Tiết kiệm tới 30% chi phí gọi ra, tăng tỷ lệ nhấc máy lên tới 90%
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="btn-view-now"><a href="/seo.html">Tìm hiểu ngay</a></button>
+                                        <p id="mobile-SIP" class="collapse">
+                                            Tiết kiệm tới 30% chi phí gọi ra, tăng tỷ lệ nhấc máy lên tới 90%
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn-view-now"><a href="/seo.html">Tìm hiểu ngay</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="trademark">
-            <div class="text-bg">
-                <img src="./images/how.svg" alt="how">
-            </div>
-            <div class="container bg-trademark">
-                <div class="row zIndex-3 pt-90">
-                    <div class="col-md-7 order-1 order-md-0 pt-4 pt-md-0">
-                        <h3 class="category-title">Định vị và <br /> phát triển thương hiệu</h3>
-                        <p class="description">
-                            Phát triển tập dữ liệu khách hàng tiềm năng là chìa khóa tăng trưởng của Doanh nghiệp.
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-md-3">
-                                    <a data-toggle="collapse" href="#advisory" role="button" aria-expanded="true" aria-controls="advisory">
+            <div class="d-flex align-items-center justify-content-end">
+                <div class="w-74 px-15 bg-trademark">
+                    <div class="row zIndex-3 pt-90">
+                        <div class="col-md-7 order-1 order-md-0 pt-4 pt-md-0">
+                            <h3 class="category-title">Định vị và <br /> phát triển thương hiệu</h3>
+                            <p class="description">
+                                Phát triển tập dữ liệu khách hàng tiềm năng là chìa khóa tăng trưởng của Doanh nghiệp.
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-md-3">
+                                        <a data-toggle="collapse" href="#advisory" role="button" aria-expanded="true" aria-controls="advisory">
                                        Nghiên cứu và Tư vấn chiến lược
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="advisory" class="collapse">
-                                        Nghiên cứu thị trường và tư vấn chiến lược định vị và phát triển thương hiệu cho sản phẩm mới và sản phẩm tái định vị
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-md-3">
-                                    <a data-toggle="collapse" href="#marketing-services" role="button" aria-expanded="true" aria-controls="marketing-services">
+                                        <p id="advisory" class="collapse">
+                                            Nghiên cứu thị trường và tư vấn chiến lược định vị và phát triển thương hiệu cho sản phẩm mới và sản phẩm tái định vị
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-md-3">
+                                        <a data-toggle="collapse" href="#marketing-services" role="button" aria-expanded="true" aria-controls="marketing-services">
                                         Dịch vụ Marketing tổng thể
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="marketing-services" class="collapse">
-                                        Thực hiện chiến dịch Marketing tích hợp trên nhiều kênh, nhiều nền tảng để đạt hiệu quả tối đa
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="fas fa-circle"></i>
-                                <div class="w-100 pb-2 pb-md-3">
-                                    <a data-toggle="collapse" href="#brandname" role="button" aria-expanded="true" aria-controls="brandname">
+                                        <p id="marketing-services" class="collapse">
+                                            Thực hiện chiến dịch Marketing tích hợp trên nhiều kênh, nhiều nền tảng để đạt hiệu quả tối đa
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-circle"></i>
+                                    <div class="w-100 pb-2 pb-md-3">
+                                        <a data-toggle="collapse" href="#brandname" role="button" aria-expanded="true" aria-controls="brandname">
                                         Giải pháp Voice brandname
                                         <img src="./images/icon-down.svg" alt="down">
                                     </a>
-                                    <p id="brandname" class="collapse">
-                                        Kết nối với khách hàng bằng cuộc gọi thương hiệu
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                        <button class="btn-view-now">Tìm hiểu ngay</button>
+                                        <p id="brandname" class="collapse">
+                                            Kết nối với khách hàng bằng cuộc gọi thương hiệu
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="btn-view-now">Tìm hiểu ngay</button>
+                        </div>
+                        <div class="col-md-5 d-flex align-items-center order-0 order-md-1">
+                            <img src="./images/1.png" alt="Image 41">
+                        </div>
                     </div>
-                    <div class="col-md-5 d-flex align-items-center order-0 order-md-1">
-                        <img src="./images/1.png" alt="Image 41">
-                    </div>
+                </div>
+                <div class="text-bg">
+                    <img src="./images/how.svg" alt="how">
                 </div>
             </div>
         </section>
+
         <section id="areas">
             <div class="bg-areas-header">
                 <div class="container areas-header pt-150">
@@ -395,7 +449,7 @@
         </section>
 
         <section id="share" class="pd-y-90">
-            <div class="container">
+            <div class="w-74 px-15 mx-auto">
                 <div class="row">
                     <div class="col-12">
                         <span class="txt-share">CHIA SẺ</span>
@@ -444,38 +498,40 @@
         </section>
 
         <section id="contact">
-            <div class="text-bg">
-                <img src="./images/contact.svg" alt="">
-            </div>
-            <div class="container pd-y-90">
-                <div class="row">
-                    <div class="col-12">
-                        <span class="txt-contact">liên hệ</span>
-                        <h3 class="category-title">
-                            Hãy cho chúng tôi biết bài toán của bạn
-                        </h3>
-                        <p class="description">Để lại thông tin và các vấn đề làm bạn trăn trở, các chuyên gia tại <br /> Goby Digital sẽ cùng bạn tìm giải pháp</p>
-                    </div>
-                </div>
-                <form action="" method="post">
+            <div class="d-flex align-items-stretch justify-content-end">
+                <div class="w-72 px-15 pd-y-90">
                     <div class="row">
-                        <div class="col-md-6 col-lg-4 pr-md-4">
-                            <input placeholder="Họ và tên" type="text" />
-                            <input placeholder="Số điện thoại" type="text" />
-                            <input placeholder="Email" type="text" />
-                        </div>
-                        <div class="col-md-6 col-lg-4 pl-md-4">
-                            <input placeholder="Tên doanh nghiệp" type="text" />
-                            <input placeholder="Quy mô" type="text" />
-                            <input placeholder="Quy mô bộ phận marketing" type="text" />
-                        </div>
                         <div class="col-12">
-                            <button type="submit" class="btn-submit">
+                            <span class="txt-contact">liên hệ</span>
+                            <h3 class="category-title">
+                                Hãy cho chúng tôi biết bài toán của bạn
+                            </h3>
+                            <p class="description">Để lại thông tin và các vấn đề làm bạn trăn trở, các chuyên gia tại <br /> Goby Digital sẽ cùng bạn tìm giải pháp</p>
+                        </div>
+                    </div>
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 pr-md-4">
+                                <input placeholder="Họ và tên" type="text" />
+                                <input placeholder="Số điện thoại" type="text" />
+                                <input placeholder="Email" type="text" />
+                            </div>
+                            <div class="col-md-6 col-lg-4 pl-md-4">
+                                <input placeholder="Tên doanh nghiệp" type="text" />
+                                <input placeholder="Quy mô" type="text" />
+                                <input placeholder="Quy mô bộ phận marketing" type="text" />
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-submit">
                                 GỬI <img src="./images/right-arrow.svg" alt="">
                             </button>
+                            </div>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
+                <div class="text-bg">
+                    <img src="./images/contact.svg" alt="">
+                </div>
             </div>
         </section>
     </main>
