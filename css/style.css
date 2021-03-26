@@ -7092,6 +7092,25 @@ img {
   .bdr-0 {
     border-right: 0 !important; } }
 
+.w-74 {
+  width: 100% !important; }
+  @media only screen and (min-width: 992px) {
+    .w-74 {
+      width: 74% !important; } }
+
+.w-72 {
+  width: 100% !important; }
+  @media only screen and (min-width: 992px) {
+    .w-72 {
+      width: 72% !important; } }
+
+.w-15 {
+  width: 15% !important; }
+
+.px-15 {
+  padding-left: 15px;
+  padding-right: 15px; }
+
 div.image {
   position: relative;
   display: block;
@@ -7112,8 +7131,8 @@ div.image {
   div.image.medium-image {
     padding-bottom: 70.27%; }
   div.image:hover img {
-    transform: scale(1.4);
-    transition: all 1s; }
+    transform: scale(1.2);
+    transition: all 2s; }
 
 .cl-blue {
   color: #095ADB !important; }
@@ -7129,7 +7148,7 @@ div.image {
   padding-bottom: 25px;
   line-height: 1.7;
   font-size: 24px; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 992px) {
     .category-title {
       padding-bottom: 50px;
       font-size: 48px;
@@ -7141,7 +7160,7 @@ div.image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1200px) {
     #contact-consultant {
       padding: 90px 0; } }
   #contact-consultant .title {
@@ -7150,7 +7169,7 @@ div.image {
     padding-bottom: 40px;
     color: #ffffff;
     line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1200px) {
       #contact-consultant .title {
         font-size: 48px; } }
   #contact-consultant .btn-contact {
@@ -7167,7 +7186,7 @@ div.image {
       background-color: #ffffff;
       border: 2px solid #0583E0;
       color: #0583E0; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1200px) {
       #contact-consultant .btn-contact {
         padding: 10px 45px;
         font-size: 24px; } }
@@ -7205,7 +7224,9 @@ header {
       color: #0583E0; }
   header nav {
     position: static !important;
-    padding-right: 0 !important; }
+    padding-right: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
     @media only screen and (min-width: 1200px) {
       header nav {
         position: unset; } }
@@ -7221,15 +7242,41 @@ header {
         header nav .navbar-collapse {
           position: unset;
           background-color: transparent; } }
+    header nav .navbar-nav li {
+      padding: 0.5rem !important; }
+      header nav .navbar-nav li:hover > .sub-menu:first-of-type {
+        display: block; }
+      @media only screen and (min-width: 1200px) {
+        header nav .navbar-nav li {
+          padding: 0.5rem 1rem !important; } }
     header nav .navbar-nav a {
       font-size: 16px;
-      padding: 0.5rem !important;
       color: #0583E0;
-      display: block; }
+      display: block;
+      padding: 0; }
       @media only screen and (min-width: 1200px) {
         header nav .navbar-nav a {
-          color: #ffffff;
-          padding: 0 1rem !important; } }
+          color: #ffffff; } }
+      header nav .navbar-nav a.dropdown-toggle::after {
+        display: none; }
+    header nav .navbar-nav .sub-menu {
+      background-color: #0F50AF;
+      min-width: 165px;
+      border-radius: 5px;
+      border: 0;
+      margin: 0;
+      padding: 0; }
+      header nav .navbar-nav .sub-menu li {
+        border-bottom: 1px solid #1658B8; }
+        header nav .navbar-nav .sub-menu li:last-child {
+          border: 0; }
+      header nav .navbar-nav .sub-menu a {
+        padding: 0.5rem !important;
+        font-size: 14px;
+        color: #ffffff; }
+    header nav .navbar-nav .sub-menu2 {
+      left: 100% !important;
+      top: 55%; }
     header nav .navbar-toogle::before {
       color: #ffffff; }
 
@@ -7264,14 +7311,14 @@ header {
       line-height: 1.75;
       font-size: 18px;
       color: #ffffff; }
-      @media only screen and (min-width: 992px) {
+      @media only screen and (min-width: 1200px) {
         .page-header .page-caption h1 {
           font-size: 42px; } }
     .page-header .page-caption .caption {
       color: #ffffff;
       padding: 2rem 0;
       font-family: "SF-Pro-Display-Light"; }
-      @media only screen and (min-width: 992px) {
+      @media only screen and (min-width: 1200px) {
         .page-header .page-caption .caption {
           padding: 3rem 0;
           font-size: 20px; } }
@@ -7291,7 +7338,7 @@ header {
         background-color: #ffffff;
         border: 1px solid #0583E0;
         color: #0583E0; }
-      @media only screen and (min-width: 576px) {
+      @media only screen and (min-width: 992px) {
         .page-header .page-caption .btn-booking-calendar {
           padding: 16px 50px;
           font-size: 18px; } }
@@ -7316,18 +7363,14 @@ main {
   main #what {
     position: relative; }
     main #what .text-bg {
-      position: absolute;
-      left: 0;
-      top: 0;
-      height: 100%;
       display: none;
-      align-items: flex-start;
-      width: 12vmax;
-      justify-content: center;
+      width: 13%;
       background-color: #F7F8FA; }
-      @media (min-width: 1300px) {
+      @media only screen and (min-width: 992px) {
         main #what .text-bg {
-          display: flex; } }
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
   main #answer {
     background-color: #ffffff;
     box-shadow: 0 5px 15px #00000010;
@@ -7351,7 +7394,8 @@ main {
         main #answer .item {
           margin-bottom: 0;
           padding: 45px;
-          min-height: 420px; } }
+          min-height: 420px;
+          height: 100%; } }
       main #answer .item .icon {
         min-height: 65px;
         display: flex;
@@ -7363,57 +7407,57 @@ main {
         color: #262626;
         padding: 15px 0px;
         line-height: 1.55; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #answer .item h3 {
             padding: 30px 0px;
             font-size: 30px; } }
       main #answer .item .description {
         font-family: "SF-Pro-Display-Regular";
         line-height: 2.25rem; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #answer .item .description {
             font-size: 20px; } }
-  @media only screen and (min-width: 768px) {
-    main #stated {
-      padding: 0 50px; } }
-  main #stated h4 {
-    font-size: 22px;
-    font-family: "SF-Pro-Display-Bold";
-    padding-bottom: 20px;
-    line-height: 1.6; }
-    @media only screen and (min-width: 768px) {
-      main #stated h4 {
-        font-size: 36px;
-        padding-bottom: 45px;
-        padding-bottom: 30px; } }
-    main #stated h4 .txt-highlights {
-      background-color: #095ADB;
-      color: #ffffff; }
-  main #stated .description {
-    display: inline-block;
-    border-top: 1px solid #DFDFDF;
-    padding-top: 20px;
-    font-size: 20px; }
-    @media only screen and (min-width: 768px) {
-      main #stated .description {
-        font-size: 24px;
-        padding-top: 30px; } }
+  main #stated {
+    width: 100%; }
+    @media only screen and (min-width: 992px) {
+      main #stated {
+        width: 74%; } }
+    @media only screen and (min-width: 1200px) {
+      main #stated {
+        padding: 0 50px; } }
+    main #stated h4 {
+      font-size: 22px;
+      font-family: "SF-Pro-Display-Bold";
+      padding-bottom: 20px;
+      line-height: 1.6; }
+      @media only screen and (min-width: 1200px) {
+        main #stated h4 {
+          font-size: 36px;
+          padding-bottom: 45px;
+          padding-bottom: 30px; } }
+      main #stated h4 .txt-highlights {
+        background-color: #095ADB;
+        color: #ffffff; }
+    main #stated .description {
+      display: inline-block;
+      border-top: 1px solid #DFDFDF;
+      padding-top: 20px;
+      font-size: 20px; }
+      @media only screen and (min-width: 1200px) {
+        main #stated .description {
+          font-size: 24px;
+          padding-top: 30px; } }
   main #how {
     position: relative; }
     main #how .text-bg {
-      position: absolute;
-      right: 0;
-      top: 0;
-      height: 100%;
       display: none;
-      align-items: center;
-      width: 14%;
-      justify-content: center;
-      background-color: #F7F8FA;
-      z-index: 4; }
-      @media only screen and (min-width: 1200px) {
+      width: 13%;
+      background-color: #F7F8FA; }
+      @media only screen and (min-width: 992px) {
         main #how .text-bg {
-          display: flex; } }
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
     main #how .bg-how {
       background-color: #ffffff;
       position: relative;
@@ -7437,7 +7481,7 @@ main {
         font-family: "SF-Pro-Display-Regular";
         line-height: 1.75;
         padding-bottom: 10px; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #how .bg-how .description {
             font-size: 20px; } }
       main #how .bg-how li {
@@ -7461,7 +7505,7 @@ main {
         align-items: center;
         justify-content: space-between;
         padding-bottom: 10px; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #how .bg-how a {
             font-size: 20px; } }
       main #how .bg-how .btn-view-now {
@@ -7479,7 +7523,7 @@ main {
           background-color: #0583E0;
           border: 2px solid #ffffff;
           color: #ffffff; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #how .bg-how .btn-view-now {
             font-size: 20px;
             padding: 10px 45px; } }
@@ -7487,18 +7531,14 @@ main {
     z-index: 2;
     position: relative; }
     main #sales-marketing .text-bg {
-      position: absolute;
-      left: 0;
-      top: 70px;
-      height: 100%;
       display: none;
-      align-items: center;
-      width: 14%;
-      justify-content: center;
+      width: 13%;
       background-color: #F7F8FA; }
-      @media only screen and (min-width: 1200px) {
+      @media only screen and (min-width: 992px) {
         main #sales-marketing .text-bg {
-          display: flex; } }
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
     main #sales-marketing .bg-sales-marketing {
       background-color: #091951;
       position: relative;
@@ -7509,7 +7549,7 @@ main {
       z-index: 4;
       padding-top: 0;
       padding-bottom: 50px; }
-      @media only screen and (min-width: 992px) {
+      @media only screen and (min-width: 1200px) {
         main #sales-marketing .bg-sales-marketing {
           padding-top: 150px;
           padding-bottom: 0; } }
@@ -7530,7 +7570,7 @@ main {
         font-family: "SF-Pro-Display-Regular";
         line-height: 1.75;
         padding-bottom: 10px; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #sales-marketing .bg-sales-marketing .description {
             font-size: 20px; } }
       main #sales-marketing .bg-sales-marketing li {
@@ -7553,7 +7593,7 @@ main {
         display: flex;
         align-items: center;
         justify-content: space-between; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #sales-marketing .bg-sales-marketing a {
             font-size: 20px; } }
       main #sales-marketing .bg-sales-marketing .btn-view-now {
@@ -7571,7 +7611,7 @@ main {
           background-color: #ffffff;
           border: 2px solid #0583E0;
           color: #0583E0; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #sales-marketing .bg-sales-marketing .btn-view-now {
             font-size: 20px;
             padding: 10px 45px; } }
@@ -7579,19 +7619,14 @@ main {
     z-index: 1;
     position: relative; }
     main #trademark .text-bg {
-      position: absolute;
-      right: 0;
-      top: 70px;
-      height: 92%;
-      display: flex;
-      align-items: center;
-      width: 14%;
-      justify-content: center;
-      background-color: #F7F8FA;
-      display: none; }
-      @media only screen and (min-width: 1200px) {
+      display: none;
+      width: 13%;
+      background-color: #F7F8FA; }
+      @media only screen and (min-width: 992px) {
         main #trademark .text-bg {
-          display: flex; } }
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
     main #trademark .bg-trademark {
       background-color: #ffffff;
       position: relative;
@@ -7601,7 +7636,7 @@ main {
       z-index: 1;
       padding-top: 0;
       padding-bottom: 35px; }
-      @media only screen and (min-width: 992px) {
+      @media only screen and (min-width: 1200px) {
         main #trademark .bg-trademark {
           padding-top: 150px;
           padding-bottom: 0; } }
@@ -7632,7 +7667,7 @@ main {
         font-family: "SF-Pro-Display-Regular";
         line-height: 1.75;
         padding-bottom: 10px; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #trademark .bg-trademark .description {
             font-size: 20px; } }
       main #trademark .bg-trademark li {
@@ -7656,7 +7691,7 @@ main {
         align-items: center;
         justify-content: space-between;
         padding-bottom: 10px; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #trademark .bg-trademark a {
             font-size: 20px; } }
       main #trademark .bg-trademark .btn-view-now {
@@ -7670,7 +7705,7 @@ main {
         border-radius: 30px;
         outline: 0;
         cursor: pointer; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #trademark .bg-trademark .btn-view-now {
             font-size: 20px;
             padding: 10px 45px; } }
@@ -7757,7 +7792,7 @@ main {
       main #areas .areas-content .item h4 {
         font-family: "SF-Pro-Display-Regular";
         font-size: 16px; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #areas .areas-content .item h4 {
             font-size: 20px; } }
       main #areas .areas-content .item .icon {
@@ -7783,7 +7818,7 @@ main {
         width: max-content;
         padding-bottom: 10px;
         font-size: 18px; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #areas .areas-content .btn-contact .txt-contact {
             padding-bottom: 20px;
             font-size: 20px; } }
@@ -7810,7 +7845,7 @@ main {
         font-family: "SF-Pro-Display-Semibold";
         font-size: 16px;
         text-transform: uppercase; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #reason .right .txt-reason {
             font-size: 20px; } }
       main #reason .right .list-items {
@@ -7826,14 +7861,14 @@ main {
           main #reason .right .list-items .item .description {
             font-size: 16px;
             font-family: "SF-Pro-Display-Regular"; }
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 1200px) {
               main #reason .right .list-items .item .description {
                 font-size: 20px; } }
         main #reason .right .list-items h4 {
           font-size: 20px;
           font-weight: bold;
           margin: 20px 0; }
-          @media only screen and (min-width: 768px) {
+          @media only screen and (min-width: 1200px) {
             main #reason .right .list-items h4 {
               font-size: 26px;
               font-weight: bold;
@@ -7845,7 +7880,7 @@ main {
       font-family: "SF-Pro-Display-Semibold";
       font-size: 16px;
       text-transform: uppercase; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1200px) {
         main #share .txt-share {
           font-size: 20px; } }
     main #share h3 {
@@ -7853,20 +7888,20 @@ main {
       padding-top: 7px;
       font-size: 24px;
       line-height: 1.7; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1200px) {
         main #share h3 {
           font-size: 48px; } }
     main #share article {
       margin-bottom: 25px;
       overflow: hidden; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1200px) {
         main #share article {
           margin-bottom: 0; } }
       main #share article .name {
         font-family: "SF-Pro-Display-Semibold";
         font-size: 20px;
         padding-top: 20px; }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1200px) {
           main #share article .name {
             font-size: 24px; } }
       main #share article:hover img {
@@ -7876,24 +7911,20 @@ main {
     background-color: #ffffff;
     position: relative; }
     main #contact .text-bg {
-      position: absolute;
-      right: 0;
       background: #095ADB;
-      top: 0;
-      height: 100%;
-      align-items: center;
-      width: 14%;
-      justify-content: center;
-      display: none; }
-      @media only screen and (min-width: 1200px) {
+      display: none;
+      width: 15%; }
+      @media only screen and (min-width: 992px) {
         main #contact .text-bg {
-          display: flex; } }
+          display: flex;
+          justify-content: center;
+          align-items: center; } }
     main #contact .txt-contact {
       color: #0583E0;
       font-family: "SF-Pro-Display-Semibold";
       font-size: 16px;
       text-transform: uppercase; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1200px) {
         main #contact .txt-contact {
           font-size: 20px; } }
     main #contact h3 {
@@ -7902,14 +7933,14 @@ main {
       padding-bottom: 15px;
       font-size: 24px;
       line-height: 1.7; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1200px) {
         main #contact h3 {
           font-size: 48px;
           padding-bottom: 25px; } }
     main #contact .description {
       font-size: 16px;
       margin-bottom: 30px; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1200px) {
         main #contact .description {
           font-size: 24px; } }
     main #contact form input {
@@ -7936,7 +7967,7 @@ main {
       margin-top: 35px;
       border: 1px solid #0583E0;
       cursor: pointer; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 1200px) {
         main #contact form .btn-submit {
           padding: 13px 34px;
           font-size: 14px; } }
@@ -9655,6 +9686,97 @@ main {
     font-size: 18px;
     font-family: "SF-Pro-Display-Medium";
     padding-top: 15px; }
+
+#list-blogs .btn-view-more {
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 2px solid #0583E0;
+  color: #0583E0;
+  font-size: 16px;
+  font-family: "SF-Pro-Display-Medium";
+  padding: 7px 28px;
+  cursor: pointer; }
+  @media only screen and (min-width: 768px) {
+    #list-blogs .btn-view-more {
+      font-size: 20px; } }
+  #list-blogs .btn-view-more:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #0583E0; }
+
+.customer-story {
+  background-color: #F7F8FA;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .customer-story::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/banner-blogs.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 0; }
+  .customer-story .page-caption {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 0;
+    height: 100%; }
+    .customer-story .page-caption h1 {
+      text-align: center;
+      font-weight: bold;
+      line-height: 1.75;
+      font-size: 18px;
+      color: #ffffff; }
+      @media only screen and (min-width: 992px) {
+        .customer-story .page-caption h1 {
+          font-size: 42px; } }
+    .customer-story .page-caption .caption {
+      color: #ffffff;
+      font-family: "SF-Pro-Display-Light"; }
+      @media only screen and (min-width: 992px) {
+        .customer-story .page-caption .caption {
+          font-size: 20px; } }
+
+#list-blogs .post-item {
+  padding-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    #list-blogs .post-item {
+      padding-bottom: 35px; } }
+  #list-blogs .post-item .note {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    background: #26262678;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; }
+  #list-blogs .post-item .post-title {
+    font-size: 18px;
+    padding: 10px 0;
+    font-weight: bold;
+    line-height: 1.7rem; }
+    @media only screen and (min-width: 768px) {
+      #list-blogs .post-item .post-title {
+        font-size: 24px;
+        padding: 15px 0;
+        line-height: 2.2rem; } }
+  #list-blogs .post-item .read-more {
+    font-size: 18px;
+    color: #095ADB; }
+    @media only screen and (min-width: 768px) {
+      #list-blogs .post-item .read-more {
+        font-size: 24px; } }
 
 #list-blogs .btn-view-more {
   background-color: #ffffff;
