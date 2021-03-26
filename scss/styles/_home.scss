@@ -152,10 +152,14 @@ main {
         }
     }
     #stated {
+<<<<<<< HEAD
         width: 100%;
         @include responsive(lg) {
             width: 74%;
         }
+=======
+        width: 74%;
+>>>>>>> deaa6de8a3dbb9c1feecf30889db4622c78ac4c8
         @include responsive(xl) {
             padding: 0 50px;
         }

@@ -7418,10 +7418,14 @@ main {
           main #answer .item .description {
             font-size: 20px; } }
   main #stated {
+<<<<<<< HEAD
     width: 100%; }
     @media only screen and (min-width: 992px) {
       main #stated {
         width: 74%; } }
+=======
+    width: 74%; }
+>>>>>>> deaa6de8a3dbb9c1feecf30889db4622c78ac4c8
     @media only screen and (min-width: 1200px) {
       main #stated {
         padding: 0 50px; } }
